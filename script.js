@@ -4,20 +4,28 @@ fetch('/.netlify/functions/getCurrentMap')
   .then(data => {
     const genieContainer = document.querySelector('div#__genieContainer');
     if (genieContainer) {
-      // Update the content of the genieContainer
-      genieContainer.setAttribute('data-content', data || 'Data not available');
-      // Trigger the extension to update its display (if it supports this method)
-      if (typeof genieContainer.updateDisplay === 'function') {
-        genieContainer.updateDisplay();
-      }
+      // Access the shadowRoot of the genieContainer
+      const shadowRoot = genieContainer.shadowRoot || genieContainer.attachShadow({ mode: 'open' });
+
+      // Create a new text node with the map data
+      const textNode = document.createTextNode(data || 'Data not available');
+
+      // Clear the existing content and append the new text node
+      shadowRoot.innerHTML = '';
+      shadowRoot.appendChild(textNode);
     }
   })
   .catch(error => {
     const genieContainer = document.querySelector('div#__genieContainer');
     if (genieContainer) {
-      genieContainer.setAttribute('data-content', 'Failed to fetch data');
-      if (typeof genieContainer.updateDisplay === 'function') {
-        genieContainer.updateDisplay();
-      }
+      // Access the shadowRoot of the genieContainer
+      const shadowRoot = genieContainer.shadowRoot || genieContainer.attachShadow({ mode: 'open' });
+
+      // Create a new text node with the error message
+      const errorTextNode = document.createTextNode('Failed to fetch data');
+
+      // Clear the existing content and append the new text node
+      shadowRoot.innerHTML = '';
+      shadowRoot.appendChild(errorTextNode);
     }
   });
