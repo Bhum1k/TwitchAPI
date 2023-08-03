@@ -1,3 +1,4 @@
+const fs = require('fs');
 const axios = require('axios');
 
 exports.handler = async (event, context) => {
@@ -5,6 +6,9 @@ exports.handler = async (event, context) => {
     const response = await axios.get('https://www.tarkovpal.com/api');
     const data = response.data;
     const currentMap = data["Current Map"][0];
+
+    // Write the raw text output to a file named 'output.txt'
+    fs.writeFileSync('data.txt', currentMap, 'utf8');
 
     return {
       statusCode: 200,
