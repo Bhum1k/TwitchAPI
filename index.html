@@ -1,8 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head>
+<head>
+  <title>Current Map Display</title>
+</head>
 <body>
-  <p id="currentMap">Loading...</p>
+  <div id="__genieContainer">
+    <template shadowrootmode="open">
+      <style>
+        @import "chrome-extension://jjfblogammkiefalfpafidabbnamoknm/built/inject.css";
+      </style>
+      <div id="rmnGenieWrappingDiv" style="right: 360px; display: none;">
+        <div data-v-4b8d7254="" class="bbb-loading-dots" style="display: none !important;">
+          <div data-v-4b8d7254="" class="finish-state start-state"></div>
+          <div data-v-4b8d7254="" class="finish-state start-state"></div>
+          <div data-v-4b8d7254="" class="finish-state start-state"></div>
+        </div>
+        <div id="component"></div>
+      </div>
+    </template>
+  </div>
 
   <script src="script.js"></script>
 </body>
