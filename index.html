@@ -7,17 +7,6 @@
   <h1>Current Map:</h1>
   <p id="currentMap"></p>
 
-  <script>
-    fetch('/.netlify/functions/getCurrentMap')
-      .then(response => response.json())
-      .then(data => {
-        const currentMapElement = document.getElementById('currentMap');
-        currentMapElement.textContent = data.currentMap || 'Data not available';
-      })
-      .catch(error => {
-        const currentMapElement = document.getElementById('currentMap');
-        currentMapElement.textContent = 'Failed to fetch data';
-      });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
