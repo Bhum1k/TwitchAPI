@@ -6,8 +6,8 @@ exports.handler = async (event, context) => {
     const data = response.data;
     const currentMap = data["Current Map"][0];
 
-    // Print the raw text output to the console
-    console.log(currentMap);
+    // Set the environment variable
+    process.env.CURRENT_MAP = currentMap;
 
     return {
       statusCode: 200,
@@ -26,3 +26,4 @@ exports.handler = async (event, context) => {
     };
   }
 };
+
