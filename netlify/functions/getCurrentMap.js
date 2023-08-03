@@ -8,18 +8,12 @@ exports.handler = async (event, context) => {
 
     return {
       statusCode: 200,
-      body: currentMap,
-      headers: {
-        'Content-Type': 'text/plain',
-      },
+      body: JSON.stringify({ currentMap }),
     };
   } catch (error) {
     return {
       statusCode: 500,
-      body: 'Failed to fetch data',
-      headers: {
-        'Content-Type': 'text/plain',
-      },
+      body: JSON.stringify({ error: 'Failed to fetch data' }),
     };
   }
 };
