@@ -4,8 +4,8 @@ exports.handler = async (event, context) => {
   try {
     const response = await axios.get('https://tarkov-time.adam.id.au/api');
     const data = response.data;
-    const left = data["left"][0];
-    const right = data["right"][0];
+    const left = data.left;
+    const right = data.right;
     const output = left.slice(0,-3);
 
 
@@ -13,7 +13,7 @@ exports.handler = async (event, context) => {
 
     return {
       statusCode: 200,
-      body: data,
+      body: left,
       headers: {
         'Content-Type': 'text/plain',
       },
