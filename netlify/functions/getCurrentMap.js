@@ -11,7 +11,7 @@ exports.handler = async (event, context) => {
 	
 	const minutes = calculateTimeDifferenceInMinutes(apiDate, central);
 	
-	const output = currentMap.concat(' (Reported ', minutes, ' minutes ago)');
+	const output = currentMap.concat(' reported ', minutes, ' minutes ago');
 
     // Set the environment variable
     process.env.CURRENT_MAP = currentMap;
