@@ -47,7 +47,7 @@ exports.handler = async (event, context) => {
 
     const minutes = calculateTimeDifferenceInMinutes(apiDate, central);
 
-    const output = `${currentMap} reported ${minutes} minutes ago`;
+    const output = values;
 
     // Set the environment variable
     process.env.CURRENT_MAP = currentMap;
