@@ -5,8 +5,7 @@ const sheets = google.sheets('v4');
 const apiKey = 'AIzaSyB6_vmv4e2C-a1J8hrEmzZscAtx2S4A61g';
 
 // The ID of the Google Spreadsheet
-const spreadsheetId = '2PACX-1vRwLysnh2Tf7h2yHBc_bpZLQh6DiFZtDqyhHLYP022xolQUPUHkSModV31E5Y7cLh_8LZGexpXy2VuH
-';
+const spreadsheetId = '2PACX-1vRwLysnh2Tf7h2yHBc_bpZLQh6DiFZtDqyhHLYP022xolQUPUHkSModV31E5Y7cLh_8LZGexpXy2VuH';
 
 // The range of cells to fetch data from (A2:B2 in this case)
 const range = 'Sheet1!A2:B2';
