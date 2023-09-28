@@ -2,7 +2,7 @@ const { google } = require('googleapis');
 const sheets = google.sheets('v4');
 
 // Load the credentials from the JSON key file
-const credentials = require('./goons.json');
+const credentials = require('goons.json');
 
 const auth = new google.auth.JWT({
   email: credentials.client_email,
