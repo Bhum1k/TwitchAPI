@@ -1,38 +1,15 @@
-const axios = require('axios');
+const { google } = require('googleapis');
+const sheets = google.sheets('v4');
 
-exports.handler = async (event, context) => {
-  try {
-    const response = await axios.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vRwLysnh2Tf7h2yHBc_bpZLQh6DiFZtDqyhHLYP022xolQUPUHkSModV31E5Y7cLh_8LZGexpXy2VuH/pubhtml?gid=1420050773&single=true&widget=true&headers=false');
-	const response2 = await axios.get('https://decapi.me/misc/time?timezone=America/Chicago&format=F%20j,%20o,%20g:i%20a')
-    const data = response.data;
-	const central = response2.data;
-    const currentMap = data["Current Map"][0];
-	const apiDate = data["Time"][0];
-	
-	const minutes = calculateTimeDifferenceInMinutes(apiDate, central);
-	
-	const output = currentMap.concat(' reported ', minutes, ' minutes ago');
+// Replace with your own API key
+const apiKey = 'AIzaSyB6_vmv4e2C-a1J8hrEmzZscAtx2S4A61g';
 
-    // Set the environment variable
-    process.env.CURRENT_MAP = currentMap;
+// The ID of the Google Spreadsheet
+const spreadsheetId = '2PACX-1vRwLysnh2Tf7h2yHBc_bpZLQh6DiFZtDqyhHLYP022xolQUPUHkSModV31E5Y7cLh_8LZGexpXy2VuH
+';
 
-    return {
-      statusCode: 200,
-      body: response,
-      headers: {
-        'Content-Type': 'text/plain',
-      },
-    };
-  } catch (error) {
-    return {
-      statusCode: 500,
-      body: 'Failed to fetch data',
-      headers: {
-        'Content-Type': 'text/plain',
-      },
-    };
-  }
-};
+// The range of cells to fetch data from (A2:B2 in this case)
+const range = 'Sheet1!A2:B2';
 
 // Function to calculate the time difference in minutes between two date strings
 function calculateTimeDifferenceInMinutes(dateString1, dateString2) {
@@ -49,10 +26,49 @@ function calculateTimeDifferenceInMinutes(dateString1, dateString2) {
   return Math.abs(timeDifferenceMinutes); // Use Math.abs to ensure a positive result
 }
 
-// Example usage
-const dateString1 = "September 20, 2023, 1:26 am";
-const dateString2 = "September 21, 2023, 2:45 pm";
+exports.handler = async (event, context) => {
+  try {
+    const sheetsApi = google.sheets({ version: 'v4', auth: apiKey });
+    const response = await sheetsApi.spreadsheets.values.get({
+      spreadsheetId,
+      range,
+    });
 
-const timeDifference = calculateTimeDifferenceInMinutes(dateString1, dateString2);
-console.log(`Time difference in minutes: ${timeDifference}`);
+    const values = response.data.values;
+    if (!values || values.length < 1 || values[0].length < 2) {
+      throw new Error('Invalid data format in the Google Spreadsheet');
+    }
 
+    const currentMap = values[0][0];
+    const apiDate = values[0][1];
+
+    // Fetch current time
+    const response2 = await axios.get('https://decapi.me/misc/time?timezone=America/Chicago&format=F%20j,%20o,%20g:i%20a');
+    const central = response2.data;
+
+    const minutes = calculateTimeDifferenceInMinutes(apiDate, central);
+
+    const output = `${currentMap} reported ${minutes} minutes ago`;
+
+    // Set the environment variable
+    process.env.CURRENT_MAP = currentMap;
+
+    return {
+      statusCode: 200,
+      body: output,
+      headers: {
+        'Content-Type': 'text/plain',
+      },
+    };
+  } catch (error) {
+    console.error('Error:', error);
+
+    return {
+      statusCode: 500,
+      body: 'Failed to fetch data',
+      headers: {
+        'Content-Type': 'text/plain',
+      },
+    };
+  }
+};
