@@ -2,7 +2,7 @@ const axios = require('axios');
 
 exports.handler = async (event, context) => {
   try {
-    const response = await axios.get('https://www.tarkovpal.com/api');
+    const response = await axios.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vRwLysnh2Tf7h2yHBc_bpZLQh6DiFZtDqyhHLYP022xolQUPUHkSModV31E5Y7cLh_8LZGexpXy2VuH/pubhtml?gid=1420050773&single=true&widget=true&headers=false');
 	const response2 = await axios.get('https://decapi.me/misc/time?timezone=America/Chicago&format=F%20j,%20o,%20g:i%20a')
     const data = response.data;
 	const central = response2.data;
@@ -18,7 +18,7 @@ exports.handler = async (event, context) => {
 
     return {
       statusCode: 200,
-      body: output,
+      body: response,
       headers: {
         'Content-Type': 'text/plain',
       },
