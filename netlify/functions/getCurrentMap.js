@@ -11,7 +11,7 @@ exports.handler = async (event, context) => {
     const response2 = await axios.get('https://decapi.me/misc/time?timezone=America/New_York&format=n/j/o%20G:i:s')
     const eastern = response2.data;
     const data = await scraping();
-    const currentMap = data[0];
+    //const currentMap = data[0];
     const apiDate = data[1];
     
     const minutesTP = calculateTimeDifferenceInMinutesTP(TPDate, central);
