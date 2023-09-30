@@ -18,7 +18,7 @@ exports.handler = async (event, context) => {
 
     return {
       statusCode: 200,
-      body: currentMap,
+      body: output,
       headers: {
         'Content-Type': 'text/plain',
       },
@@ -45,9 +45,6 @@ function calculateTimeDifferenceInMinutes(dateString1, dateString2) {
 
   // Convert milliseconds to minutes
   const timeDifferenceMinutes = Math.floor(timeDifferenceMs / (1000 * 60));
-  console.log("Hello");
-  console.log(dateString2);
-  console.log(data);
   return Math.abs(timeDifferenceMinutes); // Use Math.abs to ensure a positive result
 }
 
