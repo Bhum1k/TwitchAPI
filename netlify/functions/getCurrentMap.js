@@ -5,10 +5,9 @@ exports.handler = async (event, context) => {
   try {
     const response2 = await axios.get('https://decapi.me/misc/time?timezone=America/New_York&format=n/j/o%20G:i:s')
     const central = response2.data;
-    const currentMap = "HELLO";
-    //const data = scraping();
-    //const currentMap = data[0];
-    //const apiDate = data[1];
+    const data = scraping();
+    const currentMap = data[0];
+    const apiDate = data[1];
     
     const minutes = calculateTimeDifferenceInMinutes(apiDate, central);
     
@@ -46,7 +45,9 @@ function calculateTimeDifferenceInMinutes(dateString1, dateString2) {
 
   // Convert milliseconds to minutes
   const timeDifferenceMinutes = Math.floor(timeDifferenceMs / (1000 * 60));
-
+  console.log("Hello");
+  console.log(dateString2);
+  console.log(data);
   return Math.abs(timeDifferenceMinutes); // Use Math.abs to ensure a positive result
 }
 
@@ -70,6 +71,5 @@ async function scraping() {
   const dataArr = second.split(/^([^\d]*)(\d+.*)$/);
   dataArr.splice(0, 1)
   dataArr.splice(-1, 1)
-
   return dataArr
 }
