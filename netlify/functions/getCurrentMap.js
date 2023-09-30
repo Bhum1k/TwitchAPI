@@ -3,35 +3,22 @@ const cheerio = require('cheerio');
 
 exports.handler = async (event, context) => {
   try {
-    const response = await axios.get('https://www.tarkovpal.com/api');
-    const responseTime = await axios.get('https://decapi.me/misc/time?timezone=America/Chicago&format=F%20j,%20o,%20g:i%20a')
-    const dataTP = response.data;
-    const TPDate = data["Time"][0];
-    const central = response2.data;
     const response2 = await axios.get('https://decapi.me/misc/time?timezone=America/New_York&format=n/j/o%20G:i:s')
-    const eastern = response2.data;
+    const central = response2.data;
     const data = await scraping();
-    //const currentMap = data[0];
+    const currentMap = data[0];
     const apiDate = data[1];
     
-    const minutesTP = calculateTimeDifferenceInMinutesTP(TPDate, central);
-    const minutesGT = calculateTimeDifferenceInMinutes(apiDate, eastern);
-    if (minutesTP <= minutesGT) {
-      const currentMap = data["Current Map"][0];
-      const output = currentMap.concat(' reported ', minutesTP, ' minutes ago');
-    } else {
-      const currentMap = data[0];
-      const output = currentMap.concat(' reported ', minutesGT, ' minutes ago');
-    }
-    const out = output;
+    const minutes = calculateTimeDifferenceInMinutes(apiDate, central);
     
+    const output = currentMap.concat(' reported ', minutes, ' minutes ago');
 
     // Set the environment variable
     process.env.CURRENT_MAP = currentMap;
 
     return {
       statusCode: 200,
-      body: out,
+      body: output,
       headers: {
         'Content-Type': 'text/plain',
       },
@@ -58,21 +45,6 @@ function calculateTimeDifferenceInMinutes(dateString1, dateString2) {
 
   // Convert milliseconds to minutes
   const timeDifferenceMinutes = Math.floor(timeDifferenceMs / (1000 * 60));
-  return Math.abs(timeDifferenceMinutes); // Use Math.abs to ensure a positive result
-}
-
-// Function to calculate the time difference in minutes between two date strings
-function calculateTimeDifferenceInMinutesTP(dateString1, dateString2) {
-  // Parse the date strings into Date objects
-  const date1 = new Date(dateString1);
-  const date2 = new Date(dateString2);
-
-  // Calculate the time difference in milliseconds
-  const timeDifferenceMs = date2 - date1;
-
-  // Convert milliseconds to minutes
-  const timeDifferenceMinutes = timeDifferenceMs / (1000 * 60);
-
   return Math.abs(timeDifferenceMinutes); // Use Math.abs to ensure a positive result
 }
 
