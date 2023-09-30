@@ -16,12 +16,12 @@ exports.handler = async (event, context) => {
     
     const minutesTP = calculateTimeDifferenceInMinutesTP(TPDate, central);
     const minutesGT = calculateTimeDifferenceInMinutes(apiDate, eastern);
-    if (minutesTP >= minutesGP) {
+    if (minutesTP >= minutesGT) {
       const currentMap = data["Current Map"][0];
       const output = currentMap.concat(' reported ', minutesTP, ' minutes ago');
     } else {
       const currentMap = data[0];
-      const output = currentMap.concat(' reported ', minutesGP, ' minutes ago');
+      const output = currentMap.concat(' reported ', minutesGT, ' minutes ago');
     }
     
 
