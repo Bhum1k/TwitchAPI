@@ -1,6 +1,7 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 
+let currentMap;
 exports.handler = async (event, context) => {
   try {
     const response = await axios.get('https://www.tarkovpal.com/api');
@@ -16,10 +17,10 @@ exports.handler = async (event, context) => {
     const minutesTP = calculateTimeDifferenceInMinutesTP(TPDate, central);
     const minutesGT = calculateTimeDifferenceInMinutes(apiDate, eastern);
     if (minutesTP <= minutesGT) {
-      const currentMap = data["Current Map"][0];
+      currentMap = data["Current Map"][0];
       output = currentMap.concat(' reported ', minutesTP, ' minutes ago');
     } else {
-      const currentMap = data[0];
+      currentMap = data[0];
       output = currentMap.concat(' reported ', minutesGT, ' minutes ago');
     }
 
