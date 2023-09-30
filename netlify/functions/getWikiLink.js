@@ -1,26 +1,26 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 
-let currentMap;
+
 exports.handler = async (event, context) => {
   try {
     const response = await axios.get('https://www.tarkovpal.com/api');
-    const responseTime = await axios.get('https://decapi.me/misc/time?timezone=America/Chicago&format=F%20j,%20o,%20g:i%20a');
+    const responseTime = await axios.get('https://decapi.me/misc/time?timezone=America/Chicago&format=F%20j,%20o,%20g:i%20a')
     const dataTP = response.data;
     const TPDate = data["Time"][0];
     const central = responseTime.data;
-    const response2 = await axios.get('https://decapi.me/misc/time?timezone=America/New_York&format=n/j/o%20G:i:s');
+    const response2 = await axios.get('https://decapi.me/misc/time?timezone=America/New_York&format=n/j/o%20G:i:s')
     const eastern = response2.data;
     const data = await scraping();
     const apiDate = data[1];
     let output;
-    const minutesTP = calculateTimeDifferenceInMinutesTP(TPDate, central);
-    const minutesGT = calculateTimeDifferenceInMinutes(apiDate, eastern);
+    const minutesTP = await calculateTimeDifferenceInMinutesTP(TPDate, central);
+    const minutesGT = await calculateTimeDifferenceInMinutes(apiDate, eastern);
     if (minutesTP <= minutesGT) {
-      currentMap = data["Current Map"][0];
+      const currentMap = data["Current Map"][0];
       output = currentMap.concat(' reported ', minutesTP, ' minutes ago');
     } else {
-      currentMap = data[0];
+      const currentMap = data[0];
       output = currentMap.concat(' reported ', minutesGT, ' minutes ago');
     }
 
