@@ -12,17 +12,16 @@ exports.handler = async (event, context) => {
     const eastern = response2.data;
     const data = await scraping();
     const apiDate = data[1];
-
+    let output;
     const minutesTP = calculateTimeDifferenceInMinutesTP(TPDate, central);
     const minutesGT = calculateTimeDifferenceInMinutes(apiDate, eastern);
     if (minutesTP <= minutesGT) {
       const currentMap = data["Current Map"][0];
-      const output = currentMap.concat(' reported ', minutesTP, ' minutes ago');
+      output = currentMap.concat(' reported ', minutesTP, ' minutes ago');
     } else {
       const currentMap = data[0];
-      const output = currentMap.concat(' reported ', minutesGT, ' minutes ago');
+      output = currentMap.concat(' reported ', minutesGT, ' minutes ago');
     }
-    const out = output;
 
 
     // Set the environment variable
@@ -30,7 +29,7 @@ exports.handler = async (event, context) => {
 
     return {
       statusCode: 200,
-      body: out,
+      body: output,
       headers: {
         'Content-Type': 'text/plain',
       },
