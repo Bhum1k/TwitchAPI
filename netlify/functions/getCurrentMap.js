@@ -16,13 +16,14 @@ exports.handler = async (event, context) => {
     
     const minutesTP = calculateTimeDifferenceInMinutesTP(TPDate, central);
     const minutesGT = calculateTimeDifferenceInMinutes(apiDate, eastern);
-    if (minutesTP >= minutesGT) {
+    if (minutesTP <= minutesGT) {
       const currentMap = data["Current Map"][0];
       const output = currentMap.concat(' reported ', minutesTP, ' minutes ago');
     } else {
       const currentMap = data[0];
       const output = currentMap.concat(' reported ', minutesGT, ' minutes ago');
     }
+    const out = output;
     
 
     // Set the environment variable
@@ -30,7 +31,7 @@ exports.handler = async (event, context) => {
 
     return {
       statusCode: 200,
-      body: output,
+      body: out,
       headers: {
         'Content-Type': 'text/plain',
       },
