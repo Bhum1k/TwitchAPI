@@ -12,10 +12,11 @@ exports.handler = async function (event, context) {
         const url = queryTerm ? `${baseUrl}?query=${encodeURIComponent(queryTerm)}` : baseUrl;
 
         const yourProcessedData = queryTerm;
+        const index = searchAmmo(queryTerm);
 
         return {
             statusCode: 200,
-            body: JSON.stringify({ message: "Success", data: yourProcessedData }),
+            body: JSON.stringify({ message: "Success", data: yourProcessedData, returned: index}),
         };
     } catch (error) {
         return {
