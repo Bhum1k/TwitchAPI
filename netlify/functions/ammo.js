@@ -41,7 +41,7 @@ exports.handler = async function (event, context) {
         return {
             statusCode: 200,
             //body: JSON.stringify({ message: "Success", data: yourProcessedData, returned: index}),
-            body: priceResponse,
+            body: output,
             headers: {
                 'Content-Type': 'application/json',
             },
