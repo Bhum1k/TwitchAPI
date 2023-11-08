@@ -20,7 +20,7 @@ exports.handler = async function (event, context) {
             //body: JSON.stringify({ message: "Success", data: yourProcessedData, returned: index}),
             body: output,
             headers: {
-                'Content-Type': 'text/plain',
+                'Content-Type': 'application/json',
             },
         };
     } catch (error) {
