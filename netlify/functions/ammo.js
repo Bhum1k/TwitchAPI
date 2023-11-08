@@ -13,7 +13,12 @@ exports.handler = async function (event, context) {
 
         const yourProcessedData = queryTerm;
         const index = searchAmmo(queryTerm);
-        const output = '${ammo[index][0]} does ${ammo[index][1]} damage and has ${ammo[index][2]}'
+
+        ammoName = ammo[index][0];
+        ammoPrice = '0';
+        ammoDamage = ammo[index][1];
+        ammoPen = ammo[index][2];
+        const output = ammoName(" -> Damage: ", ammoDamage, " - Penetration: ", ammoPen, " - Price: ", ammoPrice);
 
         return {
             statusCode: 200,
