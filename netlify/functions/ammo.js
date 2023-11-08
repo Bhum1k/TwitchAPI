@@ -27,9 +27,9 @@ exports.handler = async function (event, context) {
             try {
                 priceResponse = await axios.get(priceUrl);
                 priceData = priceResponse.data[0];
-                ammoPrice = priceData["traderPrice"][0];
-                currency = priceData["traderPriceCur"][0];
-                trader = priceData["traderName"][0];
+                ammoPrice = priceData.traderPrice;
+                currency = priceData.traderPriceCur;
+                trader = priceData.traderName;
             } catch (error) {
                 ammoPrice = "0";
             }
