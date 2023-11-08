@@ -27,14 +27,14 @@ exports.handler = async function (event, context) {
             try {
                 priceResponse = await axios.get(priceUrl);
                 priceData = priceResponse.data[0];
-                ammoPrice = priceData.traderPrice;
+                ammoPrice = priceData.basePrice;
                 currency = priceData.traderPriceCur;
                 trader = priceData.traderName;
             } catch (error) {
                 ammoPrice = "0";
             }
             
-            output = ammoName.concat(" -> Damage: ", ammoDamage, " - Penetration: ", ammoPen, " - Price: ", ammoPrice, " URL: ", priceData);
+            output = ammoName.concat(" -> Damage: ", ammoDamage, " - Penetration: ", ammoPen, " - Price: ", ammoPrice, " ", currency);
         }
         
 
