@@ -13,10 +13,15 @@ exports.handler = async function (event, context) {
 
         const yourProcessedData = queryTerm;
         const index = searchAmmo(queryTerm);
+        const output = '${ammo[index][0]} does ${ammo[index][1]} damage and has ${ammo[index][2]}'
 
         return {
             statusCode: 200,
-            body: JSON.stringify({ message: "Success", data: yourProcessedData, returned: index}),
+            //body: JSON.stringify({ message: "Success", data: yourProcessedData, returned: index}),
+            body: output,
+            headers: {
+                'Content-Type': 'text/plain',
+            },
         };
     } catch (error) {
         return {
