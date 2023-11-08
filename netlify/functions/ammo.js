@@ -14,12 +14,13 @@ exports.handler = async function (event, context) {
         const yourProcessedData = queryTerm;
         const index = searchAmmo(queryTerm);
 
-        ammoName = ammo[index][0];
-        ammoPrice = ammo[index][3];
-        ammoDamage = ammo[index][1];
-        ammoPen = ammo[index][2];
+        
         let output = "Ammo Type Not Found";
         if (index != -1) {
+            ammoName = ammo[index][0];
+            ammoPrice = ammo[index][3];
+            ammoDamage = ammo[index][1];
+            ammoPen = ammo[index][2];
             output = ammoName.concat(" -> Damage: ", ammoDamage, " - Penetration: ", ammoPen, " - Price: ", ammoPrice);
         }
         
