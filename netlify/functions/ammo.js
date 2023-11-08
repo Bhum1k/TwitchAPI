@@ -18,7 +18,7 @@ exports.handler = async function (event, context) {
         ammoPrice = ammo[index][3];
         ammoDamage = ammo[index][1];
         ammoPen = ammo[index][2];
-        let output = "No Ammo Type Found";
+        let output = "Ammo Type Not Found";
         if (index != -1) {
             output = ammoName.concat(" -> Damage: ", ammoDamage, " - Penetration: ", ammoPen, " - Price: ", ammoPrice);
         }
