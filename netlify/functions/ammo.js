@@ -11,7 +11,7 @@ exports.handler = async function (event, context) {
         const baseUrl = "https://calm-figolla-de51de.netlify.app/.netlify/functions/ammo";
         const url = queryTerm ? `${baseUrl}?query=${encodeURIComponent(queryTerm)}` : baseUrl;
 
-        const yourProcessedData = "Hello";
+        const yourProcessedData = queryTerm;
 
         return {
             statusCode: 200,
