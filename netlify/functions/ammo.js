@@ -26,7 +26,7 @@ exports.handler = async function (event, context) {
             priceUrl = `https://api.tarkov-market.app/api/v1/item?q=${ammoName}&x-api-key=6dJ67FuraCJjcxjd`;
             try {
                 priceResponse = await axios.get(priceUrl);
-                priceData = priceResponse.data;
+                priceData = priceResponse.data[0];
                 ammoPrice = priceData["traderPrice"][0];
                 currency = priceData["traderPriceCur"][0];
                 trader = priceData["traderName"][0];
@@ -34,7 +34,7 @@ exports.handler = async function (event, context) {
                 ammoPrice = "0";
             }
             
-            output = ammoName.concat(" -> Damage: ", ammoDamage, " - Penetration: ", ammoPen, " - Price: ", ammoPrice, " URL: ", priceUrl);
+            output = ammoName.concat(" -> Damage: ", ammoDamage, " - Penetration: ", ammoPen, " - Price: ", ammoPrice, " URL: ", priceData);
         }
         
 
