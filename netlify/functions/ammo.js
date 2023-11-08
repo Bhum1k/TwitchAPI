@@ -34,7 +34,7 @@ exports.handler = async function (event, context) {
                 ammoPrice = "0";
             }
             
-            output = ammoName.concat(" -> Damage: ", ammoDamage, " - Penetration: ", ammoPen, " - Price: ", ammoPrice);
+            output = ammoName.concat(" -> Damage: ", ammoDamage, " - Penetration: ", ammoPen, " - Price: ", ammoPrice, " URL: ", priceUrl);
         }
         
 
@@ -85,7 +85,7 @@ function searchAmmo(query) {
     return bestMatchIndex;
 }
 
-// Example usage
+/* // Example usage
 const searchQuery = '5.45 PP';
 const resultIndex = searchAmmo(searchQuery);
 
@@ -96,3 +96,4 @@ if (resultIndex === -1) {
     console.log(`The most suitable match for '${searchQuery}' is at index ${resultIndex}.`);
 }
 
+ */
