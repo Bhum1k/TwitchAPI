@@ -13,8 +13,10 @@ exports.handler = async function (event, context) {
         
         const yourProcessedData = queryTerm;
 
-            let output = "";
-    
+            let output = "FILL";
+            if (qertTerm.length != 0) {
+
+            }
             marketUrl = `https://api.tarkov-market.app/api/v1/nightbot?x-api-key=6dJ67FuraCJjcxjd&q=${queryTerm}`;
             try {
                 priceResponse = await axios.get(marketUrl);
@@ -24,12 +26,10 @@ exports.handler = async function (event, context) {
                     let array = marketData.split(" ");
                     concatenated = array.slice(0, -1).join(" ");
                     output = concatenated;
-            } catch (error) {
+                }}
+            catch (error) {
                 output = "ERROR"
             }
-
-        }
-        
 
         return {
             statusCode: 200,
@@ -38,14 +38,11 @@ exports.handler = async function (event, context) {
             headers: {
             'Content-Type': 'application/json',
         }
-    }; catch (error) {
+    }}
+    catch (error) {
         return {
             statusCode: 500,
             body: JSON.stringify({ message: "Error", error: error.message }),
         };
     };
-
-    // Return the index of the best match
-    return bestMatchIndex;
-    }
 }
