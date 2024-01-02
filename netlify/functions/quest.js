@@ -43,7 +43,7 @@ exports.handler = async function (event, context) {
     };
 };
 
-/* function searchAmmo(query) {
+function searchAmmo(query) {
     // Convert the query to lowercase for case-insensitive matching
     const lowercaseQuery = query.toLowerCase();
 
@@ -73,16 +73,3 @@ exports.handler = async function (event, context) {
     // Return the index of the best match
     return bestMatchIndex;
 }
-
-/* // Example usage
-const searchQuery = '5.45 PP';
-const resultIndex = searchAmmo(searchQuery);
-
-// Display the result
-if (resultIndex === -1) {
-    console.log(`No matches found for '${searchQuery}'.`);
-} else {
-    console.log(`The most suitable match for '${searchQuery}' is at index ${resultIndex}.`);
-}
-
- */ */
