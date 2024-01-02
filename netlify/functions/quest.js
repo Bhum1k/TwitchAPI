@@ -17,6 +17,7 @@ exports.handler = async function (event, context) {
 
         let output = "FILL";
         let searchIndex = -1;
+        let notes = "";
         if (queryTerm.length != 0) {
             marketUrl = `https://api.tarkov-market.app/api/v1/nightbot?x-api-key=6dJ67FuraCJjcxjd&q=${queryTerm}`;
             try {
@@ -28,11 +29,13 @@ exports.handler = async function (event, context) {
                     let array = marketData.split(" ");
                     concatenated = array.slice(0, -1).join(" ");
                     searchIndex = searchData(concatenated);
-                    output = data[searchIndex][1];
+                    notes = data[searchIndex][1];
+                    notes = notes.replace(", Hideout:", " | Hideout:");
+                    output = (data[searchIndex][0]).concat(" -> ", notes);
                 }
             }
             catch (error) {
-                output = "ERROR";
+                output = "Item not found";
             }
 
         } else {
