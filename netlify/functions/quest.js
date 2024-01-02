@@ -14,29 +14,32 @@ exports.handler = async function (event, context) {
         const yourProcessedData = queryTerm;
 
             let output = "FILL";
-            if (qertTerm.length != 0) {
+            if (queryTerm.length != 0) {
+                marketUrl = `https://api.tarkov-market.app/api/v1/nightbot?x-api-key=6dJ67FuraCJjcxjd&q=${queryTerm}`;
+                try {
+                    priceResponse = await axios.get(marketUrl);
+                    marketData = priceResponse.data;
+                    console.log(marketData);
+                    output = marketData;
+                    if (marketData.includes("₽")) {
+                        let array = marketData.split(" ");
+                        concatenated = array.slice(0, -1).join(" ");
+                        output = concatenated;
+                    }
+                }
+                catch (error) {
+                    output = "ERROR"
+                }
 
+                console.log(output);
             }
-            marketUrl = `https://api.tarkov-market.app/api/v1/nightbot?x-api-key=6dJ67FuraCJjcxjd&q=${queryTerm}`;
-            try {
-                priceResponse = await axios.get(marketUrl);
-                marketData = priceResponse.data;
-                output = marketData;
-                if (marketData.includes("₽")) {
-                    let array = marketData.split(" ");
-                    concatenated = array.slice(0, -1).join(" ");
-                    output = concatenated;
-                }}
-            catch (error) {
-                output = "ERROR"
-            }
+            
 
         return {
             statusCode: 200,
-            //body: JSON.stringify({ message: "Success", data: yourProcessedData, returned: index}),
             body: output,
             headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'text/plain',
         }
     }}
     catch (error) {
@@ -46,3 +49,11 @@ exports.handler = async function (event, context) {
         };
     };
 }
+
+return {
+    statusCode: 200,
+    body: output,
+    headers: {
+        'Content-Type': 'text/plain',
+    },
+};
