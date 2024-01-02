@@ -31,7 +31,6 @@ exports.handler = async function (event, context) {
                     output = "ERROR";
                 }
 
-                console.log(output);
             } else {
                 output = "";
             }
@@ -50,11 +49,3 @@ exports.handler = async function (event, context) {
         };
     };
 }
-
-return {
-    statusCode: 200,
-    body: output,
-    headers: {
-        'Content-Type': 'text/plain',
-    },
-};
