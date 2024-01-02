@@ -28,13 +28,14 @@ exports.handler = async function (event, context) {
                     }
                 }
                 catch (error) {
-                    output = "ERROR"
+                    output = "ERROR";
                 }
 
                 console.log(output);
+            } else {
+                output = "";
             }
             
-
         return {
             statusCode: 200,
             body: output,
