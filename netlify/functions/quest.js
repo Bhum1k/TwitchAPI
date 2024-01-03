@@ -34,7 +34,7 @@ exports.handler = async function (event, context) {
                 }
             }
             catch (error) {
-                output = "Item not found";
+                output = concatenated.concat(" is not needed for quests or hideout");
             }
 
         } else {
