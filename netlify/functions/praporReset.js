@@ -1,5 +1,47 @@
+// Import the required modules
 const axios = require('axios');
 
+// Helper function to format time difference
+function formatTimeDifference(timeDifference, isPreviousRestock) {
+  const seconds = Math.floor(timeDifference / 1000);
+  const minutes = Math.floor(seconds / 60);
+  const hours = Math.floor(minutes / 60);
+
+  const formattedTime = `${hours}h ${minutes % 60}m ${seconds % 60}s`;
+
+  return isPreviousRestock
+    ? `Time since previous restock: ${formattedTime}`
+    : `Time until next restock: ${formattedTime}`;
+}
+
+// Helper function to fetch the reset time from the Tarkov API
+async function getResetTime() {
+  try {
+    const response = await axios.post('https://api.tarkov.dev/graphql', {
+      query: `{
+        traders(lang: en) {
+          name
+          resetTime
+        }
+      }`,
+    });
+
+    const data = response.data;
+    const resetTime = data?.data?.traders[0]?.resetTime;
+
+    if (!resetTime) {
+      console.error('Reset time not found in the API response:', data);
+      return null;
+    }
+
+    return resetTime;
+  } catch (error) {
+    console.error('Error fetching reset time:', error);
+    throw error;
+  }
+}
+
+// Main Lambda function
 exports.handler = async (event, context) => {
   try {
     const resetTime = await getResetTime();
@@ -53,17 +95,3 @@ exports.handler = async (event, context) => {
     };
   }
 };
-
-// The rest of your code remains unchanged
-
-function formatTimeDifference(timeDifference, isPreviousRestock) {
-  const seconds = Math.floor(timeDifference / 1000);
-  const minutes = Math.floor(seconds / 60);
-  const hours = Math.floor(minutes / 60);
-
-  const formattedTime = `${hours}h ${minutes % 60}m ${seconds % 60}s`;
-
-  return isPreviousRestock
-    ? `Time since previous restock: ${formattedTime}`
-    : `Time until next restock: ${formattedTime}`;
-}
