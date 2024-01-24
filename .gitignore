@@ -1,2 +1,5 @@
 
 netlify/functions/goons.json
+netlify/functions/praporReset.py
+netlify/functions/tarkovDevQueryTest.py
+netlify/functions/prapor.bat
