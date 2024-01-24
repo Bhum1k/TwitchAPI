@@ -65,10 +65,9 @@ exports.handler = async (event, context) => {
         statusCode: 200,
         body: JSON.stringify({
           message: output,
-          resetTime: resetTime,
         }), // Convert the body to a JSON-formatted string
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'text/plain',
         },
       };
 
