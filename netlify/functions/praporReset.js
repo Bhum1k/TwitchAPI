@@ -2,47 +2,60 @@ const axios = require('axios');
 
 exports.handler = async (event, context) => {
   try {
-    const response = await axios.get('http://worldtimeapi.org/api/timezone/Europe/London');
-    const data = response.data;
-    const currentDateTime = new Date(data.utc_datetime);
+    const resetTime = await getResetTime();
 
-    // Assuming the reset time is obtained from the Tarkov API as in your original code
-    // Replace this with the actual reset time obtained from your Tarkov API call
-    const resetTime = getResetTime(); // Replace with your implementation
+    if (resetTime) {
+      const resetTimeDate = new Date(resetTime);
+      const currentTime = new Date();
 
-    const resetTimeDate = new Date(resetTime);
-    const currentTime = new Date();
+      let timeDifference;
+      let output;
 
-    let timeDifference;
-    let output;
+      if (currentTime < resetTimeDate) {
+        timeDifference = resetTimeDate - currentTime;
+        output = formatTimeDifference(timeDifference);
+      } else {
+        timeDifference = currentTime - resetTimeDate;
+        output = formatTimeDifference(timeDifference, true);
+      }
 
-    if (currentTime < resetTimeDate) {
-      timeDifference = resetTimeDate - currentTime;
-      output = formatTimeDifference(timeDifference);
+      const jsonResponse = {
+        statusCode: 200,
+        body: {
+          message: output,
+          resetTime: resetTime,
+        },
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      };
+
+      return jsonResponse;
     } else {
-      timeDifference = currentTime - resetTimeDate;
-      output = formatTimeDifference(timeDifference, true);
+      console.error('Reset time is not available.');
+      return {
+        statusCode: 500,
+        body: JSON.stringify({ error: 'Reset time is not available.' }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      };
     }
-
-    return {
-      statusCode: 200,
-      body: output,
-      headers: {
-        'Content-Type': 'text/plain',
-      },
-    };
   } catch (error) {
+    console.error('Error in Lambda function:', error);
+
     return {
       statusCode: 500,
-      body: 'Failed to fetch data',
+      body: JSON.stringify({ error: 'Internal Server Error' }),
       headers: {
-        'Content-Type': 'text/plain',
+        'Content-Type': 'application/json',
       },
     };
   }
 };
 
-// Helper function to format time difference
+// The rest of your code remains unchanged
+
 function formatTimeDifference(timeDifference, isPreviousRestock) {
   const seconds = Math.floor(timeDifference / 1000);
   const minutes = Math.floor(seconds / 60);
@@ -53,32 +66,4 @@ function formatTimeDifference(timeDifference, isPreviousRestock) {
   return isPreviousRestock
     ? `Time since previous restock: ${formattedTime}`
     : `Time until next restock: ${formattedTime}`;
-}
-
-async function getResetTime() {
-  try {
-    const response = await fetch('https://api.tarkov.dev/graphql', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-      },
-      body: JSON.stringify({
-        query: `{
-          traders(lang: en) {
-            name
-            resetTime
-          }
-        }`
-      })
-    });
-
-    const data = await response.json();
-    const resetTime = data['data']['traders'][0]['resetTime'];
-
-    return resetTime;
-  } catch (error) {
-    console.error('Error fetching reset time:', error);
-    throw error;
-  }
 }
