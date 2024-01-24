@@ -10,8 +10,8 @@ function formatTimeDifference(timeDifference, isPreviousRestock) {
   const formattedTime = `${hours}h ${minutes % 60}m ${seconds % 60}s`;
 
   return isPreviousRestock
-    ? `Time since previous restock: ${formattedTime}`
-    : `Time until next restock: ${formattedTime}`;
+    ? `Time since previous Prapor restock: ${formattedTime}`
+    : `Time until next Prapor restock: ${formattedTime}`;
 }
 
 // Helper function to fetch the reset time from the Tarkov API
