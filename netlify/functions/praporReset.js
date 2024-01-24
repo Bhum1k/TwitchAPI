@@ -1,3 +1,60 @@
+const axios = require('axios');
+
+exports.handler = async (event, context) => {
+  try {
+    const response = await axios.get('http://worldtimeapi.org/api/timezone/Europe/London');
+    const data = response.data;
+    const currentDateTime = new Date(data.utc_datetime);
+
+    // Assuming the reset time is obtained from the Tarkov API as in your original code
+    // Replace this with the actual reset time obtained from your Tarkov API call
+    const resetTime = getResetTime(); // Replace with your implementation
+
+    const resetTimeDate = new Date(resetTime);
+    const currentTime = new Date();
+
+    let timeDifference;
+    let output;
+
+    if (currentTime < resetTimeDate) {
+      timeDifference = resetTimeDate - currentTime;
+      output = formatTimeDifference(timeDifference);
+    } else {
+      timeDifference = currentTime - resetTimeDate;
+      output = formatTimeDifference(timeDifference, true);
+    }
+
+    return {
+      statusCode: 200,
+      body: output,
+      headers: {
+        'Content-Type': 'text/plain',
+      },
+    };
+  } catch (error) {
+    return {
+      statusCode: 500,
+      body: 'Failed to fetch data',
+      headers: {
+        'Content-Type': 'text/plain',
+      },
+    };
+  }
+};
+
+// Helper function to format time difference
+function formatTimeDifference(timeDifference, isPreviousRestock) {
+  const seconds = Math.floor(timeDifference / 1000);
+  const minutes = Math.floor(seconds / 60);
+  const hours = Math.floor(minutes / 60);
+
+  const formattedTime = `${hours}h ${minutes % 60}m ${seconds % 60}s`;
+
+  return isPreviousRestock
+    ? `Time since previous restock: ${formattedTime}`
+    : `Time until next restock: ${formattedTime}`;
+}
+
 async function getResetTime() {
   try {
     const response = await fetch('https://api.tarkov.dev/graphql', {
@@ -17,59 +74,11 @@ async function getResetTime() {
     });
 
     const data = await response.json();
-    const resetTime = data?.data?.traders[0]?.resetTime;
-
-    if (!resetTime) {
-      console.error('Reset time not found in the API response:', data);
-      return null; // or throw an error, depending on your desired behavior
-    }
+    const resetTime = data['data']['traders'][0]['resetTime'];
 
     return resetTime;
   } catch (error) {
     console.error('Error fetching reset time:', error);
     throw error;
   }
-}
-
-// Example usage:
-async function fetchData() {
-  try {
-    const resetTime = await getResetTime();
-
-    if (resetTime) {
-      const resetTimeDate = new Date(resetTime);
-      const currentTime = new Date();
-
-      let timeDifference;
-      let output;
-
-      if (currentTime < resetTimeDate) {
-        timeDifference = resetTimeDate - currentTime;
-        output = formatTimeDifference(timeDifference);
-      } else {
-        timeDifference = currentTime - resetTimeDate;
-        output = formatTimeDifference(timeDifference, true);
-      }
-
-      console.log(output);
-    } else {
-      console.error('Reset time is not available.');
-    }
-  } catch (error) {
-    // Handle errors here
-  }
-}
-
-fetchData(); // Call the fetchData function to initiate the process
-
-function formatTimeDifference(timeDifference, isPreviousRestock) {
-  const seconds = Math.floor(timeDifference / 1000);
-  const minutes = Math.floor(seconds / 60);
-  const hours = Math.floor(minutes / 60);
-
-  const formattedTime = `${hours}h ${minutes % 60}m ${seconds % 60}s`;
-
-  return isPreviousRestock
-    ? `Time since previous restock: ${formattedTime}`
-    : `Time until next restock: ${formattedTime}`;
 }
