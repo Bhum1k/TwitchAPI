@@ -63,7 +63,7 @@ exports.handler = async (event, context) => {
 
       const jsonResponse = {
         statusCode: 200,
-        body: JSON.stringify(output), // Convert the body to a JSON-formatted string
+        body: output, // Convert the body to a JSON-formatted string
         headers: {
           'Content-Type': 'text/plain',
         },
