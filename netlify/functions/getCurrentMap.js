@@ -57,7 +57,7 @@ function split(str, index) {
 async function scraping() {
   const resposne = await axios.request({
     method: "GET",
-    url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vR-wIQI351UH85ILq5KiCLMMrl0uHRmjDinBCt6nXGg5exeuCxQUf8DTLJkwn7Ckr8-HmLyEIoapBE5/pubhtml?gid=1420050773&single=true&widget=true&headers=false"
+    url: "https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vR-wIQI351UH85ILq5KiCLMMrl0uHRmjDinBCt6nXGg5exeuCxQUf8DTLJkwn7Ckr8-HmLyEIoapBE5/pubhtml/sheet?headers=false&gid=1420050773"
   });
 
   const $ = cheerio.load(resposne.data);
