@@ -82,7 +82,7 @@ async function scraping2() {
     const element = $(".s0").text();
 
     const [first, second] = split(element, 23);
-    const dataArr = second.split(/^([^\d]*)(\d+.*)$/);
+    const dataArr = second.split(/TimestampMap Selection: (\d{2}\/\d{2}\/\d{4} \d{2}:\d{2}:\d{2})(.+)/);
     dataArr.splice(0, 1)
     dataArr.splice(-1, 1)
     return element
