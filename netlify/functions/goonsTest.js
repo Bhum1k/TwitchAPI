@@ -81,9 +81,14 @@ async function scraping2() {
 
     const element = $(".s0").text();
 
-    const [first, second] = split(element, 23);
-    const dataArr = second.split(/TimestampMap Selection: (\d{2}\/\d{2}\/\d{4} \d{2}:\d{2}:\d{2})(.+)/);
-    dataArr.splice(0, 1)
-    dataArr.splice(-1, 1)
-    return element
+    const match = element.match(/TimestampMap Selection: (\d{2}\/\d{2}\/\d{4} \d{2}:\d{2}:\d{2})(.+)/);
+
+    const dataArr = [];
+    if (match) {
+        dataArr.push(match[2]); // Text ("Woods")
+        dataArr.push(match[1]); // Timestamp ("2/26/2024 18:05:08")
+    } else {
+        console.error("Element format doesn't match the expected pattern.");
+    }
+    return dataArr
 }
