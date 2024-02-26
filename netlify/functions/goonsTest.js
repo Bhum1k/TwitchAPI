@@ -6,13 +6,12 @@ exports.handler = async (event, context) => {
         const response2 = await axios.get('https://decapi.me/misc/time?timezone=America/New_York&format=n/j/o%20G:i:s')
         const central = response2.data;
         const data = await scraping();
-        const output = await scraping2();
         const currentMap = data[0];
         const apiDate = data[1];
 
         const minutes = calculateTimeDifferenceInMinutes(apiDate, central);
 
-        // const output = currentMap.concat(' reported ', minutes, ' minutes ago');
+        const output = currentMap.concat(' reported ', minutes, ' minutes ago');
 
         // Set the environment variable
         process.env.CURRENT_MAP = currentMap;
@@ -21,7 +20,7 @@ exports.handler = async (event, context) => {
             statusCode: 200,
             body: output,
             headers: {
-                'Content-Type': 'json/application',
+                'Content-Type': 'text/plain',
             },
         };
     } catch (error) {
@@ -55,23 +54,8 @@ function split(str, index) {
     return result;
 }
 
+
 async function scraping() {
-    const resposne = await axios.request({
-        method: "GET",
-        url: "https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vR-wIQI351UH85ILq5KiCLMMrl0uHRmjDinBCt6nXGg5exeuCxQUf8DTLJkwn7Ckr8-HmLyEIoapBE5/pubhtml/sheet?headers=false&gid=1420050773"
-    });
-
-    const $ = cheerio.load(resposne.data);
-
-    const element = $(".s0").text();
-
-    const [first, second] = split(element, 23);
-    const dataArr = second.split(/^([^\d]*)(\d+.*)$/);
-    dataArr.splice(0, 1)
-    dataArr.splice(-1, 1)
-    return dataArr
-}
-async function scraping2() {
     const resposne = await axios.request({
         method: "GET",
         url: "https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vR-wIQI351UH85ILq5KiCLMMrl0uHRmjDinBCt6nXGg5exeuCxQUf8DTLJkwn7Ckr8-HmLyEIoapBE5/pubhtml/sheet?headers=false&gid=1420050773"
