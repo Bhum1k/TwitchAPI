@@ -65,9 +65,7 @@ async function scraping() {
     const $ = cheerio.load(resposne.data);
 
     const element = $(".s0").text();
-
-    const match = element.match(/TimestampMap Selection: (\d{2}\/\d{2}\/\d{4} \d{2}:\d{2}:\d{2})(.+)/);
-
+    const [first, second] = split(element, 23);
     const dataArr = second.match(/(\d{1,2}\/\d{1,2}\/\d{4}\s\d{1,2}:\d{2}:\d{2})([A-Za-z]+)/);
     return dataArr
 }
