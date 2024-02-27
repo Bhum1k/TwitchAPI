@@ -6,7 +6,7 @@ exports.handler = async (event, context) => {
         const response2 = await axios.get('https://decapi.me/misc/time?timezone=America/New_York&format=n/j/o%20G:i:s')
         const central = response2.data;
         const data = await scraping();
-        const currentMap = data[0];
+        const currentMap = data[2];
         const apiDate = data[1];
 
         const minutes = calculateTimeDifferenceInMinutes(apiDate, central);
@@ -67,12 +67,6 @@ async function scraping() {
 
     const match = element.match(/TimestampMap Selection: (\d{2}\/\d{2}\/\d{4} \d{2}:\d{2}:\d{2})(.+)/);
 
-    const dataArr = [];
-    if (match) {
-        dataArr.push(match[2]); // Text ("Woods")
-        dataArr.push(match[1]); // Timestamp ("2/26/2024 18:05:08")
-    } else {
-        console.error("Element format doesn't match the expected pattern.");
-    }
+    const dataArr = second.match(/(\d{1,2}\/\d{1,2}\/\d{4}\s\d{1,2}:\d{2}:\d{2})([A-Za-z]+)/);
     return dataArr
 }
