@@ -6,6 +6,7 @@ exports.handler = async (event, context) => {
         const response2 = await axios.get('https://decapi.me/misc/time?timezone=America/New_York&format=n/j/o%20G:i:s')
         const central = response2.data;
         const data = await scraping();
+        console.log(data);
         const currentMap = data[2];
         const apiDate = data[1];
 
