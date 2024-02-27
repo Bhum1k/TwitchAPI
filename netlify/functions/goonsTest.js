@@ -9,7 +9,7 @@ exports.handler = async (event, context) => {
         const currentMap = data[2];
         const apiDate = data[1];
 
-        const minutes = calculateTimeDifferenceInMinutes(apiDate, central);
+        // const minutes = calculateTimeDifferenceInMinutes(apiDate, central);
 
         const output = currentMap.concat(' reported ', minutes, ' minutes ago');
 
@@ -18,7 +18,7 @@ exports.handler = async (event, context) => {
 
         return {
             statusCode: 200,
-            body: output,
+            body: currentMap,
             headers: {
                 'Content-Type': 'text/plain',
             },
