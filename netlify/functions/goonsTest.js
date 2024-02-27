@@ -6,20 +6,21 @@ exports.handler = async (event, context) => {
         const response2 = await axios.get('https://decapi.me/misc/time?timezone=America/New_York&format=n/j/o%20G:i:s')
         const central = response2.data;
         const data = await scraping();
-        console.log(data);
+        
         const currentMap = data[2];
         const apiDate = data[1];
-
-        // const minutes = calculateTimeDifferenceInMinutes(apiDate, central);
+        console.log(currentMap);
+        console.log(apiDate);
+        const minutes = calculateTimeDifferenceInMinutes(apiDate, central);
 
         const output = currentMap.concat(' reported ', minutes, ' minutes ago');
-
+        console.log(output);
         // Set the environment variable
         process.env.CURRENT_MAP = currentMap;
 
         return {
             statusCode: 200,
-            body: currentMap,
+            body: output,
             headers: {
                 'Content-Type': 'text/plain',
             },
