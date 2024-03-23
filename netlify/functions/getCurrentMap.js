@@ -11,7 +11,7 @@ exports.handler = async (event, context) => {
     const minutes = calculateTimeDifferenceInMinutes(apiDate, central);
 
     const response = await axios.get('https://www.tarkovpal.com/api');
-    const response3 = await axios.get('https://decapi.me/misc/time?timezone=America/New_York&format=F%20j,%20o,%20g:i%20a')
+    const response3 = await axios.get('https://decapi.me/misc/time?timezone=America/Chicago&format=F%20j,%20o,%20g:i%20a')
     const data2 = response.data;
     const centralTime = response3.data;
     const currentMapTP = data2["Current Map"][0];
