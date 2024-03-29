@@ -8,7 +8,7 @@ exports.handler = async (event, context) => {
     const right = data.right;
     const left_slice = left.slice(0,-3);
     const right_slice = right.slice(0, -3);
-    const output = left_slice.concat('/', right_slice)
+    const output = left_slice.concat('/', right_slice);
 
 
 
