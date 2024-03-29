@@ -1,74 +1,99 @@
-// Import the required modules
 const axios = require('axios');
+const cheerio = require('cheerio');
 
-// Helper function to fetch the reset time from the Tarkov API
-async function getResetTime() {
-  try {
-    const response = await axios.post('https://api.tarkov.dev/graphql', {
-      query: `{
-        traders(lang: en) {
-          name
-          resetTime
-        }
-      }`,
-    });
-
-    const data = response.data;
-    const resetTime = data?.data?.traders[0]?.resetTime;
-
-    if (!resetTime) {
-      console.error('Reset time not found in the API response:', data);
-      return null;
-    }
-
-    return resetTime;
-  } catch (error) {
-    console.error('Error fetching reset time:', error);
-    throw error;
-  }
-}
-
-// Main Lambda function
 exports.handler = async (event, context) => {
   try {
-    const resetTime = await getResetTime();
+    const response2 = await axios.get('https://decapi.me/misc/time?timezone=America/New_York&format=n/j/o%20G:i:s')
+    const central = response2.data;
+    const data = await scraping();
+    const currentMap = data[2];
+    const apiDate = data[1];
+    const minutes = calculateTimeDifferenceInMinutes(apiDate, central);
 
-    if (resetTime) {
-      const resetTimeDate = new Date(resetTime);
-      const currentTime = new Date();
+    const response = await axios.get('https://www.tarkovpal.com/api');
+    const response3 = await axios.get('https://decapi.me/misc/time?timezone=America/Chicago&format=F%20j,%20o,%20g:i%20a')
+    const data2 = response.data;
+    const centralTime = response3.data;
+    const currentMapTP = data2["Current Map"][0];
+    const apiDateTP = data2["Time"][0];
 
-      let timeDifference;
-      let output = 'Balls';
+    const minutesTP = calculateTimeDifferenceInMinutesTP(apiDateTP, centralTime);
 
-
-
-     return {
-        statusCode: 200,
-        body: output, // Convert the body to a JSON-formatted string
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      };
-
-    } else {
-      console.error('Reset time is not available.');
-      return {
-        statusCode: 500,
-        body: JSON.stringify({ error: 'Reset time is not available.' }),
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      };
+    let output = "";
+    if (minutesTP > minutes) {
+      output = currentMap.concat(' reported ', minutes, ' minutes ago');
     }
-  } catch (error) {
-    console.error('Error in Lambda function:', error);
+    else {
+      output = currentMapTP.concat(' reported ', minutesTP, ' minutes ago');
+    }
+    console.log(output);
+    // Set the environment variable
+    process.env.CURRENT_MAP = currentMap;
 
     return {
-      statusCode: 500,
-      body: JSON.stringify({ error: 'Internal Server Error' }),
+      statusCode: 200,
+      body: output,
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'text/plain',
+      },
+    };
+  } catch (error) {
+    return {
+      statusCode: 500,
+      body: 'Failed to fetch data',
+      headers: {
+        'Content-Type': 'text/plain',
       },
     };
   }
 };
+
+// Function to calculate the time difference in minutes between two date strings
+function calculateTimeDifferenceInMinutes(dateString1, dateString2) {
+  // Parse the date strings into Date objects
+  const date1 = new Date(dateString1);
+  const date2 = new Date(dateString2);
+
+  // Calculate the time difference in milliseconds
+  const timeDifferenceMs = date2 - date1;
+
+  // Convert milliseconds to minutes
+  const timeDifferenceMinutes = Math.floor(timeDifferenceMs / (1000 * 60));
+  return Math.abs(timeDifferenceMinutes); // Use Math.abs to ensure a positive result
+}
+
+function split(str, index) {
+  const result = [str.slice(0, index), str.slice(index)];
+
+  return result;
+}
+
+
+async function scraping() {
+  const resposne = await axios.request({
+    method: "GET",
+    url: "https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vR-wIQI351UH85ILq5KiCLMMrl0uHRmjDinBCt6nXGg5exeuCxQUf8DTLJkwn7Ckr8-HmLyEIoapBE5/pubhtml/sheet?headers=false&gid=1420050773"
+  });
+
+  const $ = cheerio.load(resposne.data);
+
+  const element = $(".s0").text();
+  const [first, second] = split(element, 23);
+  const dataArr = second.match(/(\d{1,2}\/\d{1,2}\/\d{4}\s\d{1,2}:\d{2}:\d{2})([A-Za-z]+)/);
+  return dataArr
+}
+
+// Function to calculate the time difference in minutes between two date strings
+function calculateTimeDifferenceInMinutesTP(dateString1, dateString2) {
+  // Parse the date strings into Date objects
+  const date1 = new Date(dateString1);
+  const date2 = new Date(dateString2);
+
+  // Calculate the time difference in milliseconds
+  const timeDifferenceMs = date2 - date1;
+
+  // Convert milliseconds to minutes
+  const timeDifferenceMinutes = timeDifferenceMs / (1000 * 60);
+
+  return Math.abs(timeDifferenceMinutes); // Use Math.abs to ensure a positive result
+}
