@@ -8,14 +8,14 @@ exports.handler = async (event, context) => {
         const right = data.right;
         const left_slice = left.slice(0, -3);
         const right_slice = right.slice(0, -3);
-        const output = left_slice.concat('/', right_slice)
+        const source = left_slice.concat('/', right_slice)
 
 
 
 
         return {
             statusCode: 200,
-            body: output,
+            body: source,
             headers: {
                 'Content-Type': 'text/plain',
             },
