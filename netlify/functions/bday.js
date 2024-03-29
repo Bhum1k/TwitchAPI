@@ -38,19 +38,18 @@ exports.handler = async (event, context) => {
       const currentTime = new Date();
 
       let timeDifference;
-      let output = `Balls`;
+      let output = 'Balls';
 
 
 
-      const jsonResponse = {
+     return {
         statusCode: 200,
         body: output, // Convert the body to a JSON-formatted string
         headers: {
-          'Content-Type': 'text/plain',
+          'Content-Type': 'application/json',
         },
       };
 
-      return jsonResponse;
     } else {
       console.error('Reset time is not available.');
       return {
