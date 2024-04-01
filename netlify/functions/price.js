@@ -17,7 +17,7 @@ const searchterms = ['42 Signature Blend English Tea', 'Aramid fiber fabric', 'B
         let searchIndex = -1;
         let notes = "";
         if (queryTerm.length != 0) {
-            marketUrl = `https://api.tarkov-market.app/api/v1/nightbot?x-api-key=gmFJAoPRTMtkq1B9&q=${queryTerm}`;
+            marketUrl = `https://api.tarkov-market.app/api/v1/nightbot?x-api-key=qXHyruBbE3WZU7eI&q=${queryTerm}`;
                 priceResponse = await axios.get(marketUrl);
                 marketData = priceResponse.data;
                 console.log(marketData);

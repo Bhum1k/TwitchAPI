@@ -4,3 +4,6 @@ netlify/functions/praporReset.py
 netlify/functions/tarkovDevQueryTest.py
 netlify/functions/prapor.bat
 netlify/functions/getRecentPost.js
+*.py
+*.php
+netlify/functions/instagram.js
