@@ -12977,14 +12977,18 @@ function returnOutput(searchTerm) {
                 matches.forEach(match => {
                     console.log(match.name);
                 })
-                return "Two Matches Found"
+                return `Quest Not Found: ${matches[0].name}, ${matches[1].name}`
             }
-        } else if (matches.length > 1) {
+        } else if (matches.length < 5) {
             console.log("Multiple matches found. Possible matches:");
+            let MatchList = [];
             matches.forEach(match => {
-                console.log(match.name);
+                MatchList.push(match.name);
             });
-            return "Search too Broad"
+            matchString = MatchList.join(", ");
+            return `Multiple Quests Found: ${matchString}`;
+        } else if (matches.length >= 5) {
+            return "Search too broad";
         } else {
             console.log("No matches found.");
             return "No Match Found";
@@ -12995,7 +12999,7 @@ function returnOutput(searchTerm) {
     }
 }
 
-console.log(returnOutput("Compensation for Damage - Wager"));
+console.log(returnOutput("Test Drive"));
 
 exports.handler = async (event, context) => {
     try {
