@@ -1,4 +1,5 @@
 const fs = require('fs');
+const axios = require('axios');
 
 let data = {
     "data": {
@@ -8948,6 +8949,8 @@ function printMatch(task) {
     console.log(similarity);
     if (similarity < 0.5) {
         objectiveGroup = objective_list.join(', ')
+    } else if (isNaN(similarity)) {
+        objectiveGroup = objective_list[0];
     }
 
     console.log(objectiveGroup.trim());
@@ -8959,7 +8962,25 @@ function printMatch(task) {
     return(task.name + kappaNeeded + " | " + traderName + " | " + objectiveGroup);
 }
 
-
+async function fetchItemData() {
+    try {
+        const response = await axios.post('https://api.tarkov.dev/graphql', {
+            query: `{
+                traders(lang: en) {
+                    name
+                    resetTime
+                }
+            }`,
+        });
+        // Handle response
+        console.log('Data:', response.data);
+        return response.data;
+    } catch (error) {
+        // Handle error
+        console.error('Error fetching data:', error);
+        throw error; // Re-throw the error if needed
+    }
+}
 
 // Example usage
 
@@ -9000,7 +9021,7 @@ function returnOutput(searchTerm) {
     }
 }
 
-console.log(returnOutput("shooter born"));
+console.log(returnOutput("The Tarkov Shooter - Part 8"));
 
 exports.handler = async (event, context) => {
     try {
