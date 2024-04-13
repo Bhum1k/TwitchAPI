@@ -95,12 +95,14 @@
                     {
                         "id": "65817fbbb454159976c91917",
                         "description": "Locate and obtain the scientist's hard drive",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65817fc99a039ed2e97896e4",
                         "description": "Hand over the hard drive",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -188,12 +190,14 @@
                     {
                         "id": "65817cabba2ba6ef71fc72ca",
                         "description": "Locate and obtain the wine bottle in the store",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65817cd2881a7e07b3ec1249",
                         "description": "Hand over the wine bottle",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -215,12 +219,20 @@
                     {
                         "id": "5968ec9986f7741ddd6c1012",
                         "description": "Obtain the Bronze pocket watch on a chain on Customs",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Machinery"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5967920f86f77468d219d632",
                         "description": "Hand over the pocket watch",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5975de1f86f7744ca53b7c82",
@@ -466,12 +478,14 @@
                     {
                         "id": "5d249a6e86f774791546e952",
                         "description": "Obtain Jaeger's encrypted message",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5d249aa286f77475e8376399",
                         "description": "Hand over the message",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -1047,12 +1061,20 @@
                     {
                         "id": "5968929e86f7740d121082d3",
                         "description": "Obtain the secure folder in the Tarcone Director's office at the Customs terminal warehouse",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Director's"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "59674fe586f7744f4e358aa2",
                         "description": "Stash the package in the Factory break room (2nd floor near Gate 3)",
-                        "type": "plantQuestItem"
+                        "type": "plantQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5977784486f774285402cf52",
@@ -1229,12 +1251,20 @@
                     {
                         "id": "5968943f86f7740d137ebfc2",
                         "description": "Obtain Secure Folder 0031 in the bunkhouse on Customs",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Bunkhouse"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5968948986f7740d121082d4",
                         "description": "Hand over the folder",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "596762ec86f77426d3687a87",
@@ -1307,12 +1337,20 @@
                     {
                         "id": "596b44b686f77457cb50ecca",
                         "description": "Obtain the valuable cargo on Customs",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Unknown"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "596b450986f7745a7e510b54",
                         "description": "Hand over the valuable cargo",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a3fbabc86f774231d75afbe",
@@ -1460,12 +1498,26 @@
                     {
                         "id": "5979ef4586f77431307dc513",
                         "description": "Find the Golden Zibbo lighter on Customs",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Dorm 303"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5979ef7986f77431307dc514",
                         "description": "Stash the lighter in the bunkhouse at the trailer parking lot on Customs",
-                        "type": "plantQuestItem"
+                        "type": "plantQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Cabin"
+                                }
+                            ]
+                        ]
                     }
                 ]
             },
@@ -1674,12 +1726,20 @@
                     {
                         "id": "5969fa4886f7741ddb481544",
                         "description": "Obtain the case containing the device on Customs",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Dorm 114"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5969fa8986f7741ddc2d3154",
                         "description": "Hand over the case",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a3fb8f686f7742384533f10",
@@ -1711,12 +1771,20 @@
                     {
                         "id": "5979fc2686f77426d702a0f2",
                         "description": "Obtain information about the Deputy Chief’s past life on Customs",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Dorm 220"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5979fc7e86f77426d702a0f4",
                         "description": "Hand over the information",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5979fc5386f77426d702a0f3",
@@ -1757,7 +1825,8 @@
                     {
                         "id": "596895f986f7740d14064722",
                         "description": "Obtain the letter on the messenger's body on Factory",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5968962686f7740e7266d973",
@@ -1854,7 +1923,8 @@
                     {
                         "id": "5968975586f7740e7266d974",
                         "description": "Hand over the letter from the messenger to Therapist",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -1975,22 +2045,38 @@
                     {
                         "id": "597a0be986f774273b74f673",
                         "description": "Find any evidence that could help with the investigation on Customs",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Dorm 220"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "597a0bf886f7742717106d13",
                         "description": "Hand over the evidence",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "597a0bb486f77426d66c0634",
                         "description": "Find any information that could help with the investigation on Customs",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Dorm 220"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "597a0bdb86f7742717106d12",
                         "description": "Hand over the info",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -2088,12 +2174,14 @@
                     {
                         "id": "597a15b386f774799e5cd152",
                         "description": "Obtain the chemical-filled syringe hidden in Factory",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "597a15c386f77405ba6887d2",
                         "description": "Hand over the syringe",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -2120,12 +2208,14 @@
                     {
                         "id": "5a27ffb186f774192932b3d5",
                         "description": "Obtain the SAS disk from the first crashed drone",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a27ffc786f77415ca58ae47",
                         "description": "Hand over the first SAS disk",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a3ba3b086f7745ab1081101",
@@ -2135,12 +2225,14 @@
                     {
                         "id": "5a294f1686f774340c7b7e4a",
                         "description": "Obtain the SAS disk from the second crashed drone",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a294f3386f77433e923f9cd",
                         "description": "Hand over the second SAS disk",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -2522,12 +2614,14 @@
                     {
                         "id": "639135d89444fb141f4e6eeb",
                         "description": "Obtain the journal containing resident details on Streets of Tarkov",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639135d89444fb141f4e6eec",
                         "description": "Hand over the journal",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -2739,12 +2833,14 @@
                     {
                         "id": "5a044a6c86f7747370402d91",
                         "description": "Obtain the key to the closed premises of the Sanatorium",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a280f8d86f774141b501756",
                         "description": "Hand over the key",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -2863,12 +2959,23 @@
                     {
                         "id": "5a28183186f774398675d127",
                         "description": "Obtain the data in the computer room in the east wing of the Health Resort",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "E306 San"
+                                },
+                                {
+                                    "shortName": "E308 San"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5a28184c86f774376e43772a",
                         "description": "Hand over the retrieved data",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -2895,12 +3002,14 @@
                     {
                         "id": "5a2819c886f77460ba564f38",
                         "description": "Obtain any information about the second part of the cargo shipment",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a2e966286f7742f6c4f27a6",
                         "description": "Hand over the retrieved information",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -3381,7 +3490,8 @@
                     {
                         "id": "596a0e7086f7741ddf17dbef",
                         "description": "Obtain Secure Folder 0052 in the sawmill cabin on Woods",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "596a0eaf86f774576d4c957f",
@@ -3392,7 +3502,8 @@
                     {
                         "id": "596a0e8086f7741ddd6c104c",
                         "description": "Hand over the folder",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -3414,7 +3525,8 @@
                     {
                         "id": "596a10d886f7741ddf17dbf0",
                         "description": "Hand over Secure Folder 0052 to Skier",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -3605,12 +3717,20 @@
                     {
                         "id": "5ac6248586f77416781dd3a3",
                         "description": "Obtain the package of graphics cards",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Director's"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5ac624b286f77416781dd3ac",
                         "description": "Hand over the package",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -3721,12 +3841,14 @@
                     {
                         "id": "5a28221e86f7741d5b719624",
                         "description": "Obtain a list of the resort's tenants on Shoreline",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a28223786f7741c7a0b5401",
                         "description": "Hand over the list of tenants",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -3748,12 +3870,23 @@
                     {
                         "id": "5a2e958d86f77416be092111",
                         "description": "Obtain information on Artyom’s work on Shoreline",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "E328 San"
+                                },
+                                {
+                                    "shortName": "San util."
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5a2822de86f7740a245249ce",
                         "description": "Hand over the information",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -3928,12 +4061,14 @@
                     {
                         "id": "60929ad46342771d851b827a",
                         "description": "Obtain the package with T-90M Commander control panel on Reserve",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "60929afc35915c62b44fd05c",
                         "description": "Hand over the package",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -3955,12 +4090,20 @@
                     {
                         "id": "6092942fb0f07c6ea1246e3a",
                         "description": "Obtain the MBT Integrated Navigation System on Reserve",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "RB-ST"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "6092947635915c62b44fd05b",
                         "description": "Hand over the navigation complex",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -4035,12 +4178,20 @@
                     {
                         "id": "5968981986f7740d1648df42",
                         "description": "Obtain the valuable item in dorm room 203 on Customs",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Dorm 203"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5968988286f7740d14064724",
                         "description": "Hand over the valuable item",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a3fc03286f77414d64f9941",
@@ -4115,22 +4266,38 @@
                     {
                         "id": "6091698a30bb620b3239874c",
                         "description": "Obtain Medical record #1 on Reserve",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "RB-KSM"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "60ae12ffb809a474875907aa",
                         "description": "Obtain Medical record #2 on Reserve",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "RB-SMP"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "609169cfeca522371e5725c5",
                         "description": "Hand over the first journal",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "60ae134cabb9675f0062cf6e",
                         "description": "Hand over the second journal",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -4152,12 +4319,14 @@
                     {
                         "id": "6391359b9444fb141f4e6ee7",
                         "description": "Obtain the registered mail on Streets of Tarkov",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6391359b9444fb141f4e6ee8",
                         "description": "Hand over the letter",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -4450,12 +4619,14 @@
                     {
                         "id": "639135e0fa894f0a866afde7",
                         "description": "Obtain the container with drug samples",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639135e0fa894f0a866afde8",
                         "description": "Hand over the container",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -4477,22 +4648,26 @@
                     {
                         "id": "617bf6c70cf4a041de5b3972",
                         "description": "Find the data on the water pump operation on Lighthouse",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "617bf77a3de8a6689b533a2a",
                         "description": "Hand over the extracted data",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "61951c30aa0f643f9a0ae1b7",
                         "description": "Find the data on the pumping station operation on Lighthouse",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "61951c3e2e2805073c2d29db",
                         "description": "Hand over the extracted data",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -4691,12 +4866,14 @@
                     {
                         "id": "617bf2a6f8e6c97ec70878b7",
                         "description": "Find the informant's briefcase on Lighthouse",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "617bf29a52e86c73d372a917",
                         "description": "Hand over the found package",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -4718,12 +4895,14 @@
                     {
                         "id": "638fd070202cd55bee01ca11",
                         "description": "Obtain the financial records on Streets of Tarkov",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "638fd0805e5a195d2c443754",
                         "description": "Hand over the journal",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -4818,12 +4997,20 @@
                     {
                         "id": "5ae9b5bd86f774307c29df37",
                         "description": "Obtain the OLI cargo route documents on Interchange",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "OLI Log."
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5ae9b63286f774229110402d",
                         "description": "Hand over the documents",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -5005,7 +5192,8 @@
                     {
                         "id": "64f3176921045e77405d63ba",
                         "description": "Locate and obtain the ambulance paramedic's smartphone on Streets of Tarkov",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "64f4fdfa67e11a7c6206de72",
@@ -5016,7 +5204,8 @@
                     {
                         "id": "64f3176921045e77405d63bb",
                         "description": "Hand over the smartphone",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -5086,32 +5275,38 @@
                     {
                         "id": "5ae9b32486f7745bbc72275a",
                         "description": "Obtain the Goshan cargo manifests on Interchange",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae9b34686f7743129512ccf",
                         "description": "Hand over the Goshan cargo manifests",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae9b36c86f774307c29df04",
                         "description": "Obtain the OLI cargo manifests on Interchange",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae9b38a86f77432c81e2ce3",
                         "description": "Hand over the OLI cargo manifests",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae9b3b186f7745bbc722762",
                         "description": "Obtain the IDEA cargo manifests on Interchange",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae9b3c986f77432c81e2ce6",
                         "description": "Hand over the IDEA cargo manifests",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -5374,32 +5569,38 @@
                     {
                         "id": "60916aeac49cf53e4772cc3c",
                         "description": "Obtain Military documents #1 in the command bunker offices on Reserve",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "60ae0dfe2d6a8320983d19ba",
                         "description": "Obtain Military documents #2 in the command bunker offices on Reserve",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "60ae0e2c79e83a2cf96f35ce",
                         "description": "Obtain Military documents #3 in the command bunker offices on Reserve",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "60916b41b89a3c264d7296f9",
                         "description": "Hand over the first documents",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "60ae0f0586046842a754e21e",
                         "description": "Hand over the second documents",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "60ae0f17b809a4748759078c",
                         "description": "Hand over the third documents",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -5711,12 +5912,20 @@
                     {
                         "id": "639136fa9444fb141f4e6eef",
                         "description": "Obtain the observation results",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Pnwd 215"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "639136fa9444fb141f4e6ef0",
                         "description": "Hand over the data",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -5924,12 +6133,20 @@
                     {
                         "id": "5a68760f86f7743cc55d8709",
                         "description": "Search the room in the Health Resort for any documents about TerraGroup's research",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "W306 San"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5a68763786f77474c33a40a1",
                         "description": "Hand over the retrieved information",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a68764c86f77474c4269f3c",
@@ -5962,12 +6179,14 @@
                     {
                         "id": "5a68776786f774759f1f55f6",
                         "description": "Take a sample of the blood",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a68777586f774747d4b0d9e",
                         "description": "Hand over the blood sample",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a68778c86f77423391f38f0",
@@ -6124,12 +6343,14 @@
                     {
                         "id": "61904e76f62c89219a56e04c",
                         "description": "Find and obtain the message for Jaeger",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "61904ebb22e6d82ee97ccbbe",
                         "description": "Hand over the message",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -6278,22 +6499,32 @@
                     {
                         "id": "5edabb0b0c502106f869bc03",
                         "description": "Obtain Sanitar's surgery kit marked with a blue symbol",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5edabb950c502106f869bc04",
                         "description": "Hand over Sanitar's surgery kit",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5edabbff0880da21347b382b",
                         "description": "Obtain Sanitar's ophthalmoscope",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Cottage"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5edabc2ca0055865214cb5a6",
                         "description": "Hand over Sanitar's ophthalmoscope",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -6571,32 +6802,50 @@
                     {
                         "id": "5b478f6886f774464201225a",
                         "description": "Obtain the first Chemical container on Shoreline",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "W112 San"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5b478f8886f7744d1b23c622",
                         "description": "Hand over the first container",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5b4c826b86f7743cc87bcee4",
                         "description": "Obtain the second Chemical container on Interchange",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "EMC"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5b4c832686f77419603eb8f0",
                         "description": "Hand over the second container",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5b4c82cd86f774170c6e4169",
                         "description": "Obtain the third Chemical container on Interchange",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5b4c836486f77417063a09dc",
                         "description": "Hand over the third container",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -6623,12 +6872,14 @@
                     {
                         "id": "64f5b876a2a5bb727b61c5ad",
                         "description": "Obtain any information on the fate of Prapor's friend",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "64f5bbc967e11a7c6206e00e",
                         "description": "Hand over the found data",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -6810,12 +7061,20 @@
                     {
                         "id": "64f6a9e6dd44b6417729b535",
                         "description": "Locate and obtain information on culinary secrets at the Beluga restaurant on Streets of Tarkov",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Beluga"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "64f6aa6cdd44b6417729b536",
                         "description": "Hand over the found data",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -6837,12 +7096,20 @@
                     {
                         "id": "64f6aafd67e11a7c6206e0d1",
                         "description": "Locate and obtain the secret ingredient at the TerraGroup office on Streets of Tarkov",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "TG meeting"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "64f6aafd67e11a7c6206e0d2",
                         "description": "Hand over the chemical additive",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -6869,12 +7136,20 @@
                     {
                         "id": "6581676e7a18ff402fd23e68",
                         "description": "Locate and obtain the Tarkov real estate transactions document",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "REA"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "658167a0e53c40116f8632fa",
                         "description": "Hand over the obtained information",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -7058,12 +7333,20 @@
                     {
                         "id": "5eff5674befb6436ce3bbaf7",
                         "description": "Obtain information about Sanitar's work",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Keycard"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5edac8483c809a44ef12b4d2",
                         "description": "Hand over the Flash drive marked with blue tape",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -7233,52 +7516,77 @@
                     {
                         "id": "5b47952c86f774598100d5dc",
                         "description": "Obtain the first Motor Controller on Woods",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5b4c764786f7746f3b494ee0",
                         "description": "Hand over the first controller",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5b4c742886f7745cef1d02f5",
                         "description": "Obtain the second Motor Controller on Shoreline",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5b4c769686f7746e535a5c0e",
                         "description": "Hand over the second controller",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5b4c75a786f7747332534b52",
                         "description": "Obtain the third Motor Controller on Shoreline",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "E306 San"
+                                },
+                                {
+                                    "shortName": "E308 San"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5b4c76d886f77471d31735a3",
                         "description": "Hand over the third controller",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5b47958e86f774598100d5e2",
                         "description": "Obtain the first Single-axis Fiber Optic Gyroscope on Woods",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5b4795a586f774587a39506d",
                         "description": "Hand over the first gyroscope",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5b4c8e6586f77474396a5400",
                         "description": "Obtain the second Single-axis Fiber Optic Gyroscope on Shoreline",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "W216 San"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5b4c7aec86f77459732b4b08",
                         "description": "Hand over the second gyroscope",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -7517,7 +7825,8 @@
                     {
                         "id": "5c50481c86f77410650e0521",
                         "description": "Obtain the False flash drive from the specified spot on Customs",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5c0bc32986f7743e4d1002d2",
@@ -7536,7 +7845,8 @@
                     {
                         "id": "5c12320586f77437e44bcb15",
                         "description": "Stash the False flash drive in the trash opposite of stairs on the 3rd floor of the dorm",
-                        "type": "plantQuestItem"
+                        "type": "plantQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -7773,12 +8083,20 @@
                     {
                         "id": "639135e8c115f907b14700ab",
                         "description": "Obtain the data on vehicle movement at the Concordia residential complex parking lot on Streets of Tarkov",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Conc sec."
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "639135e8c115f907b14700ac",
                         "description": "Hand over the information",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -7904,12 +8222,14 @@
                     {
                         "id": "639135bbc115f907b14700a7",
                         "description": "Obtain the engraved guitar pick",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639135bbc115f907b14700a8",
                         "description": "Hand over the guitar pick",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -7959,22 +8279,26 @@
                     {
                         "id": "5ae9c0a686f774703201f143",
                         "description": "Obtain the Clothes design handbook - Part 1 on Interchange",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae9c0c986f77468ab400f88",
                         "description": "Hand over the first book",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae9c0e186f7746419683c5e",
                         "description": "Obtain the Clothes design handbook - Part 2 on Interchange",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae9c10686f774703201f146",
                         "description": "Hand over the second book",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -8235,12 +8559,14 @@
                     {
                         "id": "5d357e8786f7745b5e66a51a",
                         "description": "Obtain Jaeger's photo album",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5d27522686f774304e316405",
                         "description": "Hand over the photo album",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -8621,12 +8947,14 @@
                     {
                         "id": "61a00eff2d708d41a34f19b4",
                         "description": "Find the informant's intelligence folder",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "61a00f3f177fb945751bbe92",
                         "description": "Hand over the folder",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -9320,12 +9648,25 @@
                     {
                         "id": "639135534b15ca31f76bc318",
                         "description": "Obtain the digital storage device from the car dealership manager's office on Streets of Tarkov",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "LexOs"
+                                }
+                            ],
+                            [
+                                {
+                                    "shortName": "LexOs sect."
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "639135534b15ca31f76bc319",
                         "description": "Hand over the storage device",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -9721,12 +10062,14 @@
                     {
                         "id": "633d8b5dbc99da1cf0685f36",
                         "description": "Obtain the Radio transmitter body on Lighthouse",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "633d8b77f2ab4f3f095029d6",
                         "description": "Hand over the Radio transmitter body",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -9776,7 +10119,8 @@
                     {
                         "id": "6391e2f9e705511c8a4a1b85",
                         "description": "Obtain the V3 Flash drive on Lighthouse",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6391e31bfa894f0a866afdec",
@@ -9788,7 +10132,8 @@
                     {
                         "id": "6391e329c115f907b14700b1",
                         "description": "Hand over the flash drive",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63ab727b1287ef0b827d0c95",
@@ -9863,7 +10208,8 @@
                     {
                         "id": "6391d9ba4b15ca31f76bc325",
                         "description": "Obtain the V3 Flash drive on Lighthouse",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6391d9e7ee79ee703e3012e5",
@@ -9875,7 +10221,8 @@
                     {
                         "id": "6391d9fd8ba6894d155e77db",
                         "description": "Hand over the flash drive",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63ab6a89e842787ad2135719",
@@ -9958,12 +10305,14 @@
                     {
                         "id": "63990a1ddcdd126fef1771c1",
                         "description": "Obtain the informant's journal",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63990ae2dcdd126fef1771c2",
                         "description": "Bring the information to Lightkeeper",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -9991,22 +10340,26 @@
                     {
                         "id": "6399b45d98e4ed53fa4632db",
                         "description": "Obtain the forged intelligence at the Rogue base on Lighthouse",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6399c929d65735732c6ba766",
                         "description": "Obtain the original intelligence in the repair station on Reserve",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6399ca5fe101160ce05706ac",
                         "description": "Stash the forged intelligence under the BMP-2 in place of the original",
-                        "type": "plantQuestItem"
+                        "type": "plantQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6399cc30b5992f573c65782b",
                         "description": "Bring the original intelligence to Lightkeeper",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -10171,12 +10524,14 @@
                     {
                         "id": "639ae49a5e3c9b787264d675",
                         "description": "Obtain the secured tape inside the manager's office in The Lab",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639ae5445b201a534f436ef3",
                         "description": "Bring the tape to Lightkeeper",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -10548,12 +10903,20 @@
                     {
                         "id": "62863b9ae5b4f5010e0d30c8",
                         "description": "Obtain the military HDD with archived flight routes",
-                        "type": "findQuestItem"
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Radar"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "626c30c55bef5d7d590bd41b",
                         "description": "Hand over the drive",
-                        "type": "giveQuestItem"
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
                     }
                 ]
             },
