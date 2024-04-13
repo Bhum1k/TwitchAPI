@@ -12,10 +12,12 @@
     "axios": "^1.6.8",
     "cheerio": "^1.0.0-rc.12",
     "fs": "^0.0.1-security",
+    "fuse.js": "^7.0.0",
     "googleapis": "^126.0.1",
     "jsdom": "^22.1.0",
     "puppeteer": "^21.3.6",
     "re": "^0.1.4",
+    "string-similarity": "^4.0.4",
     "xmldom": "^0.6.0",
     "xpath": "^0.0.33"
   }
