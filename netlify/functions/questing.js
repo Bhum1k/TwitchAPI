@@ -8946,7 +8946,7 @@ function printMatch(task) {
     console.log(objective_list)
     let similarity = calculateSimilarity(objective_list);
     console.log(similarity);
-    if (similarity < 0.6) {
+    if (similarity < 0.5) {
         objectiveGroup = objective_list.join(', ')
     }
 
