@@ -13166,8 +13166,8 @@ function calculateSimilarity(strings) {
     const averageLevenshteinScore = totalLevenshteinScore / pairCount;
     const averageJaccardScore = totalJaccardScore / pairCount;
 
-    console.log(averageLevenshteinScore);
-    console.log(averageJaccardScore);
+    // console.log(averageLevenshteinScore);
+    // console.log(averageJaccardScore);
 
     // You can choose to return the average of the two scores or any other combination
     return averageLevenshteinScore;
@@ -13202,12 +13202,14 @@ function printMatch(task) {
             objective.description = `${objective.description} (Level ${objective.skillLevel.level})`;
         } else if (objective.type === 'findQuestItem') {
             keyList = [];
-            for (i in objective.requiredKeys[0]) {
-                console.log(i);
-                keyList.push(objective.requiredKeys[0][i].shortName);
+            if (objective.requiredKeys != null) {
+                for (i in objective.requiredKeys[0]) {
+                    // console.log(i);
+                    keyList.push(objective.requiredKeys[0][i].shortName);
+                }
+                // console.log(keyList);
+                objective.description = `${objective.description} (Keys: ${keyList.join(", ")})`;
             }
-            console.log(keyList);
-            objective.description = `${objective.description} (Keys: ${keyList.join(", ")})`;
         }
     }
 
@@ -13278,23 +13280,23 @@ function printMatch(task) {
         objective_list = filterObjectives(objective_list);
     }
 
-    console.log(objective_list)
+    // console.log(objective_list)
     let similarity = calculateSimilarity(objective_list);
-    console.log(similarity);
+    // console.log(similarity);
     if (similarity < 0.60) {
         objectiveGroup = objective_list.join(', ')
     } else if (isNaN(similarity)) {
         objectiveGroup = task.objectives[0].description;
     }
 
-    console.log(objectiveGroup.trim());
-    console.log(uniqueTerms);
-    console.log(commonPrefix);
-    console.log(commonSuffix);
+    // console.log(objectiveGroup.trim());
+    // console.log(uniqueTerms);
+    // console.log(commonPrefix);
+    // console.log(commonSuffix);
 
     // Print task name, kappa requirement, and trader name
     returnPrompt = task.name + kappaNeeded + " | " + traderName + " | " + objectiveGroup;
-    console.log(returnPrompt.length);
+    // console.log(returnPrompt.length);
     return returnPrompt;
 }
 
@@ -13323,7 +13325,7 @@ async function fetchItemData(taskID) {
                     }`,
         });
         // Handle response
-        console.log('Data:', response.data);
+        // console.log('Data:', response.data);
         return response.data;
     } catch (error) {
         // Handle error
@@ -13332,8 +13334,9 @@ async function fetchItemData(taskID) {
     }
 }
 
-// Example usage
+returnOutput("sales night");
 
+// Example usage
 function returnOutput(searchTerm) {
     const filePath = 'taskData.json';
     const taskData = data;
@@ -13343,20 +13346,21 @@ function returnOutput(searchTerm) {
         const matches = customSearch(searchTerm, taskNames);
 
         if (matches.length === 1) {
-            console.log("Single match found:");
+            // console.log("Single match found:");
+            console.log(printMatch(matches[0]))
             return(printMatch(matches[0]));
         } else if (matches.length === 2) {
             if (matches[0].name === matches[1].name) {
                 return(printMatch(matches[0]));
             } else {
-                console.log("Multiple matches found. Possible matches:");
+                // console.log("Multiple matches found. Possible matches:");
                 matches.forEach(match => {
-                    console.log(match.name);
+                    // console.log(match.name);
                 })
                 return `Quest Not Found: ${matches[0].name}, ${matches[1].name}`
             }
         } else if (matches.length < 5) {
-            console.log("Multiple matches found. Possible matches:");
+            // console.log("Multiple matches found. Possible matches:");
             let MatchList = [];
             matches.forEach(match => {
                 MatchList.push(match.name);
@@ -13366,16 +13370,14 @@ function returnOutput(searchTerm) {
         } else if (matches.length >= 5) {
             return "No quest found";
         } else {
-            console.log("No matches found.");
+            // console.log("No matches found.");
             return "No quest Found";
         }
     } else {
-        console.log('Failed to load task data.');
+        // console.log('Failed to load task data.');
         return "";
     }
 }
-
-console.log(returnOutput("cult part 2"));
 
 exports.handler = async (event, context) => {
     try {
