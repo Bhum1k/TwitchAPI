@@ -1,7 +1,7 @@
 const fs = require('fs');
 const axios = require('axios');
 
-let data = {
+const data = {
     "data": {
         "tasks": [
             {
@@ -13347,7 +13347,7 @@ function returnOutput(searchTerm) {
 
         if (matches.length === 1) {
             // console.log("Single match found:");
-            console.log(printMatch(matches[0]))
+            // console.log(printMatch(matches[0]))
             return(printMatch(matches[0]));
         } else if (matches.length === 2) {
             if (matches[0].name === matches[1].name) {
