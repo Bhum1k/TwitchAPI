@@ -16,7 +16,8 @@ const data = {
                     {
                         "id": "65732ac3c67dcd96adffa3c7",
                         "description": "Locate the Emercom station on Ground Zero",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65817bf31404f3565aef9fec",
@@ -39,12 +40,14 @@ const data = {
                     {
                         "id": "657333fee3fbaa77d3b5cd7c",
                         "description": "Locate the Utyos machine gun on Ground Zero",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6573340403f471fb2bb12df1",
                         "description": "Locate the AGS grenade launcher on Ground Zero",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "657334311dbb8b7569bb83c4",
@@ -83,17 +86,20 @@ const data = {
                     {
                         "id": "6575a524a39d2be74e620546",
                         "description": "Locate the USEC PMC group at the parking lot of the TerraGroup complex on Ground Zero",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6575a62a62028c6d5cb43cb7",
                         "description": "Locate the lab scientist on Ground Zero",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6575a64d3fc09bdfb38b713d",
                         "description": "Access the scientist's office",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65817fbbb454159976c91917",
@@ -188,7 +194,8 @@ const data = {
                     {
                         "id": "6575aa67197bd678a0c3f552",
                         "description": "Locate the liquor store on Ground Zero",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65817cabba2ba6ef71fc72ca",
@@ -360,7 +367,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "657b0567ec71635f16471dd2",
-                        "description": "Eliminate PMC operatives from a distance of at least 80 meters using a bolt-action rifle",
+                        "description": "Eliminate PMC operatives from over 80 meters away while using a bolt-action rifle",
                         "type": "shoot",
                         "count": 5
                     }
@@ -476,7 +483,8 @@ const data = {
                     {
                         "id": "63ac18f4972364554162a25c",
                         "description": "Find Jaeger's camp at the specified spot on Woods",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5d249a6e86f774791546e952",
@@ -964,7 +972,8 @@ const data = {
                     {
                         "id": "5ca6026286f77446d87abec3",
                         "description": "Gain access to the locked pumping station on Factory",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5cb6f32986f7746ef55e17a0",
@@ -1031,12 +1040,14 @@ const data = {
                     {
                         "id": "5fd9fad9c1ce6b1a3b486d03",
                         "description": "Locate Prapor's missing convoy on Woods",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5fd9fad9c1ce6b1a3b486d05",
                         "description": "Locate the temporary USEC camp",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5fd9fad9c1ce6b1a3b486d0d",
@@ -1048,7 +1059,7 @@ const data = {
             },
             {
                 "id": "59674eb386f774539f14813a",
-                "name": "Delivery from the Past",
+                "name": "Delivery From the Past",
                 "kappaRequired": true,
                 "trader": {
                     "name": "Prapor"
@@ -1127,22 +1138,26 @@ const data = {
                     {
                         "id": "63a98cfbc31b00242d28a95b",
                         "description": "Scout the Shestyorochka store at Nikitskaya street",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a98d24655ec5555b4aa9e7",
                         "description": "Scout the Sparja store at Primorsky ave",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a98d39da7999196148ba3a",
                         "description": "Scout the Sparja store in Pinewood hotel",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a98d60c0f61a5d8731cd9f",
                         "description": "Scout the Goshan store in Concordia",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a98cdf655ec5555b4aa9e6",
@@ -1163,7 +1178,7 @@ const data = {
                 "taskRequirements": [
                     {
                         "task": {
-                            "name": "Delivery from the Past"
+                            "name": "Delivery From the Past"
                         }
                     }
                 ],
@@ -1171,22 +1186,26 @@ const data = {
                     {
                         "id": "59c128b986f77415037680df",
                         "description": "Locate and mark the first fuel tank with an MS2000 Marker on Customs",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "59c128cc86f774189b3c84b5",
                         "description": "Locate and mark the second fuel tank with an MS2000 Marker on Customs",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "59c128d886f77414fe7f1a64",
                         "description": "Locate and mark the third fuel tank with an MS2000 Marker on Customs",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "59c128f386f774189b3c84bb",
                         "description": "Locate and mark the fourth fuel tank with an MS2000 Marker on Customs",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5c92184386f7746afa2e7840",
@@ -1214,7 +1233,14 @@ const data = {
                     {
                         "id": "5a3fb73b86f77458e0324376",
                         "description": "Locate the water stockpile hidden inside of the dorms on Customs",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Dorm 206"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5968a06486f7740d14064728",
@@ -1242,7 +1268,8 @@ const data = {
                     {
                         "id": "5a3fbdb086f7745a554f0c31",
                         "description": "Gain access to the locked room in the office hallway on the third floor on Factory",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5968941f86f7740d1570bbd2",
@@ -1358,12 +1385,14 @@ const data = {
                     {
                         "id": "5a3fbabc86f774231d75afbe",
                         "description": "Locate the messenger's body",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a3fbab086f77421593d9bf0",
                         "description": "Locate the place where the messenger hid the cargo",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -1600,7 +1629,8 @@ const data = {
                     {
                         "id": "5a3fbe3a86f77414422e0d9b",
                         "description": "Locate the locked bunker on Woods",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -1673,12 +1703,14 @@ const data = {
                     {
                         "id": "5ee8eea538ca5b3b4f3c4647",
                         "description": "Locate the underground bunker on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ee8eecc0b4ef7326256c660",
                         "description": "Locate the control room in the underground bunker on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ee0e5a8c321a77fc55084d2",
@@ -1747,12 +1779,14 @@ const data = {
                     {
                         "id": "5a3fb8f686f7742384533f10",
                         "description": "Locate the paramedic’s car on Customs",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a3fb92286f77422b46cdb18",
                         "description": "Find a way inside the two-story dorm room 114 on Customs",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -1806,7 +1840,8 @@ const data = {
                     {
                         "id": "5a3fbbfd86f77459d52a16a8",
                         "description": "Locate the sleeping place of the former Deputy Chief of Security on Customs",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -1862,7 +1897,8 @@ const data = {
                     {
                         "id": "5a3ba11786f7742c9d4f5d29",
                         "description": "Locate the boat hidden next to the breakwater on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a27d81a86f774472a6e0456",
@@ -1925,7 +1961,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5968975586f7740e7266d974",
-                        "description": "Hand over the letter from the messenger to Therapist",
+                        "description": "Hand over the letter from Prapor's messenger",
                         "type": "giveQuestItem",
                         "requiredKeys": null
                     }
@@ -2101,17 +2137,20 @@ const data = {
                     {
                         "id": "5a27e73f86f7740fb275c94b",
                         "description": "Locate and mark the first Tigr vehicle with an MS2000 Marker on Customs",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a27e75886f7740aef4a9157",
                         "description": "Locate and mark the second Tigr vehicle with an MS2000 Marker on Customs",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a29653986f77406a3435b26",
                         "description": "Locate and mark the third Tigr vehicle with an MS2000 Marker on Customs",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5c9394a986f7741228714be3",
@@ -2139,17 +2178,20 @@ const data = {
                     {
                         "id": "5a37e8ae86f77415076b401d",
                         "description": "Locate and mark the first T-90 tank with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a27fc8186f7746371546243",
                         "description": "Locate and mark the second T-90 tank with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a27fc9686f774675744bb60",
                         "description": "Locate and mark the third T-90 tank with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5c939d0e86f774185203c4c3",
@@ -2206,7 +2248,8 @@ const data = {
                     {
                         "id": "5a3ba34286f7744eb240406a",
                         "description": "Locate the first UAV crash site on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a27ffb186f774192932b3d5",
@@ -2223,7 +2266,8 @@ const data = {
                     {
                         "id": "5a3ba3b086f7745ab1081101",
                         "description": "Locate the second UAV crash site on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a294f1686f774340c7b7e4a",
@@ -2257,12 +2301,14 @@ const data = {
                     {
                         "id": "5a3fbc9586f77459d52a16c4",
                         "description": "Locate the transport with the chemicals on Customs",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "59b242ea86f7741e6e0e7a86",
                         "description": "Mark the vehicle with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "59b95de686f77418457056ef",
@@ -2290,12 +2336,14 @@ const data = {
                     {
                         "id": "5a3fc1f286f7744ccc15d643",
                         "description": "Locate the transport with the chemicals on Customs",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5998366886f77455853b2d9f",
                         "description": "Mark the vehicle with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "597a166d86f774779c70e8a4",
@@ -2323,12 +2371,14 @@ const data = {
                     {
                         "id": "5a3fbec386f77413bd5fc20a",
                         "description": "Locate the transport with the chemicals on Customs",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5998360886f77456936817f3",
                         "description": "Mark the vehicle with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "597a178786f774799e5cd155",
@@ -2484,12 +2534,14 @@ const data = {
                     {
                         "id": "5a28017786f77452f6318b1b",
                         "description": "Locate and mark the first truck with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a2801f986f774531b679875",
                         "description": "Locate and mark the second truck with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5cb5fd3d86f7746ef64ca33c",
@@ -2520,12 +2572,14 @@ const data = {
                     {
                         "id": "5a3ba47986f7744df8667505",
                         "description": "Locate the first truck that was holding the lost UN cargo on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a3ba4ba86f7744df759b1e5",
                         "description": "Locate the second truck that was holding the lost UN cargo on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -2584,12 +2638,14 @@ const data = {
                     {
                         "id": "5ac5e0fa86f77431c305d243",
                         "description": "Locate the first signal source on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ac5e13586f7746074388f93",
                         "description": "Locate the second signal source on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ac5e18c86f7743ebd6c9575",
@@ -2669,7 +2725,8 @@ const data = {
                     {
                         "id": "5a3ba51d86f7743af1475c3a",
                         "description": "Locate the missing informant on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a28051286f7740eb10bac04",
@@ -2697,12 +2754,14 @@ const data = {
                     {
                         "id": "5a0317da86f77451cb427295",
                         "description": "Mark the helicopter with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a0325f286f7744384509230",
                         "description": "Mark the safe road with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a37d80986f774245c063b69",
@@ -2803,12 +2862,23 @@ const data = {
                     {
                         "id": "5a3ba62786f7742c9d4f5ee9",
                         "description": "Locate the generators in the east wing of the Health Resort",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a3ba65f86f7743af1475f11",
                         "description": "Locate the generators in the west wing of the Health Resort",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "W219 San"
+                                },
+                                {
+                                    "shortName": "W220 San"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5c94f65286f77455185027ee",
@@ -3000,7 +3070,8 @@ const data = {
                     {
                         "id": "5a3ba76486f7744d39436da2",
                         "description": "Locate the room with reservoirs in the Health Resort",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a2819c886f77460ba564f38",
@@ -3034,7 +3105,8 @@ const data = {
                     {
                         "id": "5a3ba7db86f7744f0e568c9c",
                         "description": "Locate the hidden TerraGroup cargo on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a37de5486f7741535394d69",
@@ -3253,22 +3325,26 @@ const data = {
                     {
                         "id": "5ac61a8a86f7743a8d663c77",
                         "description": "Locate the first Factory extraction",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ac61ab986f7746e352cec8c",
                         "description": "Locate the second Factory extraction",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ac61adf86f774741c1bf096",
                         "description": "Locate the third Factory extraction",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a865ce1943b749b5021f86",
                         "description": "Locate the fourth Factory extraction",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ac61b1486f7743a8f30fc84",
@@ -3296,7 +3372,8 @@ const data = {
                     {
                         "id": "61958d54aa0f643f9a0aed73",
                         "description": "Locate and mark the TerraGroup cargo with an MS2000 Marker on Lighthouse",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "61958d69d14ece31007e2df4",
@@ -3324,7 +3401,14 @@ const data = {
                     {
                         "id": "63ac232087413d64ae0ac23c",
                         "description": "Locate the hidden recording studio on Lighthouse",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "OR"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "626c3158a371ee3a7a3514cc",
@@ -3353,12 +3437,20 @@ const data = {
                     {
                         "id": "64f731fa39e45b527a7c4300",
                         "description": "Locate and scout the vet clinic on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "64f732240e186112c4455d84",
                         "description": "Locate and scout the x-ray technician's room on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "X-ray"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "64f7325739e45b527a7c4302",
@@ -3386,17 +3478,20 @@ const data = {
                     {
                         "id": "6573387d0b26ed4fde798de4",
                         "description": "Locate the first pharmacy on Primorsky Ave on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "657338ded9b444e1fb07b1a8",
                         "description": "Locate the second pharmacy on Primorsky Ave on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "657338ed8e8e3a05445b760d",
                         "description": "Locate the third pharmacy at Cardinal apartment complex on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "658009db6b313a8a4ed58851",
@@ -3615,62 +3710,86 @@ const data = {
                     {
                         "id": "6087d553d79a2b4e943482bf",
                         "description": "Locate and inspect the first BMP-2 on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6086c8ed1b0bb8063d5babb7",
                         "description": "Mark the first BMP-2 with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "60882695949eb1096c454fcd",
                         "description": "Locate and inspect the second BMP-2 on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "608826d0a3994358a0751cfc",
                         "description": "Mark the second BMP-2 with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "608826f3949eb1096c454fd0",
                         "description": "Locate and inspect the third BMP-2 on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "RB-ST"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "60882714c18cfa2a4e2afe59",
                         "description": "Mark the third BMP-2 with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "RB-ST"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "6088274a82e40b3c727fd164",
                         "description": "Locate and inspect the fourth BMP-2 on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "60882779d241f77b8a49785d",
                         "description": "Mark the fourth BMP-2 with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "60892585b90d6f39cb74b114",
                         "description": "Locate and inspect the first LAV III on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "608925d455f4ac386d7e7fc4",
                         "description": "Mark the first LAV III with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "60892590fa70fc097863b8e5",
                         "description": "Locate and inspect the second LAV III on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "608930aa1124f748c94b801e",
                         "description": "Locate and inspect the T-90 tank on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -3715,7 +3834,8 @@ const data = {
                     {
                         "id": "5ac6240786f77417204ca2b9",
                         "description": "Locate the warehouse of seized goods on Customs",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ac6248586f77416781dd3a3",
@@ -3755,7 +3875,8 @@ const data = {
                     {
                         "id": "608a94101a66564e74191fc3",
                         "description": "Find the unpowered secret exit on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "608a94ae1a66564e74191fc6",
@@ -3783,12 +3904,14 @@ const data = {
                     {
                         "id": "5a3ba97386f77459df27d10e",
                         "description": "Locate the fishermen's dwelling on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a281efe86f7745bc42005cc",
                         "description": "Mark the fishing table with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a37dc0c86f77469da071ef2",
@@ -3816,7 +3939,8 @@ const data = {
                     {
                         "id": "5a3baa2586f7745b791b72fa",
                         "description": "Find Artyom’s car on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a37db0c86f7745b8f4be68a",
@@ -3910,7 +4034,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5a28235e86f7741da250b438",
-                        "description": "Reach the required Sniper Rifles skill level",
+                        "description": "Reach the required Bolt-action Rifles skill level",
                         "type": "skill",
                         "skillLevel": {
                             "level": 7
@@ -4128,22 +4252,26 @@ const data = {
                     {
                         "id": "61952308aa0f643f9a0ae20f",
                         "description": "Locate and mark the first BRDM with an MS2000 Marker on Lighthouse",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6195231dd07bdc6de57b40a5",
                         "description": "Locate and mark the second BRDM with an MS2000 Marker on Lighthouse",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "61952325aa0f643f9a0ae212",
                         "description": "Locate and mark the first Stryker with an MS2000 Marker on Lighthouse",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6195232a1e972a652931edb6",
                         "description": "Locate and mark the second Stryker with an MS2000 Marker on Lighthouse",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -4199,7 +4327,14 @@ const data = {
                     {
                         "id": "5a3fc03286f77414d64f9941",
                         "description": "Gain access to dorm room 214",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Dorm 214"
+                                }
+                            ]
+                        ]
                     }
                 ]
             },
@@ -4221,27 +4356,32 @@ const data = {
                     {
                         "id": "5ee8ec5ed72d953f5d2aabd1",
                         "description": "Locate the hermetic door leading to the hospital (White Bishop)",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ee8ecd75eb3205dae135d17",
                         "description": "Locate one of the two hermetic doors leading to the academy building (Black Bishop)",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ee8ed18d72d953f5d2aabd4",
                         "description": "Locate one of the two hermetic doors leading to barracks #1 (Black Pawn)",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ee8eddde932d53763761b2c",
                         "description": "Locate one of the two hermetic doors leading to barracks #2 (White Pawn)",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ee8edf1500391756d7498a7",
                         "description": "Locate the hermetic door leading to the building of the air control center (King)",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ee0e722c321a77fc55084d5",
@@ -4374,17 +4514,20 @@ const data = {
                     {
                         "id": "5ac7a7bf86f774132252a524",
                         "description": "Place the Signal jammer on the first specified place on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ac7a83b86f774665012340b",
                         "description": "Place the Signal jammer on the second specified place on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ac7a8d386f7741321499e3c",
                         "description": "Place the Signal jammer on the third specified place on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ac7a93286f774664f4cbd8c",
@@ -4435,7 +4578,8 @@ const data = {
                     {
                         "id": "63a7d99804d3dc28a52a2106",
                         "description": "Locate the place of bloody broadcast inside the grocery store on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639da5ec8fe84d33a25a1435",
@@ -4507,7 +4651,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5ac5eb3286f7746e7a509a09",
-                        "description": "Reach the required Memory skill level",
+                        "description": "Reach the required Attention skill level",
                         "type": "skill",
                         "skillLevel": {
                             "level": 4
@@ -4533,7 +4677,8 @@ const data = {
                     {
                         "id": "64ee9df4496db64f9b7a4433",
                         "description": "Locate the cause of the signal jamming on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "64ee9df4496db64f9b7a4435",
@@ -4575,27 +4720,32 @@ const data = {
                     {
                         "id": "6578ec473dbd035d04531a92",
                         "description": "Mark the first weather station with an MS2000 Marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6578ec473dbd035d04531a93",
                         "description": "Mark the second weather station with an MS2000 Marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6578ec473dbd035d04531a94",
                         "description": "Mark the third weather station with an MS2000 Marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6578ed62da32cab3f79bb022",
                         "description": "Mark the fourth weather station with an MS2000 Marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6578ed7792685671c65edf07",
                         "description": "Mark the fifth weather station with an MS2000 Marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -4617,7 +4767,8 @@ const data = {
                     {
                         "id": "63a7d64710b7a13eb015961f",
                         "description": "Locate the chemical laboratory on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639135e0fa894f0a866afde7",
@@ -4692,17 +4843,20 @@ const data = {
                     {
                         "id": "63927f14744e452011470816",
                         "description": "Locate and mark the first LAV III with an MS2000 Marker on Streets of Tarkov",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63927f2d8ba6894d155e77e6",
                         "description": "Locate and mark the Stryker with an MS2000 Marker on Streets of Tarkov",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63927f349444fb141f4e6f24",
                         "description": "Locate and mark the second LAV III with an MS2000 Marker on Streets of Tarkov",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639cebb78fe84d33a25a142b",
@@ -4798,27 +4952,32 @@ const data = {
                     {
                         "id": "5ae4508386f7741250488337",
                         "description": "Locate and check the AVOKADO store on Interchange",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae450db86f7741250488359",
                         "description": "Locate and check the KOSTIN store on Interchange",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae450ee86f7740f9307859d",
                         "description": "Locate and check the tRend store on Interchange",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae4510786f7740fa614399f",
                         "description": "Locate and check the DINO CLOTHES store on Interchange",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae4511d86f7740ffc31ccb5",
                         "description": "Locate and check the TOP BRAND store on Interchange",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae4514986f7740e915d218c",
@@ -4927,7 +5086,8 @@ const data = {
                     {
                         "id": "63a7db4a3e491955e65fb88b",
                         "description": "Locate the apartment of Prapor's friend on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639c8c875573fd6cc27d99bb",
@@ -5035,27 +5195,56 @@ const data = {
                     {
                         "id": "608bd0a053b9dd01a116f474",
                         "description": "Check the first arsenal in the eastern barracks (Black Pawn) on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "608bd2465e0ef91ab810f98a",
                         "description": "Check the duty room in the eastern barracks (Black Pawn) on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "RB-OB"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "608bd0c20637f21f9934b6e4",
                         "description": "Check the second arsenal in the eastern barracks (Black Pawn) on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "RB-ORB3"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "608bd136c61c4b541b381da3",
                         "description": "Check the first arsenal in the southern barracks (White Pawn) on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "RB-ORB1"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "608bd149f597ad0a33574d74",
                         "description": "Check the second arsenal in the southern barracks (White Pawn) on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "RB-ORB2"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "608c187853b9dd01a116f480",
@@ -5083,12 +5272,14 @@ const data = {
                     {
                         "id": "60a4dc7e4e734e57d07fb335",
                         "description": "Mark the first group of fuel tanks with an MS2000 Marker on Reserve",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "60b90232ec7c6f5eb510c195",
                         "description": "Mark the second group of fuel tanks with an MS2000 Marker on Reserve",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "608bfe32c61c4b541b381da9",
@@ -5116,7 +5307,8 @@ const data = {
                     {
                         "id": "65802b627b44fa5e1463889a",
                         "description": "Locate Ragman's SUV on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65802bfabac8c53c548fca2a",
@@ -5160,13 +5352,13 @@ const data = {
                     },
                     {
                         "id": "65bb698050fd7c32f5d666d1",
-                        "description": "65bb698050fd7c32f5d666d1",
+                        "description": "Locate and eliminate Basmach",
                         "type": "shoot",
                         "count": 1
                     },
                     {
                         "id": "65bb6a61a845e4eb51390b4e",
-                        "description": "65bb6a61a845e4eb51390b4e",
+                        "description": "Locate and eliminate Gus",
                         "type": "shoot",
                         "count": 1
                     }
@@ -5235,17 +5427,20 @@ const data = {
                     {
                         "id": "5ae452c086f774336a397578",
                         "description": "Mark the first fuel tank with an MS2000 Marker on Interchange",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae452de86f77450595c4333",
                         "description": "Mark the second fuel tank with an MS2000 Marker on Interchange",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae452fa86f774336a39758e",
                         "description": "Mark the third fuel tank with an MS2000 Marker on Interchange",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae4531986f774177033c3e6",
@@ -5404,22 +5599,32 @@ const data = {
                     {
                         "id": "5a2806e086f774291b084041",
                         "description": "Locate and mark the first ritual spot with an MS2000 Marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a2806b386f77420062f0fbd",
                         "description": "Locate and mark the ritual spot with an MS2000 Marker on Customs",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Dorm mrk."
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5fe0e9ed3f3a7d4169035e8e",
                         "description": "Locate and mark the second ritual spot with an MS2000 Marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a2806f886f774513d3e69f5",
                         "description": "Locate and mark the ritual spot with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -5478,12 +5683,14 @@ const data = {
                     {
                         "id": "63ac1e0a87413d64ae0ac233",
                         "description": "Locate the helicopter at the water treatment plant on Lighthouse",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6179b804bca27a099552e057",
                         "description": "Mark the helicopter with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "61abcc6379c3a477d0122457",
@@ -5534,17 +5741,20 @@ const data = {
                     {
                         "id": "63ac1b741b5c95746621ddb4",
                         "description": "Recon the roof of the first office building on Lighthouse",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63ac1bd387413d64ae0ac22b",
                         "description": "Recon the roof of the second office building on Lighthouse",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63ac1c56972364554162a25e",
                         "description": "Recon the roof of the third office building on Lighthouse",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "62987d43b7bd956bd62a09b3",
@@ -5624,7 +5834,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "6398776f93ae507d5858c3a8",
-                        "description": "Modify an P226R to comply with the given specifications",
+                        "description": "Modify a P226R to comply with the given specifications",
                         "type": "buildWeapon"
                     }
                 ]
@@ -5687,17 +5897,20 @@ const data = {
                     {
                         "id": "5d357b6c86f774588d4d7e25",
                         "description": "Locate the chairman's house in the abandoned village on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5d357b9586f7745b422d653f",
                         "description": "Locate the fisherman's house in the abandoned village on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5d357bb786f774588d4d7e27",
                         "description": "Locate the priest's house in the abandoned village on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "629f4f080f57046e362e6e9e",
@@ -5725,7 +5938,8 @@ const data = {
                     {
                         "id": "5d8a05d086f77410b4225d10",
                         "description": "Locate the food storage location on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "629f1259422dff20ff234b4d",
@@ -5752,7 +5966,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "6193dabd5f6468204470571f",
-                        "description": "Eliminate Scavs along the main road on Lighthouse",
+                        "description": "Eliminate Scavs along the shore and the main road on Lighthouse",
                         "type": "shoot",
                         "count": 15
                     }
@@ -5776,17 +5990,20 @@ const data = {
                     {
                         "id": "5a6873bc86f7741f8d4589a3",
                         "description": "Locate and mark the first ambulance with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a6873d786f7743ad1151d6e",
                         "description": "Locate and mark the second ambulance with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a6873ec86f7743cc55d8622",
                         "description": "Locate and mark the third ambulance with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -5844,12 +6061,14 @@ const data = {
                     {
                         "id": "63a7d53904d3dc28a52a2100",
                         "description": "Locate the cargo convoy on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a7d58004d3dc28a52a2102",
                         "description": "Determine the ambush spot",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639cee16f5765f47cc7f0ea1",
@@ -5877,12 +6096,14 @@ const data = {
                     {
                         "id": "63a7d444f32fa1316250c3d5",
                         "description": "Locate the cargo convoy on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a7d461f32fa1316250c3d7",
                         "description": "Determine the ambush spot",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639cdf9aad9d7e3216668fd0",
@@ -5910,7 +6131,8 @@ const data = {
                     {
                         "id": "63a7d8665199ab1f7d4a7747",
                         "description": "Locate the surveillance spot on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639136fa9444fb141f4e6eef",
@@ -5950,7 +6172,8 @@ const data = {
                     {
                         "id": "63ac22b8f627f540861d1b2d",
                         "description": "Locate the place of bloody broadcast inside the old house on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a511ea30d85e10e375b047",
@@ -5978,7 +6201,8 @@ const data = {
                     {
                         "id": "63a7da6f5199ab1f7d4a774a",
                         "description": "Locate the balletmeister's apartment on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a7daae04d3dc28a52a2109",
@@ -6176,8 +6400,9 @@ const data = {
                 "objectives": [
                     {
                         "id": "5a68770f86f774747d4b0d8b",
-                        "description": "Locate the van that belonged to the head of the health resort Medical Services",
-                        "type": "visit"
+                        "description": "Locate the van of the Health Resort medical services director on Woods",
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a68776786f774759f1f55f6",
@@ -6242,7 +6467,8 @@ const data = {
                     {
                         "id": "5a6879be86f774284429b1bb",
                         "description": "Locate the drop spot on night-time Factory",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a687a1c86f7745f2152168c",
@@ -6341,7 +6567,8 @@ const data = {
                     {
                         "id": "63ac22351b5c95746621ddc4",
                         "description": "Locate the hideout of Jaeger's friend on Lighthouse",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "61904e76f62c89219a56e04c",
@@ -6374,18 +6601,21 @@ const data = {
                 "objectives": [
                     {
                         "id": "5edab7d3cc183c769d778bc5",
-                        "description": "Locate the group that was sent to the Health Resort",
-                        "type": "visit"
+                        "description": "Locate the group that was sent to the Health Resort on Shoreline",
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5edab8890880da21347b3826",
-                        "description": "Locate the group that was sent to the pier",
-                        "type": "visit"
+                        "description": "Locate the group that was sent to the pier on Shoreline",
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5edab8e216d985118871ba18",
-                        "description": "Locate the group that was sent to the cottages",
-                        "type": "visit"
+                        "description": "Locate the group that was sent to the cottages on Shoreline",
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5f03969a51823847c253afa0",
@@ -6413,17 +6643,20 @@ const data = {
                     {
                         "id": "5eda1d6ec586607c09662d54",
                         "description": "Mark the first trading post with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5eda1da9a58a4c49c74165ee",
                         "description": "Mark the second trading post with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5eda1dd3317f6066993c1744",
                         "description": "Mark the third trading post with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5f0389268580cc37797e0026",
@@ -6501,7 +6734,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5edabb0b0c502106f869bc03",
-                        "description": "Obtain Sanitar's surgery kit marked with a blue symbol",
+                        "description": "Locate and obtain Sanitar's surgery kit marked with a blue symbol on Shoreline",
                         "type": "findQuestItem",
                         "requiredKeys": null
                     },
@@ -6513,7 +6746,7 @@ const data = {
                     },
                     {
                         "id": "5edabbff0880da21347b382b",
-                        "description": "Obtain Sanitar's ophthalmoscope",
+                        "description": "Locate and obtain Sanitar's ophthalmoscope on Shoreline",
                         "type": "findQuestItem",
                         "requiredKeys": [
                             [
@@ -6781,7 +7014,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "617bf1e1d93d977d2452051f",
-                        "description": "Eliminate Rogue USEC operatives",
+                        "description": "Eliminate Rogues on Lighthouse",
                         "type": "shoot",
                         "count": 10
                     }
@@ -6870,7 +7103,8 @@ const data = {
                     {
                         "id": "64f5aac4b63b74469b6c14c7",
                         "description": "Locate the place of work of Prapor's friend on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "64f5b876a2a5bb727b61c5ad",
@@ -7134,7 +7368,8 @@ const data = {
                     {
                         "id": "6573397ef3f8344c4575cd88",
                         "description": "Locate the real estate fund on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6581676e7a18ff402fd23e68",
@@ -7179,7 +7414,14 @@ const data = {
                     {
                         "id": "5f0488c590eea473df674002",
                         "description": "Locate Sanitar's office in the health resort",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "San tape"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5f04983ffbed7a08077b4367",
@@ -7289,19 +7531,19 @@ const data = {
                 "objectives": [
                     {
                         "id": "6578eb36e5020875d64645d0",
-                        "description": "Locate and eliminate Kollontai on Streets of Tarkov",
+                        "description": "Locate and eliminate Kollontay on Streets of Tarkov",
                         "type": "shoot",
                         "count": 1
                     },
                     {
                         "id": "6580130847df99b0741919f0",
-                        "description": "Eliminate Kollontai's guards on Streets of Tarkov",
+                        "description": "Eliminate Kollontay's guards on Streets of Tarkov",
                         "type": "shoot",
                         "count": 4
                     },
                     {
                         "id": "6582b05dc992d6dcc0a40c75",
-                        "description": "Hand over Kollontai's police baton",
+                        "description": "Hand over the found in raid Kollontay's police baton",
                         "type": "giveItem",
                         "count": 1,
                         "foundInRaid": true
@@ -7331,7 +7573,14 @@ const data = {
                     {
                         "id": "5eec9d054110547f1f545c99",
                         "description": "Find Sanitar's workplace in The Lab",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Keycard"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5eff5674befb6436ce3bbaf7",
@@ -7371,17 +7620,20 @@ const data = {
                     {
                         "id": "5b478d8986f774563c7a4809",
                         "description": "Locate and mark the first yellow minibus with an MS2000 Marker on Interchange",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5b478daf86f7744d1c35339b",
                         "description": "Locate and mark the second yellow minibus with an MS2000 Marker on Interchange",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5b478dca86f7744d190d91c2",
                         "description": "Locate and mark the third yellow minibus with an MS2000 Marker on Interchange",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5b478de086f7744d1c3533a1",
@@ -7491,7 +7743,8 @@ const data = {
                     {
                         "id": "65802779963422318339533a",
                         "description": "Locate the smugglers' base on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65802779963422318339533c",
@@ -7655,7 +7908,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5c1242fa86f7742aa04fed52",
-                        "description": "Eliminate PMC operatives in the time period of 22:00-05:00 (Excluding Factory and The Lab)",
+                        "description": "Eliminate PMC operatives in the time period of 21:00-06:00 (Excluding Factory and The Lab)",
                         "type": "shoot",
                         "count": 30
                     }
@@ -7679,22 +7932,26 @@ const data = {
                     {
                         "id": "617bf5860cf4a041de5b396b",
                         "description": "Find and mark the group of fuel tanks with an MS2000 Marker on Lighthouse",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "61926522b0295324b5484459",
                         "description": "Find and mark the first tanker truck with an MS2000 Marker on Lighthouse",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6192653d80c326298126aee1",
                         "description": "Find and mark the second tanker truck with an MS2000 Marker on Lighthouse",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "61926544bb0c712ed42d583c",
                         "description": "Find and mark the third tanker truck with an MS2000 Marker on Lighthouse",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -7915,14 +8172,14 @@ const data = {
                 "objectives": [
                     {
                         "id": "5ae9bc6e86f7746e0026222c",
-                        "description": "Hand over the armor",
+                        "description": "Hand over the found in raid 6B13 assault armor in 0-50% durability",
                         "type": "giveItem",
                         "count": 1,
                         "foundInRaid": true
                     },
                     {
                         "id": "5ae9bea886f77468ab400e64",
-                        "description": "Hand over the armor",
+                        "description": "Hand over the found in raid 6B13 assault armor in 50-100% durability",
                         "type": "giveItem",
                         "count": 1,
                         "foundInRaid": true
@@ -7992,12 +8249,20 @@ const data = {
                     {
                         "id": "65733403eefc2c312a759ddc",
                         "description": "Locate the IT firm office on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65801ad655315fdce2096bec",
                         "description": "Unravel the secret of the firm's success",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Negotiations"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "65801b07a26e65a69c2fedd1",
@@ -8025,7 +8290,14 @@ const data = {
                     {
                         "id": "6573382e557ff128bf3da537",
                         "description": "Unravel the secret of the IT firm's employees' high morale on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Relax"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "65800413f41301adef3c9698",
@@ -8057,7 +8329,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "63a9b229813bba58a50c9ee6",
-                        "description": "Eliminate any hostile from over 100 meters away while using AR-15 platform weapons",
+                        "description": "Eliminate any enemy from over 100 meters away while using AR-15 platform weapons",
                         "type": "shoot",
                         "count": 30
                     }
@@ -8191,7 +8463,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "63a9ae63da7999196148ba5c",
-                        "description": "Eliminate any hostile from over 100 meters away while using AK-74 series weapons",
+                        "description": "Eliminate any enemy from over 100 meters away while using AK-74 series weapons",
                         "type": "shoot",
                         "count": 30
                     }
@@ -8220,7 +8492,8 @@ const data = {
                     {
                         "id": "63a7d8f404d3dc28a52a2104",
                         "description": "Locate the musician gathering spot on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639135bbc115f907b14700a7",
@@ -8254,7 +8527,8 @@ const data = {
                     {
                         "id": "63ac0c99f83fd608393890bf",
                         "description": "Find the lost group in the chalet area on Lighthouse",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6190464d74169a76c90aa230",
@@ -8345,7 +8619,8 @@ const data = {
                     {
                         "id": "63ac210b1287ef0b827d0cb8",
                         "description": "Locate the hidden drug lab on Lighthouse",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "626c3010a371ee3a7a3514cb",
@@ -8374,7 +8649,8 @@ const data = {
                     {
                         "id": "63a7d6d61f06d111271f5aeb",
                         "description": "Locate the cultist meeting spot on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639da86bad9d7e3216668fd7",
@@ -8430,7 +8706,8 @@ const data = {
                     {
                         "id": "64ee9a979878a0569d6ec8cb",
                         "description": "Locate the ritual spot on Chekannaya st. on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "64ee9b5a1a5f313cb144bf87",
@@ -8556,8 +8833,9 @@ const data = {
                 "objectives": [
                     {
                         "id": "5d357e0e86f7745b3f307c56",
-                        "description": "Locate Jaeger's room with a view of a bay in the Health Resort",
-                        "type": "visit"
+                        "description": "Locate Jaeger's Health Resort room with a view of the bay on Shoreline",
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5d357e8786f7745b5e66a51a",
@@ -8591,77 +8869,92 @@ const data = {
                     {
                         "id": "6573057d66de94c756a60472",
                         "description": "Locate the first ATM on Nizhnaya Sadovaya Street on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65730580123b33fa7bb1a9fc",
                         "description": "Locate the second ATM on Nizhnaya Sadovaya Street on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "657305885511555648dbb952",
                         "description": "Locate the ATM on Razvedchikov Street on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6572e876dc0d635f633a5718",
                         "description": "Locate the first group of ATMs on Klimov Street on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65730579d50436e87723dae4",
                         "description": "Locate the first ATM on Klimov Street on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6573058b4e3f646b0e364add",
-                        "description": "Locate the third group of ATMs on Klimov Street on Streets of Tarkov",
-                        "type": "visit"
+                        "description": "Locate the group of ATMs on Klimov Street on Streets of Tarkov",
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6573058d6a542c099ce5d92b",
                         "description": "Locate the second ATM on Klimov Street on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6573058f5c2ba64444301c25",
                         "description": "Locate the fourth group of ATMs on Klimov Street on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65730595fd5ec1426ebd5484",
                         "description": "Locate the fifth group of ATMs on Klimov Street on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "657305913186869491d7f5fd",
                         "description": "Locate the third ATM on Klimov Street on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65730593d4b1bd9359203a74",
                         "description": "Locate the fourth ATM on Klimov Street on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6573058510b6071846639907",
                         "description": "Locate the first ATM on Primorsky Ave on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65730597d64537696cc661c6",
                         "description": "Locate the second ATM on Primorsky Ave on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "657305989d1d1fe81237e9e7",
                         "description": "Locate the third ATM on Primorsky Ave on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6573059ace022903ee1e6b11",
                         "description": "Locate the ATM at the expo on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -8945,7 +9238,8 @@ const data = {
                     {
                         "id": "63ac1a941b5c95746621ddb2",
                         "description": "Locate the crashed helicopter on Lighthouse",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "61a00eff2d708d41a34f19b4",
@@ -9111,17 +9405,20 @@ const data = {
                     {
                         "id": "5c10f94386f774227172c574",
                         "description": "Locate and mark the first fuel stash with an MS2000 Marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5c10f94386f774227172c575",
                         "description": "Locate and mark the second fuel stash with an MS2000 Marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5c10f94386f774227172c576",
                         "description": "Locate and mark the third fuel stash with an MS2000 Marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5c10f94386f774227172c577",
@@ -9435,7 +9732,8 @@ const data = {
                     {
                         "id": "63a7cd3aee7b4d0d5507baee",
                         "description": "Find the debtor on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639dbba35b759c65a3476549",
@@ -9590,7 +9888,14 @@ const data = {
                     {
                         "id": "63a7d767f32fa1316250c3da",
                         "description": "Locate where the missing group was held captive on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Iron gate"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "63972c5d61b7754ff93bf3ba",
@@ -9618,12 +9923,20 @@ const data = {
                     {
                         "id": "63a7dbc31943b749b5021ec3",
                         "description": "Locate the improvised jail warden's apartment on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a7dbefee7b4d0d5507baf8",
                         "description": "Find out what happened to the warden",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Chek 15"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "63972db222ea23711e21aaaa",
@@ -9690,7 +10003,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5c0be2b486f7747bcb347d58",
-                        "description": "Reach the required Sniper Rifles skill level",
+                        "description": "Reach the required Bolt-action Rifles skill level",
                         "type": "skill",
                         "skillLevel": {
                             "level": 10
@@ -9796,7 +10109,7 @@ const data = {
                     },
                     {
                         "id": "65e08db1a97b2cd4e452432d",
-                        "description": "65e08db1a97b2cd4e452432d",
+                        "description": "Reach level 4 loyalty with Jaeger",
                         "type": "traderLevel"
                     }
                 ]
@@ -9889,22 +10202,26 @@ const data = {
                     {
                         "id": "625ecedaa4eb80027c4f2e0b",
                         "description": "Set up the retransmitter inside the MI-8 helicopter at the water treatment plant",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "625ecee6f7308432be1d44c7",
                         "description": "Set up the retransmitter inside the abandoned USEC cottage",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "625eceebc4874104f230c0c7",
                         "description": "Set up the retransmitter at a high elevation overlooking the lighthouse",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6386410704a59f742a7a3b45",
                         "description": "Set up the retransmitter on the roof of the sunken building at the shore",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -9949,22 +10266,26 @@ const data = {
                     {
                         "id": "62602852c48e6c62a440fab6",
                         "description": "Locate and mark the first bunker with an MS2000 marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "62602858efebc4442a7b3876",
                         "description": "Locate and mark the second bunker with an MS2000 marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6260285c1ed3bb5bcc5bd9e8",
                         "description": "Locate and mark the third bunker with an MS2000 marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "638643e03674202b7d07c9e5",
                         "description": "Locate and mark the fourth bunker with an MS2000 marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -10094,7 +10415,8 @@ const data = {
                     {
                         "id": "63ab617b87413d64ae0ac210",
                         "description": "Check if the radio transmitter works near the Lighthouse peninsula",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "62602c89a4eb80027c4f2e0f",
@@ -10141,7 +10463,8 @@ const data = {
                     {
                         "id": "63ab727b1287ef0b827d0c95",
                         "description": "Visit the Lighthouse building",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -10230,7 +10553,8 @@ const data = {
                     {
                         "id": "63ab6a89e842787ad2135719",
                         "description": "Visit the Lighthouse building",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -10276,12 +10600,14 @@ const data = {
                     {
                         "id": "6397a6942e519e69d2139b25",
                         "description": "Locate and mark the first Patrol-A armored vehicle with an MS2000 Marker on Streets of Tarkov",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6397a7ce706b793c7d6094c9",
                         "description": "Locate and mark the second Patrol-A armored vehicle with an MS2000 Marker on Streets of Tarkov",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -10303,7 +10629,8 @@ const data = {
                     {
                         "id": "63a7cee004d3dc28a52a20f8",
                         "description": "Locate the informant's backup hideout",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63990a1ddcdd126fef1771c1",
@@ -10517,12 +10844,14 @@ const data = {
                     {
                         "id": "63a7cf9f04d3dc28a52a20fa",
                         "description": "Search the weapon testing area in The Lab",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a7cfe104d3dc28a52a20fc",
                         "description": "Search the human experiment room in The Lab",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639ae49a5e3c9b787264d675",
@@ -10556,7 +10885,8 @@ const data = {
                     {
                         "id": "63a7d2acee7b4d0d5507baf2",
                         "description": "Locate a good sniping position in Concordia overlooking the construction site",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639c359f0a20a7001f00c7a8",
@@ -10568,7 +10898,8 @@ const data = {
                     {
                         "id": "63a7d315f32fa1316250c3d2",
                         "description": "Locate a good sniping position at Primorsky overlooking the movie theater",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639c39807c1532d85b0162a9",
@@ -10602,7 +10933,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "639a169e6cd47c525121a116",
-                        "description": "Reach the required Sniper Rifles skill level",
+                        "description": "Reach the required Bolt-action Rifles skill level",
                         "type": "skill",
                         "skillLevel": {
                             "level": 10
@@ -10634,7 +10965,8 @@ const data = {
                     {
                         "id": "63bd64552803ffbfad0e3e48",
                         "description": "Locate the transport holding the cargo on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639ae7423174277743234bb7",
@@ -10645,7 +10977,8 @@ const data = {
                     {
                         "id": "639aea2228d8a21b593a3491",
                         "description": "Mark the cargo area with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63bd64ba3d34b0e64b0d0a17",
@@ -10901,7 +11234,14 @@ const data = {
                     {
                         "id": "63ac19f9de609574d97adf78",
                         "description": "Locate the radar station commandant's office on Lighthouse",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Radar"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "62863b9ae5b4f5010e0d30c8",
@@ -12529,7 +12869,7 @@ const data = {
                     },
                     {
                         "id": "65b10c6a8511b7ef8694e060",
-                        "description": "65b10c6a8511b7ef8694e060",
+                        "description": "Hand over the found in raid item: Glorious E lightweight armored mask",
                         "type": "giveItem",
                         "count": 1,
                         "foundInRaid": true
@@ -13200,7 +13540,7 @@ function printMatch(task) {
             objective.description = `${objective.description} (x${objective.count})`;
         } else if (objective.type === 'skill') {
             objective.description = `${objective.description} (Level ${objective.skillLevel.level})`;
-        } else if (objective.type === 'findQuestItem') {
+        } else if ((objective.type === 'findQuestItem') || (objective.type === 'visit') || (objective.type === 'mark')) {
             keyList = [];
             if (objective.requiredKeys != null) {
                 for (i in objective.requiredKeys[0]) {
@@ -13289,7 +13629,7 @@ function printMatch(task) {
         objectiveGroup = task.objectives[0].description;
     }
 
-    // console.log(objectiveGroup.trim());
+    console.log(objectiveGroup.trim());
     // console.log(uniqueTerms);
     // console.log(commonPrefix);
     // console.log(commonSuffix);
@@ -13334,7 +13674,7 @@ async function fetchItemData(taskID) {
     }
 }
 
-returnOutput("sales night");
+returnOutput("broadcast 1");
 
 // Example usage
 function returnOutput(searchTerm) {

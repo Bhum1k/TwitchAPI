@@ -357,7 +357,7 @@
                 "objectives": [
                     {
                         "id": "657b0567ec71635f16471dd2",
-                        "description": "Eliminate PMC operatives from a distance of at least 80 meters using a bolt-action rifle",
+                        "description": "Eliminate PMC operatives from over 80 meters away while using a bolt-action rifle",
                         "type": "shoot",
                         "count": 5
                     }
@@ -1045,7 +1045,7 @@
             },
             {
                 "id": "59674eb386f774539f14813a",
-                "name": "Delivery from the Past",
+                "name": "Delivery From the Past",
                 "kappaRequired": true,
                 "trader": {
                     "name": "Prapor"
@@ -1160,7 +1160,7 @@
                 "taskRequirements": [
                     {
                         "task": {
-                            "name": "Delivery from the Past"
+                            "name": "Delivery From the Past"
                         }
                     }
                 ],
@@ -1168,22 +1168,26 @@
                     {
                         "id": "59c128b986f77415037680df",
                         "description": "Locate and mark the first fuel tank with an MS2000 Marker on Customs",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "59c128cc86f774189b3c84b5",
                         "description": "Locate and mark the second fuel tank with an MS2000 Marker on Customs",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "59c128d886f77414fe7f1a64",
                         "description": "Locate and mark the third fuel tank with an MS2000 Marker on Customs",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "59c128f386f774189b3c84bb",
                         "description": "Locate and mark the fourth fuel tank with an MS2000 Marker on Customs",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5c92184386f7746afa2e7840",
@@ -1922,7 +1926,7 @@
                 "objectives": [
                     {
                         "id": "5968975586f7740e7266d974",
-                        "description": "Hand over the letter from the messenger to Therapist",
+                        "description": "Hand over the letter from Prapor's messenger",
                         "type": "giveQuestItem",
                         "requiredKeys": null
                     }
@@ -2098,17 +2102,20 @@
                     {
                         "id": "5a27e73f86f7740fb275c94b",
                         "description": "Locate and mark the first Tigr vehicle with an MS2000 Marker on Customs",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a27e75886f7740aef4a9157",
                         "description": "Locate and mark the second Tigr vehicle with an MS2000 Marker on Customs",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a29653986f77406a3435b26",
                         "description": "Locate and mark the third Tigr vehicle with an MS2000 Marker on Customs",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5c9394a986f7741228714be3",
@@ -2136,17 +2143,20 @@
                     {
                         "id": "5a37e8ae86f77415076b401d",
                         "description": "Locate and mark the first T-90 tank with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a27fc8186f7746371546243",
                         "description": "Locate and mark the second T-90 tank with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a27fc9686f774675744bb60",
                         "description": "Locate and mark the third T-90 tank with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5c939d0e86f774185203c4c3",
@@ -2259,7 +2269,8 @@
                     {
                         "id": "59b242ea86f7741e6e0e7a86",
                         "description": "Mark the vehicle with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "59b95de686f77418457056ef",
@@ -2292,7 +2303,8 @@
                     {
                         "id": "5998366886f77455853b2d9f",
                         "description": "Mark the vehicle with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "597a166d86f774779c70e8a4",
@@ -2325,7 +2337,8 @@
                     {
                         "id": "5998360886f77456936817f3",
                         "description": "Mark the vehicle with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "597a178786f774799e5cd155",
@@ -2481,12 +2494,14 @@
                     {
                         "id": "5a28017786f77452f6318b1b",
                         "description": "Locate and mark the first truck with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a2801f986f774531b679875",
                         "description": "Locate and mark the second truck with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5cb5fd3d86f7746ef64ca33c",
@@ -2694,12 +2709,14 @@
                     {
                         "id": "5a0317da86f77451cb427295",
                         "description": "Mark the helicopter with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a0325f286f7744384509230",
                         "description": "Mark the safe road with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a37d80986f774245c063b69",
@@ -3293,7 +3310,8 @@
                     {
                         "id": "61958d54aa0f643f9a0aed73",
                         "description": "Locate and mark the TerraGroup cargo with an MS2000 Marker on Lighthouse",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "61958d69d14ece31007e2df4",
@@ -3617,7 +3635,8 @@
                     {
                         "id": "6086c8ed1b0bb8063d5babb7",
                         "description": "Mark the first BMP-2 with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "60882695949eb1096c454fcd",
@@ -3627,7 +3646,8 @@
                     {
                         "id": "608826d0a3994358a0751cfc",
                         "description": "Mark the second BMP-2 with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "608826f3949eb1096c454fd0",
@@ -3637,7 +3657,14 @@
                     {
                         "id": "60882714c18cfa2a4e2afe59",
                         "description": "Mark the third BMP-2 with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "RB-ST"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "6088274a82e40b3c727fd164",
@@ -3647,7 +3674,8 @@
                     {
                         "id": "60882779d241f77b8a49785d",
                         "description": "Mark the fourth BMP-2 with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "60892585b90d6f39cb74b114",
@@ -3657,7 +3685,8 @@
                     {
                         "id": "608925d455f4ac386d7e7fc4",
                         "description": "Mark the first LAV III with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "60892590fa70fc097863b8e5",
@@ -3785,7 +3814,8 @@
                     {
                         "id": "5a281efe86f7745bc42005cc",
                         "description": "Mark the fishing table with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a37dc0c86f77469da071ef2",
@@ -3907,7 +3937,7 @@
                 "objectives": [
                     {
                         "id": "5a28235e86f7741da250b438",
-                        "description": "Reach the required Sniper Rifles skill level",
+                        "description": "Reach the required Bolt-action Rifles skill level",
                         "type": "skill",
                         "skillLevel": {
                             "level": 7
@@ -4125,22 +4155,26 @@
                     {
                         "id": "61952308aa0f643f9a0ae20f",
                         "description": "Locate and mark the first BRDM with an MS2000 Marker on Lighthouse",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6195231dd07bdc6de57b40a5",
                         "description": "Locate and mark the second BRDM with an MS2000 Marker on Lighthouse",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "61952325aa0f643f9a0ae212",
                         "description": "Locate and mark the first Stryker with an MS2000 Marker on Lighthouse",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6195232a1e972a652931edb6",
                         "description": "Locate and mark the second Stryker with an MS2000 Marker on Lighthouse",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -4371,17 +4405,20 @@
                     {
                         "id": "5ac7a7bf86f774132252a524",
                         "description": "Place the Signal jammer on the first specified place on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ac7a83b86f774665012340b",
                         "description": "Place the Signal jammer on the second specified place on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ac7a8d386f7741321499e3c",
                         "description": "Place the Signal jammer on the third specified place on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ac7a93286f774664f4cbd8c",
@@ -4504,7 +4541,7 @@
                 "objectives": [
                     {
                         "id": "5ac5eb3286f7746e7a509a09",
-                        "description": "Reach the required Memory skill level",
+                        "description": "Reach the required Attention skill level",
                         "type": "skill",
                         "skillLevel": {
                             "level": 4
@@ -4572,27 +4609,32 @@
                     {
                         "id": "6578ec473dbd035d04531a92",
                         "description": "Mark the first weather station with an MS2000 Marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6578ec473dbd035d04531a93",
                         "description": "Mark the second weather station with an MS2000 Marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6578ec473dbd035d04531a94",
                         "description": "Mark the third weather station with an MS2000 Marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6578ed62da32cab3f79bb022",
                         "description": "Mark the fourth weather station with an MS2000 Marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6578ed7792685671c65edf07",
                         "description": "Mark the fifth weather station with an MS2000 Marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -4689,17 +4731,20 @@
                     {
                         "id": "63927f14744e452011470816",
                         "description": "Locate and mark the first LAV III with an MS2000 Marker on Streets of Tarkov",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63927f2d8ba6894d155e77e6",
                         "description": "Locate and mark the Stryker with an MS2000 Marker on Streets of Tarkov",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63927f349444fb141f4e6f24",
                         "description": "Locate and mark the second LAV III with an MS2000 Marker on Streets of Tarkov",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639cebb78fe84d33a25a142b",
@@ -5080,12 +5125,14 @@
                     {
                         "id": "60a4dc7e4e734e57d07fb335",
                         "description": "Mark the first group of fuel tanks with an MS2000 Marker on Reserve",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "60b90232ec7c6f5eb510c195",
                         "description": "Mark the second group of fuel tanks with an MS2000 Marker on Reserve",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "608bfe32c61c4b541b381da9",
@@ -5157,13 +5204,13 @@
                     },
                     {
                         "id": "65bb698050fd7c32f5d666d1",
-                        "description": "65bb698050fd7c32f5d666d1",
+                        "description": "Locate and eliminate Basmach",
                         "type": "shoot",
                         "count": 1
                     },
                     {
                         "id": "65bb6a61a845e4eb51390b4e",
-                        "description": "65bb6a61a845e4eb51390b4e",
+                        "description": "Locate and eliminate Gus",
                         "type": "shoot",
                         "count": 1
                     }
@@ -5232,17 +5279,20 @@
                     {
                         "id": "5ae452c086f774336a397578",
                         "description": "Mark the first fuel tank with an MS2000 Marker on Interchange",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae452de86f77450595c4333",
                         "description": "Mark the second fuel tank with an MS2000 Marker on Interchange",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae452fa86f774336a39758e",
                         "description": "Mark the third fuel tank with an MS2000 Marker on Interchange",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae4531986f774177033c3e6",
@@ -5401,22 +5451,32 @@
                     {
                         "id": "5a2806e086f774291b084041",
                         "description": "Locate and mark the first ritual spot with an MS2000 Marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a2806b386f77420062f0fbd",
                         "description": "Locate and mark the ritual spot with an MS2000 Marker on Customs",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Dorm mrk."
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5fe0e9ed3f3a7d4169035e8e",
                         "description": "Locate and mark the second ritual spot with an MS2000 Marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a2806f886f774513d3e69f5",
                         "description": "Locate and mark the ritual spot with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -5480,7 +5540,8 @@
                     {
                         "id": "6179b804bca27a099552e057",
                         "description": "Mark the helicopter with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "61abcc6379c3a477d0122457",
@@ -5621,7 +5682,7 @@
                 "objectives": [
                     {
                         "id": "6398776f93ae507d5858c3a8",
-                        "description": "Modify an P226R to comply with the given specifications",
+                        "description": "Modify a P226R to comply with the given specifications",
                         "type": "buildWeapon"
                     }
                 ]
@@ -5749,7 +5810,7 @@
                 "objectives": [
                     {
                         "id": "6193dabd5f6468204470571f",
-                        "description": "Eliminate Scavs along the main road on Lighthouse",
+                        "description": "Eliminate Scavs along the shore and the main road on Lighthouse",
                         "type": "shoot",
                         "count": 15
                     }
@@ -5773,17 +5834,20 @@
                     {
                         "id": "5a6873bc86f7741f8d4589a3",
                         "description": "Locate and mark the first ambulance with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a6873d786f7743ad1151d6e",
                         "description": "Locate and mark the second ambulance with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a6873ec86f7743cc55d8622",
                         "description": "Locate and mark the third ambulance with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -6173,7 +6237,7 @@
                 "objectives": [
                     {
                         "id": "5a68770f86f774747d4b0d8b",
-                        "description": "Locate the van that belonged to the head of the health resort Medical Services",
+                        "description": "Locate the van of the Health Resort medical services director on Woods",
                         "type": "visit"
                     },
                     {
@@ -6371,17 +6435,17 @@
                 "objectives": [
                     {
                         "id": "5edab7d3cc183c769d778bc5",
-                        "description": "Locate the group that was sent to the Health Resort",
+                        "description": "Locate the group that was sent to the Health Resort on Shoreline",
                         "type": "visit"
                     },
                     {
                         "id": "5edab8890880da21347b3826",
-                        "description": "Locate the group that was sent to the pier",
+                        "description": "Locate the group that was sent to the pier on Shoreline",
                         "type": "visit"
                     },
                     {
                         "id": "5edab8e216d985118871ba18",
-                        "description": "Locate the group that was sent to the cottages",
+                        "description": "Locate the group that was sent to the cottages on Shoreline",
                         "type": "visit"
                     },
                     {
@@ -6410,17 +6474,20 @@
                     {
                         "id": "5eda1d6ec586607c09662d54",
                         "description": "Mark the first trading post with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5eda1da9a58a4c49c74165ee",
                         "description": "Mark the second trading post with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5eda1dd3317f6066993c1744",
                         "description": "Mark the third trading post with an MS2000 Marker on Shoreline",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5f0389268580cc37797e0026",
@@ -6498,7 +6565,7 @@
                 "objectives": [
                     {
                         "id": "5edabb0b0c502106f869bc03",
-                        "description": "Obtain Sanitar's surgery kit marked with a blue symbol",
+                        "description": "Locate and obtain Sanitar's surgery kit marked with a blue symbol on Shoreline",
                         "type": "findQuestItem",
                         "requiredKeys": null
                     },
@@ -6510,7 +6577,7 @@
                     },
                     {
                         "id": "5edabbff0880da21347b382b",
-                        "description": "Obtain Sanitar's ophthalmoscope",
+                        "description": "Locate and obtain Sanitar's ophthalmoscope on Shoreline",
                         "type": "findQuestItem",
                         "requiredKeys": [
                             [
@@ -6778,7 +6845,7 @@
                 "objectives": [
                     {
                         "id": "617bf1e1d93d977d2452051f",
-                        "description": "Eliminate Rogue USEC operatives",
+                        "description": "Eliminate Rogues on Lighthouse",
                         "type": "shoot",
                         "count": 10
                     }
@@ -7286,19 +7353,19 @@
                 "objectives": [
                     {
                         "id": "6578eb36e5020875d64645d0",
-                        "description": "Locate and eliminate Kollontai on Streets of Tarkov",
+                        "description": "Locate and eliminate Kollontay on Streets of Tarkov",
                         "type": "shoot",
                         "count": 1
                     },
                     {
                         "id": "6580130847df99b0741919f0",
-                        "description": "Eliminate Kollontai's guards on Streets of Tarkov",
+                        "description": "Eliminate Kollontay's guards on Streets of Tarkov",
                         "type": "shoot",
                         "count": 4
                     },
                     {
                         "id": "6582b05dc992d6dcc0a40c75",
-                        "description": "Hand over Kollontai's police baton",
+                        "description": "Hand over the found in raid Kollontay's police baton",
                         "type": "giveItem",
                         "count": 1,
                         "foundInRaid": true
@@ -7368,17 +7435,20 @@
                     {
                         "id": "5b478d8986f774563c7a4809",
                         "description": "Locate and mark the first yellow minibus with an MS2000 Marker on Interchange",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5b478daf86f7744d1c35339b",
                         "description": "Locate and mark the second yellow minibus with an MS2000 Marker on Interchange",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5b478dca86f7744d190d91c2",
                         "description": "Locate and mark the third yellow minibus with an MS2000 Marker on Interchange",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5b478de086f7744d1c3533a1",
@@ -7652,7 +7722,7 @@
                 "objectives": [
                     {
                         "id": "5c1242fa86f7742aa04fed52",
-                        "description": "Eliminate PMC operatives in the time period of 22:00-05:00 (Excluding Factory and The Lab)",
+                        "description": "Eliminate PMC operatives in the time period of 21:00-06:00 (Excluding Factory and The Lab)",
                         "type": "shoot",
                         "count": 30
                     }
@@ -7676,22 +7746,26 @@
                     {
                         "id": "617bf5860cf4a041de5b396b",
                         "description": "Find and mark the group of fuel tanks with an MS2000 Marker on Lighthouse",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "61926522b0295324b5484459",
                         "description": "Find and mark the first tanker truck with an MS2000 Marker on Lighthouse",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6192653d80c326298126aee1",
                         "description": "Find and mark the second tanker truck with an MS2000 Marker on Lighthouse",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "61926544bb0c712ed42d583c",
                         "description": "Find and mark the third tanker truck with an MS2000 Marker on Lighthouse",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -7912,14 +7986,14 @@
                 "objectives": [
                     {
                         "id": "5ae9bc6e86f7746e0026222c",
-                        "description": "Hand over the armor",
+                        "description": "Hand over the found in raid 6B13 assault armor in 0-50% durability",
                         "type": "giveItem",
                         "count": 1,
                         "foundInRaid": true
                     },
                     {
                         "id": "5ae9bea886f77468ab400e64",
-                        "description": "Hand over the armor",
+                        "description": "Hand over the found in raid 6B13 assault armor in 50-100% durability",
                         "type": "giveItem",
                         "count": 1,
                         "foundInRaid": true
@@ -8054,7 +8128,7 @@
                 "objectives": [
                     {
                         "id": "63a9b229813bba58a50c9ee6",
-                        "description": "Eliminate any hostile from over 100 meters away while using AR-15 platform weapons",
+                        "description": "Eliminate any enemy from over 100 meters away while using AR-15 platform weapons",
                         "type": "shoot",
                         "count": 30
                     }
@@ -8188,7 +8262,7 @@
                 "objectives": [
                     {
                         "id": "63a9ae63da7999196148ba5c",
-                        "description": "Eliminate any hostile from over 100 meters away while using AK-74 series weapons",
+                        "description": "Eliminate any enemy from over 100 meters away while using AK-74 series weapons",
                         "type": "shoot",
                         "count": 30
                     }
@@ -8553,7 +8627,7 @@
                 "objectives": [
                     {
                         "id": "5d357e0e86f7745b3f307c56",
-                        "description": "Locate Jaeger's room with a view of a bay in the Health Resort",
+                        "description": "Locate Jaeger's Health Resort room with a view of the bay on Shoreline",
                         "type": "visit"
                     },
                     {
@@ -8612,7 +8686,7 @@
                     },
                     {
                         "id": "6573058b4e3f646b0e364add",
-                        "description": "Locate the third group of ATMs on Klimov Street on Streets of Tarkov",
+                        "description": "Locate the group of ATMs on Klimov Street on Streets of Tarkov",
                         "type": "visit"
                     },
                     {
@@ -9108,17 +9182,20 @@
                     {
                         "id": "5c10f94386f774227172c574",
                         "description": "Locate and mark the first fuel stash with an MS2000 Marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5c10f94386f774227172c575",
                         "description": "Locate and mark the second fuel stash with an MS2000 Marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5c10f94386f774227172c576",
                         "description": "Locate and mark the third fuel stash with an MS2000 Marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5c10f94386f774227172c577",
@@ -9687,7 +9764,7 @@
                 "objectives": [
                     {
                         "id": "5c0be2b486f7747bcb347d58",
-                        "description": "Reach the required Sniper Rifles skill level",
+                        "description": "Reach the required Bolt-action Rifles skill level",
                         "type": "skill",
                         "skillLevel": {
                             "level": 10
@@ -9793,7 +9870,7 @@
                     },
                     {
                         "id": "65e08db1a97b2cd4e452432d",
-                        "description": "65e08db1a97b2cd4e452432d",
+                        "description": "Reach level 4 loyalty with Jaeger",
                         "type": "traderLevel"
                     }
                 ]
@@ -9886,22 +9963,26 @@
                     {
                         "id": "625ecedaa4eb80027c4f2e0b",
                         "description": "Set up the retransmitter inside the MI-8 helicopter at the water treatment plant",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "625ecee6f7308432be1d44c7",
                         "description": "Set up the retransmitter inside the abandoned USEC cottage",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "625eceebc4874104f230c0c7",
                         "description": "Set up the retransmitter at a high elevation overlooking the lighthouse",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6386410704a59f742a7a3b45",
                         "description": "Set up the retransmitter on the roof of the sunken building at the shore",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -9946,22 +10027,26 @@
                     {
                         "id": "62602852c48e6c62a440fab6",
                         "description": "Locate and mark the first bunker with an MS2000 marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "62602858efebc4442a7b3876",
                         "description": "Locate and mark the second bunker with an MS2000 marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6260285c1ed3bb5bcc5bd9e8",
                         "description": "Locate and mark the third bunker with an MS2000 marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "638643e03674202b7d07c9e5",
                         "description": "Locate and mark the fourth bunker with an MS2000 marker on Woods",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -10273,12 +10358,14 @@
                     {
                         "id": "6397a6942e519e69d2139b25",
                         "description": "Locate and mark the first Patrol-A armored vehicle with an MS2000 Marker on Streets of Tarkov",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6397a7ce706b793c7d6094c9",
                         "description": "Locate and mark the second Patrol-A armored vehicle with an MS2000 Marker on Streets of Tarkov",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -10599,7 +10686,7 @@
                 "objectives": [
                     {
                         "id": "639a169e6cd47c525121a116",
-                        "description": "Reach the required Sniper Rifles skill level",
+                        "description": "Reach the required Bolt-action Rifles skill level",
                         "type": "skill",
                         "skillLevel": {
                             "level": 10
@@ -10642,7 +10729,8 @@
                     {
                         "id": "639aea2228d8a21b593a3491",
                         "description": "Mark the cargo area with an MS2000 Marker",
-                        "type": "mark"
+                        "type": "mark",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63bd64ba3d34b0e64b0d0a17",
@@ -12526,7 +12614,7 @@
                     },
                     {
                         "id": "65b10c6a8511b7ef8694e060",
-                        "description": "65b10c6a8511b7ef8694e060",
+                        "description": "Hand over the found in raid item: Glorious E lightweight armored mask",
                         "type": "giveItem",
                         "count": 1,
                         "foundInRaid": true
