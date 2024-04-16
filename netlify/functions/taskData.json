@@ -13,7 +13,8 @@
                     {
                         "id": "65732ac3c67dcd96adffa3c7",
                         "description": "Locate the Emercom station on Ground Zero",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65817bf31404f3565aef9fec",
@@ -36,12 +37,14 @@
                     {
                         "id": "657333fee3fbaa77d3b5cd7c",
                         "description": "Locate the Utyos machine gun on Ground Zero",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6573340403f471fb2bb12df1",
                         "description": "Locate the AGS grenade launcher on Ground Zero",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "657334311dbb8b7569bb83c4",
@@ -80,17 +83,20 @@
                     {
                         "id": "6575a524a39d2be74e620546",
                         "description": "Locate the USEC PMC group at the parking lot of the TerraGroup complex on Ground Zero",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6575a62a62028c6d5cb43cb7",
                         "description": "Locate the lab scientist on Ground Zero",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6575a64d3fc09bdfb38b713d",
                         "description": "Access the scientist's office",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65817fbbb454159976c91917",
@@ -185,7 +191,8 @@
                     {
                         "id": "6575aa67197bd678a0c3f552",
                         "description": "Locate the liquor store on Ground Zero",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65817cabba2ba6ef71fc72ca",
@@ -473,7 +480,8 @@
                     {
                         "id": "63ac18f4972364554162a25c",
                         "description": "Find Jaeger's camp at the specified spot on Woods",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5d249a6e86f774791546e952",
@@ -961,7 +969,8 @@
                     {
                         "id": "5ca6026286f77446d87abec3",
                         "description": "Gain access to the locked pumping station on Factory",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5cb6f32986f7746ef55e17a0",
@@ -1028,12 +1037,14 @@
                     {
                         "id": "5fd9fad9c1ce6b1a3b486d03",
                         "description": "Locate Prapor's missing convoy on Woods",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5fd9fad9c1ce6b1a3b486d05",
                         "description": "Locate the temporary USEC camp",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5fd9fad9c1ce6b1a3b486d0d",
@@ -1124,22 +1135,26 @@
                     {
                         "id": "63a98cfbc31b00242d28a95b",
                         "description": "Scout the Shestyorochka store at Nikitskaya street",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a98d24655ec5555b4aa9e7",
                         "description": "Scout the Sparja store at Primorsky ave",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a98d39da7999196148ba3a",
                         "description": "Scout the Sparja store in Pinewood hotel",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a98d60c0f61a5d8731cd9f",
                         "description": "Scout the Goshan store in Concordia",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a98cdf655ec5555b4aa9e6",
@@ -1215,7 +1230,14 @@
                     {
                         "id": "5a3fb73b86f77458e0324376",
                         "description": "Locate the water stockpile hidden inside of the dorms on Customs",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Dorm 206"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5968a06486f7740d14064728",
@@ -1243,7 +1265,8 @@
                     {
                         "id": "5a3fbdb086f7745a554f0c31",
                         "description": "Gain access to the locked room in the office hallway on the third floor on Factory",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5968941f86f7740d1570bbd2",
@@ -1359,12 +1382,14 @@
                     {
                         "id": "5a3fbabc86f774231d75afbe",
                         "description": "Locate the messenger's body",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a3fbab086f77421593d9bf0",
                         "description": "Locate the place where the messenger hid the cargo",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -1601,7 +1626,8 @@
                     {
                         "id": "5a3fbe3a86f77414422e0d9b",
                         "description": "Locate the locked bunker on Woods",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -1674,12 +1700,14 @@
                     {
                         "id": "5ee8eea538ca5b3b4f3c4647",
                         "description": "Locate the underground bunker on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ee8eecc0b4ef7326256c660",
                         "description": "Locate the control room in the underground bunker on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ee0e5a8c321a77fc55084d2",
@@ -1748,12 +1776,14 @@
                     {
                         "id": "5a3fb8f686f7742384533f10",
                         "description": "Locate the paramedic’s car on Customs",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a3fb92286f77422b46cdb18",
                         "description": "Find a way inside the two-story dorm room 114 on Customs",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -1807,7 +1837,8 @@
                     {
                         "id": "5a3fbbfd86f77459d52a16a8",
                         "description": "Locate the sleeping place of the former Deputy Chief of Security on Customs",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -1863,7 +1894,8 @@
                     {
                         "id": "5a3ba11786f7742c9d4f5d29",
                         "description": "Locate the boat hidden next to the breakwater on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a27d81a86f774472a6e0456",
@@ -2213,7 +2245,8 @@
                     {
                         "id": "5a3ba34286f7744eb240406a",
                         "description": "Locate the first UAV crash site on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a27ffb186f774192932b3d5",
@@ -2230,7 +2263,8 @@
                     {
                         "id": "5a3ba3b086f7745ab1081101",
                         "description": "Locate the second UAV crash site on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a294f1686f774340c7b7e4a",
@@ -2264,7 +2298,8 @@
                     {
                         "id": "5a3fbc9586f77459d52a16c4",
                         "description": "Locate the transport with the chemicals on Customs",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "59b242ea86f7741e6e0e7a86",
@@ -2298,7 +2333,8 @@
                     {
                         "id": "5a3fc1f286f7744ccc15d643",
                         "description": "Locate the transport with the chemicals on Customs",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5998366886f77455853b2d9f",
@@ -2332,7 +2368,8 @@
                     {
                         "id": "5a3fbec386f77413bd5fc20a",
                         "description": "Locate the transport with the chemicals on Customs",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5998360886f77456936817f3",
@@ -2532,12 +2569,14 @@
                     {
                         "id": "5a3ba47986f7744df8667505",
                         "description": "Locate the first truck that was holding the lost UN cargo on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a3ba4ba86f7744df759b1e5",
                         "description": "Locate the second truck that was holding the lost UN cargo on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -2596,12 +2635,14 @@
                     {
                         "id": "5ac5e0fa86f77431c305d243",
                         "description": "Locate the first signal source on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ac5e13586f7746074388f93",
                         "description": "Locate the second signal source on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ac5e18c86f7743ebd6c9575",
@@ -2681,7 +2722,8 @@
                     {
                         "id": "5a3ba51d86f7743af1475c3a",
                         "description": "Locate the missing informant on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a28051286f7740eb10bac04",
@@ -2817,12 +2859,23 @@
                     {
                         "id": "5a3ba62786f7742c9d4f5ee9",
                         "description": "Locate the generators in the east wing of the Health Resort",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a3ba65f86f7743af1475f11",
                         "description": "Locate the generators in the west wing of the Health Resort",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "W219 San"
+                                },
+                                {
+                                    "shortName": "W220 San"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5c94f65286f77455185027ee",
@@ -3014,7 +3067,8 @@
                     {
                         "id": "5a3ba76486f7744d39436da2",
                         "description": "Locate the room with reservoirs in the Health Resort",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a2819c886f77460ba564f38",
@@ -3048,7 +3102,8 @@
                     {
                         "id": "5a3ba7db86f7744f0e568c9c",
                         "description": "Locate the hidden TerraGroup cargo on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a37de5486f7741535394d69",
@@ -3267,22 +3322,26 @@
                     {
                         "id": "5ac61a8a86f7743a8d663c77",
                         "description": "Locate the first Factory extraction",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ac61ab986f7746e352cec8c",
                         "description": "Locate the second Factory extraction",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ac61adf86f774741c1bf096",
                         "description": "Locate the third Factory extraction",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a865ce1943b749b5021f86",
                         "description": "Locate the fourth Factory extraction",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ac61b1486f7743a8f30fc84",
@@ -3339,7 +3398,14 @@
                     {
                         "id": "63ac232087413d64ae0ac23c",
                         "description": "Locate the hidden recording studio on Lighthouse",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "OR"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "626c3158a371ee3a7a3514cc",
@@ -3368,12 +3434,20 @@
                     {
                         "id": "64f731fa39e45b527a7c4300",
                         "description": "Locate and scout the vet clinic on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "64f732240e186112c4455d84",
                         "description": "Locate and scout the x-ray technician's room on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "X-ray"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "64f7325739e45b527a7c4302",
@@ -3401,17 +3475,20 @@
                     {
                         "id": "6573387d0b26ed4fde798de4",
                         "description": "Locate the first pharmacy on Primorsky Ave on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "657338ded9b444e1fb07b1a8",
                         "description": "Locate the second pharmacy on Primorsky Ave on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "657338ed8e8e3a05445b760d",
                         "description": "Locate the third pharmacy at Cardinal apartment complex on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "658009db6b313a8a4ed58851",
@@ -3630,7 +3707,8 @@
                     {
                         "id": "6087d553d79a2b4e943482bf",
                         "description": "Locate and inspect the first BMP-2 on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6086c8ed1b0bb8063d5babb7",
@@ -3641,7 +3719,8 @@
                     {
                         "id": "60882695949eb1096c454fcd",
                         "description": "Locate and inspect the second BMP-2 on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "608826d0a3994358a0751cfc",
@@ -3652,7 +3731,14 @@
                     {
                         "id": "608826f3949eb1096c454fd0",
                         "description": "Locate and inspect the third BMP-2 on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "RB-ST"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "60882714c18cfa2a4e2afe59",
@@ -3669,7 +3755,8 @@
                     {
                         "id": "6088274a82e40b3c727fd164",
                         "description": "Locate and inspect the fourth BMP-2 on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "60882779d241f77b8a49785d",
@@ -3680,7 +3767,8 @@
                     {
                         "id": "60892585b90d6f39cb74b114",
                         "description": "Locate and inspect the first LAV III on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "608925d455f4ac386d7e7fc4",
@@ -3691,12 +3779,14 @@
                     {
                         "id": "60892590fa70fc097863b8e5",
                         "description": "Locate and inspect the second LAV III on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "608930aa1124f748c94b801e",
                         "description": "Locate and inspect the T-90 tank on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -3741,7 +3831,8 @@
                     {
                         "id": "5ac6240786f77417204ca2b9",
                         "description": "Locate the warehouse of seized goods on Customs",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ac6248586f77416781dd3a3",
@@ -3781,7 +3872,8 @@
                     {
                         "id": "608a94101a66564e74191fc3",
                         "description": "Find the unpowered secret exit on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "608a94ae1a66564e74191fc6",
@@ -3809,7 +3901,8 @@
                     {
                         "id": "5a3ba97386f77459df27d10e",
                         "description": "Locate the fishermen's dwelling on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a281efe86f7745bc42005cc",
@@ -3843,7 +3936,8 @@
                     {
                         "id": "5a3baa2586f7745b791b72fa",
                         "description": "Find Artyom’s car on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a37db0c86f7745b8f4be68a",
@@ -4230,7 +4324,14 @@
                     {
                         "id": "5a3fc03286f77414d64f9941",
                         "description": "Gain access to dorm room 214",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Dorm 214"
+                                }
+                            ]
+                        ]
                     }
                 ]
             },
@@ -4252,27 +4353,32 @@
                     {
                         "id": "5ee8ec5ed72d953f5d2aabd1",
                         "description": "Locate the hermetic door leading to the hospital (White Bishop)",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ee8ecd75eb3205dae135d17",
                         "description": "Locate one of the two hermetic doors leading to the academy building (Black Bishop)",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ee8ed18d72d953f5d2aabd4",
                         "description": "Locate one of the two hermetic doors leading to barracks #1 (Black Pawn)",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ee8eddde932d53763761b2c",
                         "description": "Locate one of the two hermetic doors leading to barracks #2 (White Pawn)",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ee8edf1500391756d7498a7",
                         "description": "Locate the hermetic door leading to the building of the air control center (King)",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ee0e722c321a77fc55084d5",
@@ -4469,7 +4575,8 @@
                     {
                         "id": "63a7d99804d3dc28a52a2106",
                         "description": "Locate the place of bloody broadcast inside the grocery store on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639da5ec8fe84d33a25a1435",
@@ -4567,7 +4674,8 @@
                     {
                         "id": "64ee9df4496db64f9b7a4433",
                         "description": "Locate the cause of the signal jamming on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "64ee9df4496db64f9b7a4435",
@@ -4656,7 +4764,8 @@
                     {
                         "id": "63a7d64710b7a13eb015961f",
                         "description": "Locate the chemical laboratory on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639135e0fa894f0a866afde7",
@@ -4840,27 +4949,32 @@
                     {
                         "id": "5ae4508386f7741250488337",
                         "description": "Locate and check the AVOKADO store on Interchange",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae450db86f7741250488359",
                         "description": "Locate and check the KOSTIN store on Interchange",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae450ee86f7740f9307859d",
                         "description": "Locate and check the tRend store on Interchange",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae4510786f7740fa614399f",
                         "description": "Locate and check the DINO CLOTHES store on Interchange",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae4511d86f7740ffc31ccb5",
                         "description": "Locate and check the TOP BRAND store on Interchange",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5ae4514986f7740e915d218c",
@@ -4969,7 +5083,8 @@
                     {
                         "id": "63a7db4a3e491955e65fb88b",
                         "description": "Locate the apartment of Prapor's friend on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639c8c875573fd6cc27d99bb",
@@ -5077,27 +5192,56 @@
                     {
                         "id": "608bd0a053b9dd01a116f474",
                         "description": "Check the first arsenal in the eastern barracks (Black Pawn) on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "608bd2465e0ef91ab810f98a",
                         "description": "Check the duty room in the eastern barracks (Black Pawn) on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "RB-OB"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "608bd0c20637f21f9934b6e4",
                         "description": "Check the second arsenal in the eastern barracks (Black Pawn) on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "RB-ORB3"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "608bd136c61c4b541b381da3",
                         "description": "Check the first arsenal in the southern barracks (White Pawn) on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "RB-ORB1"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "608bd149f597ad0a33574d74",
                         "description": "Check the second arsenal in the southern barracks (White Pawn) on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "RB-ORB2"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "608c187853b9dd01a116f480",
@@ -5160,7 +5304,8 @@
                     {
                         "id": "65802b627b44fa5e1463889a",
                         "description": "Locate Ragman's SUV on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65802bfabac8c53c548fca2a",
@@ -5535,7 +5680,8 @@
                     {
                         "id": "63ac1e0a87413d64ae0ac233",
                         "description": "Locate the helicopter at the water treatment plant on Lighthouse",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6179b804bca27a099552e057",
@@ -5592,17 +5738,20 @@
                     {
                         "id": "63ac1b741b5c95746621ddb4",
                         "description": "Recon the roof of the first office building on Lighthouse",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63ac1bd387413d64ae0ac22b",
                         "description": "Recon the roof of the second office building on Lighthouse",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63ac1c56972364554162a25e",
                         "description": "Recon the roof of the third office building on Lighthouse",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "62987d43b7bd956bd62a09b3",
@@ -5745,17 +5894,20 @@
                     {
                         "id": "5d357b6c86f774588d4d7e25",
                         "description": "Locate the chairman's house in the abandoned village on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5d357b9586f7745b422d653f",
                         "description": "Locate the fisherman's house in the abandoned village on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5d357bb786f774588d4d7e27",
                         "description": "Locate the priest's house in the abandoned village on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "629f4f080f57046e362e6e9e",
@@ -5783,7 +5935,8 @@
                     {
                         "id": "5d8a05d086f77410b4225d10",
                         "description": "Locate the food storage location on Reserve",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "629f1259422dff20ff234b4d",
@@ -5905,12 +6058,14 @@
                     {
                         "id": "63a7d53904d3dc28a52a2100",
                         "description": "Locate the cargo convoy on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a7d58004d3dc28a52a2102",
                         "description": "Determine the ambush spot",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639cee16f5765f47cc7f0ea1",
@@ -5938,12 +6093,14 @@
                     {
                         "id": "63a7d444f32fa1316250c3d5",
                         "description": "Locate the cargo convoy on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a7d461f32fa1316250c3d7",
                         "description": "Determine the ambush spot",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639cdf9aad9d7e3216668fd0",
@@ -5971,7 +6128,8 @@
                     {
                         "id": "63a7d8665199ab1f7d4a7747",
                         "description": "Locate the surveillance spot on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639136fa9444fb141f4e6eef",
@@ -6011,7 +6169,8 @@
                     {
                         "id": "63ac22b8f627f540861d1b2d",
                         "description": "Locate the place of bloody broadcast inside the old house on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a511ea30d85e10e375b047",
@@ -6039,7 +6198,8 @@
                     {
                         "id": "63a7da6f5199ab1f7d4a774a",
                         "description": "Locate the balletmeister's apartment on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a7daae04d3dc28a52a2109",
@@ -6238,7 +6398,8 @@
                     {
                         "id": "5a68770f86f774747d4b0d8b",
                         "description": "Locate the van of the Health Resort medical services director on Woods",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a68776786f774759f1f55f6",
@@ -6303,7 +6464,8 @@
                     {
                         "id": "5a6879be86f774284429b1bb",
                         "description": "Locate the drop spot on night-time Factory",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5a687a1c86f7745f2152168c",
@@ -6402,7 +6564,8 @@
                     {
                         "id": "63ac22351b5c95746621ddc4",
                         "description": "Locate the hideout of Jaeger's friend on Lighthouse",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "61904e76f62c89219a56e04c",
@@ -6436,17 +6599,20 @@
                     {
                         "id": "5edab7d3cc183c769d778bc5",
                         "description": "Locate the group that was sent to the Health Resort on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5edab8890880da21347b3826",
                         "description": "Locate the group that was sent to the pier on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5edab8e216d985118871ba18",
                         "description": "Locate the group that was sent to the cottages on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5f03969a51823847c253afa0",
@@ -6934,7 +7100,8 @@
                     {
                         "id": "64f5aac4b63b74469b6c14c7",
                         "description": "Locate the place of work of Prapor's friend on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "64f5b876a2a5bb727b61c5ad",
@@ -7198,7 +7365,8 @@
                     {
                         "id": "6573397ef3f8344c4575cd88",
                         "description": "Locate the real estate fund on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6581676e7a18ff402fd23e68",
@@ -7243,7 +7411,14 @@
                     {
                         "id": "5f0488c590eea473df674002",
                         "description": "Locate Sanitar's office in the health resort",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "San tape"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5f04983ffbed7a08077b4367",
@@ -7395,7 +7570,14 @@
                     {
                         "id": "5eec9d054110547f1f545c99",
                         "description": "Find Sanitar's workplace in The Lab",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Keycard"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "5eff5674befb6436ce3bbaf7",
@@ -7558,7 +7740,8 @@
                     {
                         "id": "65802779963422318339533a",
                         "description": "Locate the smugglers' base on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65802779963422318339533c",
@@ -8063,12 +8246,20 @@
                     {
                         "id": "65733403eefc2c312a759ddc",
                         "description": "Locate the IT firm office on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65801ad655315fdce2096bec",
                         "description": "Unravel the secret of the firm's success",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Negotiations"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "65801b07a26e65a69c2fedd1",
@@ -8096,7 +8287,14 @@
                     {
                         "id": "6573382e557ff128bf3da537",
                         "description": "Unravel the secret of the IT firm's employees' high morale on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Relax"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "65800413f41301adef3c9698",
@@ -8291,7 +8489,8 @@
                     {
                         "id": "63a7d8f404d3dc28a52a2104",
                         "description": "Locate the musician gathering spot on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639135bbc115f907b14700a7",
@@ -8325,7 +8524,8 @@
                     {
                         "id": "63ac0c99f83fd608393890bf",
                         "description": "Find the lost group in the chalet area on Lighthouse",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6190464d74169a76c90aa230",
@@ -8416,7 +8616,8 @@
                     {
                         "id": "63ac210b1287ef0b827d0cb8",
                         "description": "Locate the hidden drug lab on Lighthouse",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "626c3010a371ee3a7a3514cb",
@@ -8445,7 +8646,8 @@
                     {
                         "id": "63a7d6d61f06d111271f5aeb",
                         "description": "Locate the cultist meeting spot on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639da86bad9d7e3216668fd7",
@@ -8501,7 +8703,8 @@
                     {
                         "id": "64ee9a979878a0569d6ec8cb",
                         "description": "Locate the ritual spot on Chekannaya st. on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "64ee9b5a1a5f313cb144bf87",
@@ -8628,7 +8831,8 @@
                     {
                         "id": "5d357e0e86f7745b3f307c56",
                         "description": "Locate Jaeger's Health Resort room with a view of the bay on Shoreline",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "5d357e8786f7745b5e66a51a",
@@ -8662,77 +8866,92 @@
                     {
                         "id": "6573057d66de94c756a60472",
                         "description": "Locate the first ATM on Nizhnaya Sadovaya Street on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65730580123b33fa7bb1a9fc",
                         "description": "Locate the second ATM on Nizhnaya Sadovaya Street on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "657305885511555648dbb952",
                         "description": "Locate the ATM on Razvedchikov Street on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6572e876dc0d635f633a5718",
                         "description": "Locate the first group of ATMs on Klimov Street on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65730579d50436e87723dae4",
                         "description": "Locate the first ATM on Klimov Street on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6573058b4e3f646b0e364add",
                         "description": "Locate the group of ATMs on Klimov Street on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6573058d6a542c099ce5d92b",
                         "description": "Locate the second ATM on Klimov Street on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6573058f5c2ba64444301c25",
                         "description": "Locate the fourth group of ATMs on Klimov Street on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65730595fd5ec1426ebd5484",
                         "description": "Locate the fifth group of ATMs on Klimov Street on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "657305913186869491d7f5fd",
                         "description": "Locate the third ATM on Klimov Street on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65730593d4b1bd9359203a74",
                         "description": "Locate the fourth ATM on Klimov Street on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6573058510b6071846639907",
                         "description": "Locate the first ATM on Primorsky Ave on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "65730597d64537696cc661c6",
                         "description": "Locate the second ATM on Primorsky Ave on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "657305989d1d1fe81237e9e7",
                         "description": "Locate the third ATM on Primorsky Ave on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "6573059ace022903ee1e6b11",
                         "description": "Locate the ATM at the expo on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -9016,7 +9235,8 @@
                     {
                         "id": "63ac1a941b5c95746621ddb2",
                         "description": "Locate the crashed helicopter on Lighthouse",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "61a00eff2d708d41a34f19b4",
@@ -9509,7 +9729,8 @@
                     {
                         "id": "63a7cd3aee7b4d0d5507baee",
                         "description": "Find the debtor on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639dbba35b759c65a3476549",
@@ -9664,7 +9885,14 @@
                     {
                         "id": "63a7d767f32fa1316250c3da",
                         "description": "Locate where the missing group was held captive on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Iron gate"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "63972c5d61b7754ff93bf3ba",
@@ -9692,12 +9920,20 @@
                     {
                         "id": "63a7dbc31943b749b5021ec3",
                         "description": "Locate the improvised jail warden's apartment on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a7dbefee7b4d0d5507baf8",
                         "description": "Find out what happened to the warden",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Chek 15"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "63972db222ea23711e21aaaa",
@@ -10176,7 +10412,8 @@
                     {
                         "id": "63ab617b87413d64ae0ac210",
                         "description": "Check if the radio transmitter works near the Lighthouse peninsula",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "62602c89a4eb80027c4f2e0f",
@@ -10223,7 +10460,8 @@
                     {
                         "id": "63ab727b1287ef0b827d0c95",
                         "description": "Visit the Lighthouse building",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -10312,7 +10550,8 @@
                     {
                         "id": "63ab6a89e842787ad2135719",
                         "description": "Visit the Lighthouse building",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     }
                 ]
             },
@@ -10387,7 +10626,8 @@
                     {
                         "id": "63a7cee004d3dc28a52a20f8",
                         "description": "Locate the informant's backup hideout",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63990a1ddcdd126fef1771c1",
@@ -10601,12 +10841,14 @@
                     {
                         "id": "63a7cf9f04d3dc28a52a20fa",
                         "description": "Search the weapon testing area in The Lab",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "63a7cfe104d3dc28a52a20fc",
                         "description": "Search the human experiment room in The Lab",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639ae49a5e3c9b787264d675",
@@ -10640,7 +10882,8 @@
                     {
                         "id": "63a7d2acee7b4d0d5507baf2",
                         "description": "Locate a good sniping position in Concordia overlooking the construction site",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639c359f0a20a7001f00c7a8",
@@ -10652,7 +10895,8 @@
                     {
                         "id": "63a7d315f32fa1316250c3d2",
                         "description": "Locate a good sniping position at Primorsky overlooking the movie theater",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639c39807c1532d85b0162a9",
@@ -10718,7 +10962,8 @@
                     {
                         "id": "63bd64552803ffbfad0e3e48",
                         "description": "Locate the transport holding the cargo on Streets of Tarkov",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": null
                     },
                     {
                         "id": "639ae7423174277743234bb7",
@@ -10986,7 +11231,14 @@
                     {
                         "id": "63ac19f9de609574d97adf78",
                         "description": "Locate the radar station commandant's office on Lighthouse",
-                        "type": "visit"
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Radar"
+                                }
+                            ]
+                        ]
                     },
                     {
                         "id": "62863b9ae5b4f5010e0d30c8",

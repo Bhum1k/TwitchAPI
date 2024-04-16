@@ -1,7 +1,7 @@
 const fs = require('fs');
 const axios = require('axios');
 
-const data = {
+let data = {
     "data": {
         "tasks": [
             {
@@ -13524,10 +13524,6 @@ function printMatch(task) {
     let objectiveGroup = "";
     let objective_list = [];
 
-    for (let objective of task.objectives) {
-        objective_list.push(objective.description);
-    }
-
     let filteredObjectives = task.objectives.filter(obj => !obj.description.includes("Hand over"));
 
     if (filteredObjectives.length === 0) {
@@ -13547,11 +13543,23 @@ function printMatch(task) {
                     // console.log(i);
                     keyList.push(objective.requiredKeys[0][i].shortName);
                 }
-                // console.log(keyList);
+                console.log(keyList);
                 objective.description = `${objective.description} (Keys: ${keyList.join(", ")})`;
+                console.log(objective.description);
+            } else {
+                console.log("Key not found");
             }
+        } else {
+            console.log(objective.type);
         }
     }
+
+    for (let objective of task.objectives) {
+        objective_list.push(objective.description);
+    }
+
+
+    console.log(task.objectives);
 
     // Function to find common prefix
     function findCommonPrefix(descriptions) {
@@ -13637,6 +13645,7 @@ function printMatch(task) {
     // Print task name, kappa requirement, and trader name
     returnPrompt = task.name + kappaNeeded + " | " + traderName + " | " + objectiveGroup;
     // console.log(returnPrompt.length);
+    console.log(returnPrompt);
     return returnPrompt;
 }
 
@@ -13674,12 +13683,12 @@ async function fetchItemData(taskID) {
     }
 }
 
-returnOutput("broadcast 1");
+returnOutput("broadcast 1", data);
 
 // Example usage
-function returnOutput(searchTerm) {
+function returnOutput(searchTerm, jsonData) {
     const filePath = 'taskData.json';
-    const taskData = data;
+    let taskData = jsonData;
 
     if (taskData) {
         const taskNames = taskData.data.tasks;
@@ -13724,7 +13733,7 @@ exports.handler = async (event, context) => {
         const { queryStringParameters } = event;
         const queryTerm = queryStringParameters && queryStringParameters.query;
 
-        const output = returnOutput(queryTerm);
+        const output = returnOutput(queryTerm, data);
 
         return {
             statusCode: 200,
