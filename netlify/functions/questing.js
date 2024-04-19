@@ -1,7 +1,7 @@
 const fs = require('fs');
 const axios = require('axios');
 
-let data = {
+const data = {
     "data": {
         "tasks": [
             {
@@ -13425,6 +13425,49 @@ let data = {
     }
 }
 
+// Function to recursively freeze an object and its nested properties
+function deepFreeze(obj) {
+    // Retrieve the property names of obj
+    const propNames = Object.getOwnPropertyNames(obj);
+
+    // Freeze properties before freezing self
+    propNames.forEach(function (name) {
+        const prop = obj[name];
+
+        // If prop is an object or array, recursively freeze it
+        if (typeof prop === 'object' && prop !== null) {
+            deepFreeze(prop);
+        }
+    });
+
+    // Freeze self (no-op if already frozen)
+    return Object.freeze(obj);
+}
+
+// Recursively freeze the tasks array and its nested properties
+data.data.tasks.forEach(task => {
+    deepFreeze(task);
+});
+
+deepFreeze(data);
+
+// Deep clone function
+function deepClone(obj) {
+    if (obj === null || typeof obj !== 'object') {
+        return obj;
+    }
+
+    const clone = Array.isArray(obj) ? [] : {};
+
+    for (let key in obj) {
+        if (Object.prototype.hasOwnProperty.call(obj, key)) {
+            clone[key] = deepClone(obj[key]);
+        }
+    }
+
+    return clone;
+}
+
 // Function to load data from JSON file
 function loadTaskData(filePath) {
     try {
@@ -13683,12 +13726,13 @@ async function fetchItemData(taskID) {
     }
 }
 
-returnOutput("broadcast 1", data);
+// returnOutput("guide", data);
+
 
 // Example usage
 function returnOutput(searchTerm, jsonData) {
     const filePath = 'taskData.json';
-    let taskData = jsonData;
+    let taskData = deepClone(jsonData);
 
     if (taskData) {
         const taskNames = taskData.data.tasks;
