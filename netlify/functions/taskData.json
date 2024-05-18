@@ -9491,6 +9491,12 @@
                         "description": "Eliminate Scavs while wearing a UN uniform (UNTAR helmet, MF-UNTAR body armor, M4A1 rifle) on Streets of Tarkov",
                         "type": "shoot",
                         "count": 12
+                    },
+                    {
+                        "id": "65e08aa9f5879b2586d5fd4c",
+                        "description": "Eliminate Scavs while wearing a UN uniform (UNTAR helmet, MF-UNTAR body armor, M4A1 rifle) on Ground Zero",
+                        "type": "shoot",
+                        "count": 12
                     }
                 ]
             },
@@ -11587,7 +11593,14 @@
                         "description": "Survive and extract from Streets of Tarkov with the \"Survived\" exit status",
                         "type": "extract",
                         "count": 1
+                    },
+                    {
+                        "id": "63aec66556503c322a190372",
+                        "description": "Survive and extract from Ground Zero with the \"Survived\" exit status",
+                        "type": "extract",
+                        "count": 1
                     }
+                    
                 ]
             },
             {

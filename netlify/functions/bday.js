@@ -2,7 +2,7 @@ const axios = require('axios');
 
 exports.handler = async (event, context) => {
     try {
-        const CentralDateTimeData = await axios.get('https://decapi.me/misc/time?timezone=America/Chicago&format=F%20j,%20o,%20g:i:s%20a');
+        const CentralDateTimeData = await axios.get('https://decapi.me/misc/time?timezone=America/Los_Angeles&format=F%20j,%20o,%20g:i:s%20a');
         const CentralDateTime = CentralDateTimeData.data;
 
         const BDayTime = "May 26, 2024, 0:00:00 am";
