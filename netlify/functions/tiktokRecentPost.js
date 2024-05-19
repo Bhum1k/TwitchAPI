@@ -30,7 +30,7 @@ async function fetchData() {
 }
 
 // Call the async function to execute the code
-fetchData();
+// fetchData();
 
 
 
