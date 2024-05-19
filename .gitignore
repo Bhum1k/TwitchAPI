@@ -7,3 +7,4 @@ netlify/functions/getRecentPost.js
 *.py
 *.php
 netlify/functions/instagram.js
+netlify/functions/instagram_page.html
