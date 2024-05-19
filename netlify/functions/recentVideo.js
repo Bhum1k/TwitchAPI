@@ -29,8 +29,16 @@ async function getLatestVideo(apiKey, channelId) {
         const videoId = latestVideo.resourceId.videoId;
         const videoUrl = `https://youtu.be/${videoId}`;
 
-        const firstWord = videoTitle.split(' ')[0].toUpperCase();
-        const resultString = `NEW FIA ${firstWord} VLOG: ${videoUrl}`;
+        let fillerWord = '';
+        const vlogIndex = videoTitle.toLowerCase().indexOf('vlog');
+        if (vlogIndex !== -1) {
+            fillerWord = videoTitle.substring(0, vlogIndex).trim();
+            if (fillerWord.length > 0) {
+                fillerWord = fillerWord.toUpperCase();
+            }
+        }
+
+        const resultString = fillerWord ? `FIA ${fillerWord} VLOG: ${videoUrl}` : `FIA VLOG: ${videoUrl}`;
 
         return resultString;
     } catch (error) {
