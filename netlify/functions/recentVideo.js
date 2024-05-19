@@ -38,7 +38,7 @@ async function getLatestVideo(apiKey, channelId) {
             }
         }
 
-        const resultString = fillerWord ? `FIA ${fillerWord} VLOG: ${videoUrl}` : `FIA VLOG: ${videoUrl}`;
+        const resultString = fillerWord ? `NEW FIA ${fillerWord} VLOG: ${videoUrl}` : `NEW FIA YT VIDEO: ${videoUrl}`;
 
         return resultString;
     } catch (error) {
