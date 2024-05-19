@@ -29,6 +29,7 @@ async function fetchData() {
 // Call the async function to execute the code
 fetchData();
 
+
 exports.handler = async (event, context) => {
     try {
         const result = await fetchData();
