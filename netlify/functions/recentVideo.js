@@ -50,7 +50,7 @@ const CHANNEL_ID = 'UCOsc46KpYdy0zAKzPdLUokA';
 //     }
 // }
 
-main();
+// main();
 
 exports.handler = async (event, context) => {
     try {
