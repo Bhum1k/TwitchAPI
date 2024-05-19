@@ -8,3 +8,4 @@ netlify/functions/getRecentPost.js
 *.php
 netlify/functions/instagram.js
 netlify/functions/instagram_page.html
+netlify/functions/instagram_feed.json

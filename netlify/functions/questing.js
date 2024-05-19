@@ -1,3 +1,58 @@
+/*
+https://api.tarkov.dev/
+
+query {
+  tasks {
+    id
+    name
+    kappaRequired
+    trader {
+      name
+    }
+    taskRequirements {
+      task {
+        name
+      }
+    }
+    objectives {
+      id
+      description
+      type
+      ... on TaskObjectiveQuestItem {
+        requiredKeys{
+          shortName
+        }
+      }
+      ... on TaskObjectiveItem {
+        count
+        foundInRaid
+      }
+      ... on TaskObjectiveShoot {
+        count
+      }
+      ... on TaskObjectiveSkill {
+        skillLevel {
+          level
+        }
+      }
+      ... on TaskObjectiveExtract {
+        count
+      }
+      ... on TaskObjectiveMark {
+        requiredKeys {
+          shortName
+        }
+      }
+      ... on TaskObjectiveBasic {
+        requiredKeys {
+          shortName
+        }
+      }
+    }
+  }
+}
+*/
+
 const fs = require('fs');
 const axios = require('axios');
 
