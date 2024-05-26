@@ -61,7 +61,7 @@ exports.handler = async (event, context) => {
             currentDateTime.getMonth() === bdayDateTime.getMonth() &&
             currentDateTime.getDate() === bdayDateTime.getDate()
         ) {
-            output = "It's today fiatheCheering fiatheCheering fiatheCheering";
+            output = "ITS TODAY! fiatheParty fiatheParty fiatheParty";
         } else {
             if (daysUntilBday >= 1) {
                 output = `${daysUntilBday} ${daysPlurality}, ${hoursUntilBday} ${hoursPlurality} and ${minutesUntilBday} ${minutesPlurality} away`;
