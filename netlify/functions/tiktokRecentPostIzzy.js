@@ -21,8 +21,8 @@ async function fetchData() {
     try {
         const response = await axios.request(options);
         const videoId = response.data.data.videos[0].video_id;
-        console.log(`Izzy's Most Recent TikTok: https://www.tiktok.com/@izzytwig/video/${videoId}`);
-        return `Izzy's Most Recent TikTok: https://www.tiktok.com/@izzytwig/video/${videoId}`;
+        console.log(`Izzy's Recent TikTok: tiktok.com/@izzytwig/video/${videoId}`);
+        return `Izzy's Recent TikTok: tiktok.com/@izzytwig/video/${videoId}`;
     } catch (error) {
         console.error('Error fetching data:', error);
         return error;
@@ -51,7 +51,7 @@ exports.handler = async (event, context) => {
     } catch (error) {
         return {
             statusCode: 500,
-            body: 'Failed to fetch data',
+            body: '',
             headers: {
                 'Content-Type': 'text/plain',
             },
