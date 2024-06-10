@@ -76,7 +76,7 @@ const data = {
                     },
                     {
                         "id": "65817bf31404f3565aef9fec",
-                        "description": "Hand over any medicine items",
+                        "description": "Hand over any found in raid medicine items",
                         "type": "giveItem",
                         "count": 3,
                         "foundInRaid": true
@@ -823,7 +823,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5d26fd8886f77469f0445745",
-                        "description": "Locate and eliminate Reshala",
+                        "description": "Locate and neutralize Reshala",
                         "type": "shoot",
                         "count": 1
                     },
@@ -959,6 +959,89 @@ const data = {
                 ]
             },
             {
+                "id": "6658a15615cbb1b2c6014d5b",
+                "name": "Hustle",
+                "kappaRequired": false,
+                "trader": {
+                    "name": "Jaeger"
+                },
+                "taskRequirements": [
+                    {
+                        "task": {
+                            "name": "Acquaintance"
+                        }
+                    }
+                ],
+                "objectives": [
+                    {
+                        "id": "6658a15615cbb1b2c6014d5c",
+                        "description": "Locate and neutralize Reshala on Reserve",
+                        "type": "shoot",
+                        "count": 1
+                    },
+                    {
+                        "id": "6658a15615cbb1b2c6014d5e",
+                        "description": "Locate and neutralize Glukhar on Reserve",
+                        "type": "shoot",
+                        "count": 1
+                    },
+                    {
+                        "id": "6658a15615cbb1b2c6014d60",
+                        "description": "Locate and neutralize Killa on Reserve",
+                        "type": "shoot",
+                        "count": 1
+                    },
+                    {
+                        "id": "6658a15615cbb1b2c6014d62",
+                        "description": "Locate and neutralize Shturman on Reserve",
+                        "type": "shoot",
+                        "count": 1
+                    },
+                    {
+                        "id": "6658a15615cbb1b2c6014d64",
+                        "description": "Locate and neutralize Knight on Reserve",
+                        "type": "shoot",
+                        "count": 1
+                    },
+                    {
+                        "id": "6658a15615cbb1b2c6014d66",
+                        "description": "Locate and neutralize Big Pipe on Reserve",
+                        "type": "shoot",
+                        "count": 1
+                    },
+                    {
+                        "id": "6658a15615cbb1b2c6014d68",
+                        "description": "Locate and neutralize Birdeye on Reserve",
+                        "type": "shoot",
+                        "count": 1
+                    },
+                    {
+                        "id": "6658a15615cbb1b2c6014d6a",
+                        "description": "Locate and neutralize Sanitar on Reserve",
+                        "type": "shoot",
+                        "count": 1
+                    },
+                    {
+                        "id": "6658a15615cbb1b2c6014d6c",
+                        "description": "Locate and neutralize Tagilla on Reserve",
+                        "type": "shoot",
+                        "count": 1
+                    },
+                    {
+                        "id": "6658a220a4dc74f102c355ce",
+                        "description": "Locate and neutralize Kaban on Reserve",
+                        "type": "shoot",
+                        "count": 1
+                    },
+                    {
+                        "id": "6658a2387aed962d75700786",
+                        "description": "Locate and neutralize Kollontay on Reserve",
+                        "type": "shoot",
+                        "count": 1
+                    }
+                ]
+            },
+            {
                 "id": "5d25e2b486f77409de05bba0",
                 "name": "The Huntsman Path - Secured Perimeter",
                 "kappaRequired": true,
@@ -987,6 +1070,59 @@ const data = {
                 ]
             },
             {
+                "id": "66058cb22cee99303f1ba067",
+                "name": "Easy Money - Part 1",
+                "kappaRequired": false,
+                "trader": {
+                    "name": "Skier"
+                },
+                "taskRequirements": [
+                    {
+                        "task": {
+                            "name": "Burning Rubber"
+                        }
+                    }
+                ],
+                "objectives": [
+                    {
+                        "id": "664bbad8d5057479ac4b8002",
+                        "description": "Find a stack of “Bison VS Undertaker” posters at the USEC camp on Woods",
+                        "type": "findQuestItem",
+                        "requiredKeys": null
+                    },
+                    {
+                        "id": "664bbb5f217c767c35ae3d51",
+                        "description": "Find a stack of “Killa and Tagilla” posters at the USEC camp on woods",
+                        "type": "findQuestItem",
+                        "requiredKeys": null
+                    },
+                    {
+                        "id": "664bbb73c71d456fd03714ca",
+                        "description": "Find a stack of “Make a fortune on betting!” posters at the USEC camp on woods",
+                        "type": "findQuestItem",
+                        "requiredKeys": null
+                    },
+                    {
+                        "id": "6606b709f7ce34bb26221cab",
+                        "description": "Stash the flyers \"Bison VS Undertaker\" in the living quarters at the Scav base on Customs",
+                        "type": "plantQuestItem",
+                        "requiredKeys": null
+                    },
+                    {
+                        "id": "6606b74ebce4c3e0bda438fd",
+                        "description": "Stash the flyers \"Killa and Tagilla\" at the railway platform on Reserve",
+                        "type": "plantQuestItem",
+                        "requiredKeys": null
+                    },
+                    {
+                        "id": "6606b752a6c704c4333a804d",
+                        "description": "Stash the flyers \"Easy money on betting\" inside the helicopter at the water treatment plant on Lighthouse",
+                        "type": "plantQuestItem",
+                        "requiredKeys": null
+                    }
+                ]
+            },
+            {
                 "id": "59674cd986f7744ab26e32f2",
                 "name": "Shootout Picnic",
                 "kappaRequired": false,
@@ -1006,6 +1142,166 @@ const data = {
                         "description": "Eliminate Scavs on Woods",
                         "type": "shoot",
                         "count": 15
+                    }
+                ]
+            },
+            {
+                "id": "66058cb5ae4719735349b9e8",
+                "name": "Easy Money - Part 2",
+                "kappaRequired": false,
+                "trader": {
+                    "name": "Ref"
+                },
+                "taskRequirements": [
+                    {
+                        "task": {
+                            "name": "Easy Money - Part 1"
+                        }
+                    }
+                ],
+                "objectives": [
+                    {
+                        "id": "6606bd2aa49db36b69b6dbf9",
+                        "description": "Hand over the found in raid item: Bottle of Tarkovskaya vodka",
+                        "type": "giveItem",
+                        "count": 2,
+                        "foundInRaid": true
+                    },
+                    {
+                        "id": "6606bd6768f8018fffebd998",
+                        "description": "Hand over the found in raid item: Bottle of Pevko Light beer",
+                        "type": "giveItem",
+                        "count": 7,
+                        "foundInRaid": true
+                    },
+                    {
+                        "id": "6606bd814120fcf7f0a38e55",
+                        "description": "Hand over the found in raid item: Alyonka chocolate bar",
+                        "type": "giveItem",
+                        "count": 2,
+                        "foundInRaid": true
+                    },
+                    {
+                        "id": "6606bd9128b63f13e560592f",
+                        "description": "Hand over the found in raid item: Pack of Tarker dried meat",
+                        "type": "giveItem",
+                        "count": 5,
+                        "foundInRaid": true
+                    }
+                ]
+            },
+            {
+                "id": "66058cb7c7f3584787181476",
+                "name": "Balancing - Part 1",
+                "kappaRequired": false,
+                "trader": {
+                    "name": "Ref"
+                },
+                "taskRequirements": [
+                    {
+                        "task": {
+                            "name": "Easy Money - Part 2"
+                        }
+                    }
+                ],
+                "objectives": [
+                    {
+                        "id": "6606d133fcb99b9004aa2d1d",
+                        "description": "Eliminate Scavs while using G36 and Thor body armor on Interchange",
+                        "type": "shoot",
+                        "count": 10
+                    }
+                ]
+            },
+            {
+                "id": "66058cb9e8e4f17985230805",
+                "name": "Balancing - Part 2",
+                "kappaRequired": false,
+                "trader": {
+                    "name": "Ref"
+                },
+                "taskRequirements": [
+                    {
+                        "task": {
+                            "name": "Balancing - Part 1"
+                        }
+                    }
+                ],
+                "objectives": [
+                    {
+                        "id": "660a9c99c650fa4d531f4c96",
+                        "description": "Eliminate PMCs while using AKS-74UB and PACA body armor on Streets of Tarkov",
+                        "type": "shoot",
+                        "count": 5
+                    }
+                ]
+            },
+            {
+                "id": "66058cbb06ef1d50a60c1f46",
+                "name": "Surprise",
+                "kappaRequired": false,
+                "trader": {
+                    "name": "Ref"
+                },
+                "taskRequirements": [
+                    {
+                        "task": {
+                            "name": "Balancing - Part 2"
+                        }
+                    }
+                ],
+                "objectives": [
+                    {
+                        "id": "6606d08b4e2e27ca2d80085e",
+                        "description": "Hand over the item: Korund-VM ballistic plates (Front)",
+                        "type": "giveItem",
+                        "count": 1,
+                        "foundInRaid": true
+                    },
+                    {
+                        "id": "6606d09a3db3fc1911e204ce",
+                        "description": "Hand over the item: SPRTN Omega ballistic plate",
+                        "type": "giveItem",
+                        "count": 1,
+                        "foundInRaid": true
+                    },
+                    {
+                        "id": "6606d0a8f146598b0f492e12",
+                        "description": "Hand over the item: 6B33 ballistic plate (Front)",
+                        "type": "giveItem",
+                        "count": 1,
+                        "foundInRaid": true
+                    }
+                ]
+            },
+            {
+                "id": "66058cbd9f59e625462acc8e",
+                "name": "Create a Distraction - Part 1",
+                "kappaRequired": false,
+                "trader": {
+                    "name": "Ref"
+                },
+                "taskRequirements": [
+                    {
+                        "task": {
+                            "name": "Surprise"
+                        }
+                    }
+                ],
+                "objectives": [
+                    {
+                        "id": "660a9dc64c0927ead4fcfeef",
+                        "description": "Plant a TP-200 TNT brick at the car dealership on Streets of Tarkov",
+                        "type": "plantItem",
+                        "count": 3,
+                        "foundInRaid": false
+                    },
+                    {
+                        "id": "660a9dcf070cb9c8cc1715c7",
+                        "description": "Plant a TP-200 TNT brick at the MVD academy on Streets of Tarkov",
+                        "type": "plantItem",
+                        "count": 3,
+                        "foundInRaid": false
                     }
                 ]
             },
@@ -1100,7 +1396,7 @@ const data = {
                     },
                     {
                         "id": "5fd9fad9c1ce6b1a3b486d05",
-                        "description": "Locate the temporary USEC camp",
+                        "description": "Locate the temporary USEC camp on Woods",
                         "type": "visit",
                         "requiredKeys": null
                     },
@@ -1141,7 +1437,7 @@ const data = {
                     },
                     {
                         "id": "59674fe586f7744f4e358aa2",
-                        "description": "Stash the package in the Factory break room (2nd floor near Gate 3)",
+                        "description": "Stash the package in the break room on the 2nd floor near Gate 3 on Factory",
                         "type": "plantQuestItem",
                         "requiredKeys": null
                     },
@@ -2808,13 +3104,13 @@ const data = {
                 "objectives": [
                     {
                         "id": "5a0317da86f77451cb427295",
-                        "description": "Mark the helicopter with an MS2000 Marker on Shoreline",
+                        "description": "Mark the helicopter at the Health Resort with an MS2000 Marker on Shoreline",
                         "type": "mark",
                         "requiredKeys": null
                     },
                     {
                         "id": "5a0325f286f7744384509230",
-                        "description": "Mark the safe road with an MS2000 Marker on Shoreline",
+                        "description": "Mark the safe road to the helicopter with an MS2000 Marker on Shoreline",
                         "type": "mark",
                         "requiredKeys": null
                     },
@@ -2916,13 +3212,13 @@ const data = {
                 "objectives": [
                     {
                         "id": "5a3ba62786f7742c9d4f5ee9",
-                        "description": "Locate the generators in the east wing of the Health Resort",
+                        "description": "Locate the generators in the east wing of the Health Resort on Shoreline",
                         "type": "visit",
                         "requiredKeys": null
                     },
                     {
                         "id": "5a3ba65f86f7743af1475f11",
-                        "description": "Locate the generators in the west wing of the Health Resort",
+                        "description": "Locate the generators in the west wing of the Health Resort on Shoreline",
                         "type": "visit",
                         "requiredKeys": [
                             [
@@ -2960,7 +3256,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5a044a6c86f7747370402d91",
-                        "description": "Obtain the key to the closed premises of the Sanatorium",
+                        "description": "Obtain the key to the closed premises of the Sanatorium on Shoreline",
                         "type": "findQuestItem",
                         "requiredKeys": null
                     },
@@ -3086,7 +3382,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5a28183186f774398675d127",
-                        "description": "Obtain the data in the computer room in the east wing of the Health Resort",
+                        "description": "Obtain the data in the computer room in the east wing of the Health Resort on Shoreline",
                         "type": "findQuestItem",
                         "requiredKeys": [
                             [
@@ -3124,7 +3420,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5a3ba76486f7744d39436da2",
-                        "description": "Locate the room with reservoirs in the Health Resort",
+                        "description": "Locate the room with reservoirs in the Health Resort on Shoreline",
                         "type": "visit",
                         "requiredKeys": null
                     },
@@ -3159,7 +3455,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5a3ba7db86f7744f0e568c9c",
-                        "description": "Locate the hidden TerraGroup cargo on Shoreline",
+                        "description": "Locate the TerraGroup cargo hidden inside the Health Resort on Shoreline",
                         "type": "visit",
                         "requiredKeys": null
                     },
@@ -3578,7 +3874,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "60c0d187938d68438757cda2",
-                        "description": "Locate and eliminate Tagilla",
+                        "description": "Locate and neutralize Tagilla",
                         "type": "shoot",
                         "count": 1
                     },
@@ -3705,7 +4001,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5d27276886f7740701348578",
-                        "description": "Locate and eliminate Shturman",
+                        "description": "Locate and neutralize Shturman",
                         "type": "shoot",
                         "count": 1
                     },
@@ -3935,7 +4231,7 @@ const data = {
                     },
                     {
                         "id": "608a94ae1a66564e74191fc6",
-                        "description": "Extract through that exit",
+                        "description": "Survive and extract from the location through the secret exit",
                         "type": "extract",
                         "count": 1
                     }
@@ -3993,7 +4289,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5a3baa2586f7745b791b72fa",
-                        "description": "Find Artyom’s car on Shoreline",
+                        "description": "Locate Artyom’s car on Shoreline",
                         "type": "visit",
                         "requiredKeys": null
                     },
@@ -4198,6 +4494,12 @@ const data = {
                         "description": "Eliminate PMC operatives with a headshot while using a bolt-action rifle on Interchange",
                         "type": "shoot",
                         "count": 5
+                    },
+                    {
+                        "id": "65e0812209dffc3fd97b99e8",
+                        "description": "Eliminate PMC operatives with a headshot while using a bolt-action rifle on Ground Zero",
+                        "type": "shoot",
+                        "count": 5
                     }
                 ]
             },
@@ -4283,7 +4585,7 @@ const data = {
                     },
                     {
                         "id": "6092947635915c62b44fd05b",
-                        "description": "Hand over the navigation complex",
+                        "description": "Hand over the navigation system",
                         "type": "giveQuestItem",
                         "requiredKeys": null
                     }
@@ -4410,31 +4712,31 @@ const data = {
                 "objectives": [
                     {
                         "id": "5ee8ec5ed72d953f5d2aabd1",
-                        "description": "Locate the hermetic door leading to the hospital (White Bishop)",
+                        "description": "Locate the hermetic door leading to the hospital (White Bishop) on Reserve",
                         "type": "visit",
                         "requiredKeys": null
                     },
                     {
                         "id": "5ee8ecd75eb3205dae135d17",
-                        "description": "Locate one of the two hermetic doors leading to the academy building (Black Bishop)",
+                        "description": "Locate one of the two hermetic doors leading to the academy building (Black Bishop) on Reserve",
                         "type": "visit",
                         "requiredKeys": null
                     },
                     {
                         "id": "5ee8ed18d72d953f5d2aabd4",
-                        "description": "Locate one of the two hermetic doors leading to barracks #1 (Black Pawn)",
+                        "description": "Locate one of the two hermetic doors leading to barracks #1 (Black Pawn) on Reserve",
                         "type": "visit",
                         "requiredKeys": null
                     },
                     {
                         "id": "5ee8eddde932d53763761b2c",
-                        "description": "Locate one of the two hermetic doors leading to barracks #2 (White Pawn)",
+                        "description": "Locate one of the two hermetic doors leading to barracks #2 (White Pawn) on Reserve",
                         "type": "visit",
                         "requiredKeys": null
                     },
                     {
                         "id": "5ee8edf1500391756d7498a7",
-                        "description": "Locate the hermetic door leading to the building of the air control center (King)",
+                        "description": "Locate the hermetic door leading to the building of the air control center (King) on Reserve",
                         "type": "visit",
                         "requiredKeys": null
                     },
@@ -4709,7 +5011,7 @@ const data = {
                         "description": "Reach the required Attention skill level",
                         "type": "skill",
                         "skillLevel": {
-                            "level": 4
+                            "level": 8
                         }
                     }
                 ]
@@ -5395,7 +5697,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "64e7ba17220ee966bf425ecb",
-                        "description": "Locate and eliminate Kaban",
+                        "description": "Locate and neutralize Kaban",
                         "type": "shoot",
                         "count": 1
                     },
@@ -5407,13 +5709,13 @@ const data = {
                     },
                     {
                         "id": "65bb698050fd7c32f5d666d1",
-                        "description": "Locate and eliminate Basmach",
+                        "description": "Eliminate Basmach",
                         "type": "shoot",
                         "count": 1
                     },
                     {
                         "id": "65bb6a61a845e4eb51390b4e",
-                        "description": "Locate and eliminate Gus",
+                        "description": "Eliminate Gus",
                         "type": "shoot",
                         "count": 1
                     }
@@ -5585,28 +5887,28 @@ const data = {
                 "objectives": [
                     {
                         "id": "5ae9e17c86f77440d37ce03c",
-                        "description": "Stash Ghost balaclava in the specified place",
+                        "description": "Stash a Ghost balaclava at the sawmill docks on Woods",
                         "type": "plantItem",
                         "count": 1,
                         "foundInRaid": false
                     },
                     {
                         "id": "5ae9e1c786f77403fb3f9674",
-                        "description": "Stash Shemagh (Green) in the specified place",
+                        "description": "Stash a Shemagh (Green) at the sawmill docks on Woods",
                         "type": "plantItem",
                         "count": 1,
                         "foundInRaid": false
                     },
                     {
                         "id": "5ae9e2a286f7740de4152a0a",
-                        "description": "Stash RayBench Hipster Reserve sunglasses in the specified place",
+                        "description": "Stash RayBench Hipster Reserve sunglasses at the sawmill docks on Woods",
                         "type": "plantItem",
                         "count": 1,
                         "foundInRaid": false
                     },
                     {
                         "id": "5ae9e2e386f7740de4152a0d",
-                        "description": "Stash Round frame sunglasses in the specified place",
+                        "description": "Stash Round frame sunglasses at the sawmill docks on Woods",
                         "type": "plantItem",
                         "count": 1,
                         "foundInRaid": false
@@ -5795,19 +6097,19 @@ const data = {
                 "objectives": [
                     {
                         "id": "63ac1b741b5c95746621ddb4",
-                        "description": "Recon the roof of the first office building on Lighthouse",
+                        "description": "Recon the roof of the first water treatment plant facility on Lighthouse",
                         "type": "visit",
                         "requiredKeys": null
                     },
                     {
                         "id": "63ac1bd387413d64ae0ac22b",
-                        "description": "Recon the roof of the second office building on Lighthouse",
+                        "description": "Recon the roof of the second water treatment plant facility on Lighthouse",
                         "type": "visit",
                         "requiredKeys": null
                     },
                     {
                         "id": "63ac1c56972364554162a25e",
-                        "description": "Recon the roof of the third office building on Lighthouse",
+                        "description": "Recon the roof of the third water treatment plant facility on Lighthouse",
                         "type": "visit",
                         "requiredKeys": null
                     },
@@ -5836,19 +6138,19 @@ const data = {
                 "objectives": [
                     {
                         "id": "60916aeac49cf53e4772cc3c",
-                        "description": "Obtain Military documents #1 in the command bunker offices on Reserve",
+                        "description": "Obtain the first folder with military documents in the command bunker offices on Reserve",
                         "type": "findQuestItem",
                         "requiredKeys": null
                     },
                     {
                         "id": "60ae0dfe2d6a8320983d19ba",
-                        "description": "Obtain Military documents #2 in the command bunker offices on Reserve",
+                        "description": "Obtain the second folder with military documents in the command bunker offices on Reserve",
                         "type": "findQuestItem",
                         "requiredKeys": null
                     },
                     {
                         "id": "60ae0e2c79e83a2cf96f35ce",
-                        "description": "Obtain Military documents #3 in the command bunker offices on Reserve",
+                        "description": "Obtain the third folder with military documents in the command bunker offices on Reserve",
                         "type": "findQuestItem",
                         "requiredKeys": null
                     },
@@ -5969,7 +6271,7 @@ const data = {
                     },
                     {
                         "id": "629f4f080f57046e362e6e9e",
-                        "description": "Survive and extract from Shoreline with the \"Survived\" exit status",
+                        "description": "Survive and extract from the location with the \"Survived\" exit status",
                         "type": "extract",
                         "count": 1
                     }
@@ -6414,7 +6716,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5a68760f86f7743cc55d8709",
-                        "description": "Search the room in the Health Resort for any documents about TerraGroup's research",
+                        "description": "Search the room in the Health Resort for any documents about TerraGroup's research on Shoreline",
                         "type": "findQuestItem",
                         "requiredKeys": [
                             [
@@ -6551,7 +6853,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5d27369586f774457411b264",
-                        "description": "Locate and eliminate Glukhar",
+                        "description": "Locate and neutralize Glukhar",
                         "type": "shoot",
                         "count": 1
                     }
@@ -6598,7 +6900,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "608a8356fa70fc097863b8f8",
-                        "description": "Eliminate Scavs in the barracks area on Reserve",
+                        "description": "Eliminate Scavs inside the main barracks on Reserve",
                         "type": "shoot",
                         "count": 10
                     }
@@ -7092,7 +7394,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5b478f6886f774464201225a",
-                        "description": "Obtain the first Chemical container on Shoreline",
+                        "description": "Obtain the first chemical container on Shoreline",
                         "type": "findQuestItem",
                         "requiredKeys": [
                             [
@@ -7110,7 +7412,7 @@ const data = {
                     },
                     {
                         "id": "5b4c826b86f7743cc87bcee4",
-                        "description": "Obtain the second Chemical container on Interchange",
+                        "description": "Obtain the second chemical container on Interchange",
                         "type": "findQuestItem",
                         "requiredKeys": [
                             [
@@ -7128,7 +7430,7 @@ const data = {
                     },
                     {
                         "id": "5b4c82cd86f774170c6e4169",
-                        "description": "Obtain the third Chemical container on Interchange",
+                        "description": "Obtain the third chemical container on Interchange",
                         "type": "findQuestItem",
                         "requiredKeys": null
                     },
@@ -7513,7 +7815,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5edab5a6cecc0069284c0ec2",
-                        "description": "Locate and eliminate Sanitar",
+                        "description": "Locate and neutralize Sanitar",
                         "type": "shoot",
                         "count": 1
                     }
@@ -7586,13 +7888,13 @@ const data = {
                 "objectives": [
                     {
                         "id": "6578eb36e5020875d64645d0",
-                        "description": "Locate and eliminate Kollontay on Streets of Tarkov",
+                        "description": "Locate and neutralize Kollontay",
                         "type": "shoot",
                         "count": 1
                     },
                     {
                         "id": "6580130847df99b0741919f0",
-                        "description": "Eliminate Kollontay's guards on Streets of Tarkov",
+                        "description": "Eliminate Kollontay's guards",
                         "type": "shoot",
                         "count": 4
                     },
@@ -7810,6 +8112,36 @@ const data = {
                 ]
             },
             {
+                "id": "6613f3007f6666d56807c929",
+                "name": "Drip-Out - Part 1",
+                "kappaRequired": false,
+                "trader": {
+                    "name": "Ragman"
+                },
+                "taskRequirements": [
+                    {
+                        "task": {
+                            "name": "Minibus"
+                        }
+                    }
+                ],
+                "objectives": [
+                    {
+                        "id": "6613f36ca4dc044e13e02295",
+                        "description": "Eliminate Raiders",
+                        "type": "shoot",
+                        "count": 100
+                    },
+                    {
+                        "id": "6616819ac7c53d7769413d9c",
+                        "description": "Hand over the found in raid WARTECH brand equipment",
+                        "type": "giveItem",
+                        "count": 50,
+                        "foundInRaid": true
+                    }
+                ]
+            },
+            {
                 "id": "5b4794cb86f774598100d5d4",
                 "name": "Lend-Lease - Part 1",
                 "kappaRequired": true,
@@ -7826,7 +8158,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5b47952c86f774598100d5dc",
-                        "description": "Obtain the first Motor Controller on Woods",
+                        "description": "Obtain the first motor controller on Woods",
                         "type": "findQuestItem",
                         "requiredKeys": null
                     },
@@ -7838,7 +8170,7 @@ const data = {
                     },
                     {
                         "id": "5b4c742886f7745cef1d02f5",
-                        "description": "Obtain the second Motor Controller on Shoreline",
+                        "description": "Obtain the second motor controller on Shoreline",
                         "type": "findQuestItem",
                         "requiredKeys": null
                     },
@@ -7850,7 +8182,7 @@ const data = {
                     },
                     {
                         "id": "5b4c75a786f7747332534b52",
-                        "description": "Obtain the third Motor Controller on Shoreline",
+                        "description": "Obtain the third motor controller on Shoreline",
                         "type": "findQuestItem",
                         "requiredKeys": [
                             [
@@ -7871,7 +8203,7 @@ const data = {
                     },
                     {
                         "id": "5b47958e86f774598100d5e2",
-                        "description": "Obtain the first Single-axis Fiber Optic Gyroscope on Woods",
+                        "description": "Obtain the first single-axis fiber optic gyroscope on Woods",
                         "type": "findQuestItem",
                         "requiredKeys": null
                     },
@@ -7883,7 +8215,7 @@ const data = {
                     },
                     {
                         "id": "5b4c8e6586f77474396a5400",
-                        "description": "Obtain the second Single-axis Fiber Optic Gyroscope on Shoreline",
+                        "description": "Obtain the second single-axis fiber optic gyroscope on Shoreline",
                         "type": "findQuestItem",
                         "requiredKeys": [
                             [
@@ -7932,7 +8264,7 @@ const data = {
                     },
                     {
                         "id": "5d4c020a86f77449c463ced6",
-                        "description": "Find OFZ 30x160mm shells in raid",
+                        "description": "Find OFZ 30x165mm shells in raid",
                         "type": "findItem",
                         "count": 5,
                         "foundInRaid": true
@@ -7965,7 +8297,7 @@ const data = {
                         "id": "5c1242fa86f7742aa04fed52",
                         "description": "Eliminate PMC operatives in the time period of 21:00-06:00 (Excluding Factory and The Lab)",
                         "type": "shoot",
-                        "count": 30
+                        "count": 25
                     }
                 ]
             },
@@ -8027,7 +8359,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5ae4559386f7742dc043c95e",
-                        "description": "Find Ski hat with holes for eyes in raid",
+                        "description": "Find a Ski hat with holes for eyes in raid",
                         "type": "findItem",
                         "count": 1,
                         "foundInRaid": true
@@ -8041,7 +8373,7 @@ const data = {
                     },
                     {
                         "id": "5ae455fb86f7744dd8242380",
-                        "description": "Find Pilgrim tourist backpack in raid",
+                        "description": "Find a Pilgrim tourist backpack in raid",
                         "type": "findItem",
                         "count": 1,
                         "foundInRaid": true
@@ -8145,21 +8477,21 @@ const data = {
                     },
                     {
                         "id": "5c0bc32986f7743e4d1002d2",
-                        "description": "Stash SV-98 sniper rifle in the trash opposite of stairs on the 3rd floor of the dorm",
+                        "description": "Stash SV-98 sniper rifle in the trash opposite of stairs on the 3rd floor of the dorm on Customs",
                         "type": "plantItem",
                         "count": 1,
                         "foundInRaid": false
                     },
                     {
                         "id": "5c0bc43e86f7744794440ba5",
-                        "description": "Stash Roler Submariner gold wrist watch in the trash opposite of stairs on the 3rd floor of the dorm",
+                        "description": "Stash Roler Submariner gold wrist watch in the trash opposite of stairs on the 3rd floor of the dorm on Customs",
                         "type": "plantItem",
                         "count": 1,
                         "foundInRaid": false
                     },
                     {
                         "id": "5c12320586f77437e44bcb15",
-                        "description": "Stash the False flash drive in the trash opposite of stairs on the 3rd floor of the dorm",
+                        "description": "Stash the False flash drive in the trash opposite of stairs on the 3rd floor of the dorm on Customs",
                         "type": "plantQuestItem",
                         "requiredKeys": null
                     }
@@ -8610,7 +8942,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5ae9c0a686f774703201f143",
-                        "description": "Obtain the Clothes design handbook - Part 1 on Interchange",
+                        "description": "Obtain the first book of clothes design on Interchange",
                         "type": "findQuestItem",
                         "requiredKeys": null
                     },
@@ -8622,7 +8954,7 @@ const data = {
                     },
                     {
                         "id": "5ae9c0e186f7746419683c5e",
-                        "description": "Obtain the Clothes design handbook - Part 2 on Interchange",
+                        "description": "Obtain the second book of clothes design on Interchange",
                         "type": "findQuestItem",
                         "requiredKeys": null
                     },
@@ -8754,7 +9086,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "64eea404a2a5bb727b61c31e",
-                        "description": "Locate and eliminate Priest",
+                        "description": "Locate and neutralize Priest",
                         "type": "shoot",
                         "count": 1
                     },
@@ -8801,14 +9133,14 @@ const data = {
                 "objectives": [
                     {
                         "id": "5b47899386f77470315db7f3",
-                        "description": "Find Bronze lions in raid",
+                        "description": "Find Bronze lion figurines in raid",
                         "type": "findItem",
                         "count": 2,
                         "foundInRaid": true
                     },
                     {
                         "id": "5b4789b586f7744d190d8f43",
-                        "description": "Hand over the Bronze lions",
+                        "description": "Hand over the figurines",
                         "type": "giveItem",
                         "count": 2,
                         "foundInRaid": true
@@ -8822,28 +9154,28 @@ const data = {
                     },
                     {
                         "id": "5b478a0986f7744d190d8f46",
-                        "description": "Hand over the Horse figurines",
+                        "description": "Hand over the figurines",
                         "type": "giveItem",
                         "count": 2,
                         "foundInRaid": true
                     },
                     {
                         "id": "5b478a2186f77468074619da",
-                        "description": "Find Cat figurine in raid",
+                        "description": "Find a Cat figurine in raid",
                         "type": "findItem",
                         "count": 1,
                         "foundInRaid": true
                     },
                     {
                         "id": "5b478a3786f77470315db7fa",
-                        "description": "Hand over the Cat figurine",
+                        "description": "Hand over the figurine",
                         "type": "giveItem",
                         "count": 1,
                         "foundInRaid": true
                     },
                     {
                         "id": "5b478a6c86f7744d190d8f4d",
-                        "description": "Find Roler Submariner gold wrist watch in raid",
+                        "description": "Find a Roler Submariner gold wrist watch in raid",
                         "type": "findItem",
                         "count": 1,
                         "foundInRaid": true
@@ -8864,7 +9196,7 @@ const data = {
                     },
                     {
                         "id": "62a70058ec21e50cad3b6709",
-                        "description": "Hand over the Golden egg",
+                        "description": "Hand over the figurine",
                         "type": "giveItem",
                         "count": 1,
                         "foundInRaid": true
@@ -9549,6 +9881,12 @@ const data = {
                         "description": "Eliminate Scavs while wearing a UN uniform (UNTAR helmet, MF-UNTAR body armor, M4A1 rifle) on Streets of Tarkov",
                         "type": "shoot",
                         "count": 12
+                    },
+                    {
+                        "id": "65e08aa9f5879b2586d5fd4c",
+                        "description": "Eliminate Scavs while wearing a UN uniform (UNTAR helmet, MF-UNTAR body armor, M4A1 rifle) on Ground Zero",
+                        "type": "shoot",
+                        "count": 12
                     }
                 ]
             },
@@ -9643,7 +9981,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5d2719b186f7740701348573",
-                        "description": "Locate and eliminate Killa",
+                        "description": "Locate and neutralize Killa",
                         "type": "shoot",
                         "count": 1
                     },
@@ -9685,7 +10023,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5dc53fd386f77469c87589a3",
-                        "description": "Locate and eliminate Killa",
+                        "description": "Locate and neutralize Killa",
                         "type": "shoot",
                         "count": 50
                     }
@@ -9837,7 +10175,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "5fd8aa3206fb3a6b8154a2c3",
-                        "description": "Eliminate Shturman with a headshot from over 75 meters away while using an M700 sniper rifle with the specified scope",
+                        "description": "Locate and neutralize Shturman with a headshot from over 75 meters away while using an M700 sniper rifle with the specified scope",
                         "type": "shoot",
                         "count": 1
                     }
@@ -9860,7 +10198,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "600303250b79c6604058ce30",
-                        "description": "Locate and eliminate Shturman",
+                        "description": "Locate and neutralize Shturman",
                         "type": "shoot",
                         "count": 20
                     }
@@ -9961,285 +10299,6 @@ const data = {
                 ]
             },
             {
-                "id": "639135cd8ba6894d155e77cb",
-                "name": "House Arrest - Part 2",
-                "kappaRequired": false,
-                "trader": {
-                    "name": "Skier"
-                },
-                "taskRequirements": [
-                    {
-                        "task": {
-                            "name": "House Arrest - Part 1"
-                        }
-                    }
-                ],
-                "objectives": [
-                    {
-                        "id": "63a7dbc31943b749b5021ec3",
-                        "description": "Locate the improvised jail warden's apartment on Streets of Tarkov",
-                        "type": "visit",
-                        "requiredKeys": null
-                    },
-                    {
-                        "id": "63a7dbefee7b4d0d5507baf8",
-                        "description": "Find out what happened to the warden",
-                        "type": "visit",
-                        "requiredKeys": [
-                            [
-                                {
-                                    "shortName": "Chek 15"
-                                }
-                            ]
-                        ]
-                    },
-                    {
-                        "id": "63972db222ea23711e21aaaa",
-                        "description": "Survive and extract from the location",
-                        "type": "extract",
-                        "count": 1
-                    }
-                ]
-            },
-            {
-                "id": "639135534b15ca31f76bc317",
-                "name": "Your Car Needs a Service",
-                "kappaRequired": false,
-                "trader": {
-                    "name": "Peacekeeper"
-                },
-                "taskRequirements": [
-                    {
-                        "task": {
-                            "name": "Cargo X - Part 4"
-                        }
-                    }
-                ],
-                "objectives": [
-                    {
-                        "id": "639135534b15ca31f76bc318",
-                        "description": "Obtain the digital storage device from the car dealership manager's office on Streets of Tarkov",
-                        "type": "findQuestItem",
-                        "requiredKeys": [
-                            [
-                                {
-                                    "shortName": "LexOs"
-                                }
-                            ],
-                            [
-                                {
-                                    "shortName": "LexOs sect."
-                                }
-                            ]
-                        ]
-                    },
-                    {
-                        "id": "639135534b15ca31f76bc319",
-                        "description": "Hand over the storage device",
-                        "type": "giveQuestItem",
-                        "requiredKeys": null
-                    }
-                ]
-            },
-            {
-                "id": "5c0be13186f7746f016734aa",
-                "name": "Psycho Sniper",
-                "kappaRequired": true,
-                "trader": {
-                    "name": "Mechanic"
-                },
-                "taskRequirements": [
-                    {
-                        "task": {
-                            "name": "Wet Job - Part 6"
-                        }
-                    }
-                ],
-                "objectives": [
-                    {
-                        "id": "5c0be2b486f7747bcb347d58",
-                        "description": "Reach the required Bolt-action Rifles skill level",
-                        "type": "skill",
-                        "skillLevel": {
-                            "level": 10
-                        }
-                    },
-                    {
-                        "id": "64b67c6358b5637e2d71a655",
-                        "description": "Eliminate PMC operatives without dying while using a bolt-action rifle",
-                        "type": "shoot",
-                        "count": 5
-                    }
-                ]
-            },
-            {
-                "id": "5c139eb686f7747878361a6f",
-                "name": "Import",
-                "kappaRequired": true,
-                "trader": {
-                    "name": "Mechanic"
-                },
-                "taskRequirements": [
-                    {
-                        "task": {
-                            "name": "Farming - Part 4"
-                        }
-                    }
-                ],
-                "objectives": [
-                    {
-                        "id": "5ec14003e16f6c41ee73525f",
-                        "description": "Find UHF RFID Reader in raid",
-                        "type": "findItem",
-                        "count": 1,
-                        "foundInRaid": true
-                    },
-                    {
-                        "id": "5ec14080c9ffe55cca300867",
-                        "description": "Find VPX Flash Storage Module in raid",
-                        "type": "findItem",
-                        "count": 1,
-                        "foundInRaid": true
-                    },
-                    {
-                        "id": "5c139eb686f7747878361a72",
-                        "description": "Hand over the reader",
-                        "type": "giveItem",
-                        "count": 1,
-                        "foundInRaid": true
-                    },
-                    {
-                        "id": "5c139eb686f7747878361a73",
-                        "description": "Hand over the storage module",
-                        "type": "giveItem",
-                        "count": 1,
-                        "foundInRaid": true
-                    }
-                ]
-            },
-            {
-                "id": "5c12452c86f7744b83469073",
-                "name": "Perfect Mediator",
-                "kappaRequired": true,
-                "trader": {
-                    "name": "Prapor"
-                },
-                "taskRequirements": [
-                    {
-                        "task": {
-                            "name": "Shaking up the Teller"
-                        }
-                    }
-                ],
-                "objectives": [
-                    {
-                        "id": "5c12470d86f77465ae27a8c0",
-                        "description": "Reach level 4 loyalty with Ragman",
-                        "type": "traderLevel"
-                    },
-                    {
-                        "id": "5c1247f386f77452db1d2b03",
-                        "description": "Reach level 4 loyalty with Skier",
-                        "type": "traderLevel"
-                    },
-                    {
-                        "id": "5c12484586f7744b83469074",
-                        "description": "Reach level 4 loyalty with Mechanic",
-                        "type": "traderLevel"
-                    },
-                    {
-                        "id": "5c12487386f7742a60324299",
-                        "description": "Reach level 4 loyalty with Peacekeeper",
-                        "type": "traderLevel"
-                    },
-                    {
-                        "id": "5c12489886f77452db1d2b05",
-                        "description": "Reach level 4 loyalty with Prapor",
-                        "type": "traderLevel"
-                    },
-                    {
-                        "id": "5c1248ef86f77428266184c2",
-                        "description": "Reach level 4 loyalty with Therapist",
-                        "type": "traderLevel"
-                    },
-                    {
-                        "id": "65e08db1a97b2cd4e452432d",
-                        "description": "Reach level 4 loyalty with Jaeger",
-                        "type": "traderLevel"
-                    }
-                ]
-            },
-            {
-                "id": "5c0be5fc86f774467a116593",
-                "name": "Private Clinic",
-                "kappaRequired": true,
-                "trader": {
-                    "name": "Therapist"
-                },
-                "taskRequirements": [
-                    {
-                        "task": {
-                            "name": "Health Care Privacy - Part 4"
-                        }
-                    }
-                ],
-                "objectives": [
-                    {
-                        "id": "5fd892bc37b6e511a4734969",
-                        "description": "Find Ophthalmoscope in raid",
-                        "type": "findItem",
-                        "count": 1,
-                        "foundInRaid": true
-                    },
-                    {
-                        "id": "5fd8935b7dd32f724e0fe7ee",
-                        "description": "Find LEDX Skin Transilluminator in raid",
-                        "type": "findItem",
-                        "count": 1,
-                        "foundInRaid": true
-                    },
-                    {
-                        "id": "5c0be66c86f7744523489ab2",
-                        "description": "Hand over the Ophthalmoscope",
-                        "type": "giveItem",
-                        "count": 1,
-                        "foundInRaid": true
-                    },
-                    {
-                        "id": "5c0be69086f7743c9c1ecf43",
-                        "description": "Hand over the LEDX Skin Transilluminator",
-                        "type": "giveItem",
-                        "count": 1,
-                        "foundInRaid": true
-                    }
-                ]
-            },
-            {
-                "id": "5c0bdb5286f774166e38eed4",
-                "name": "Flint",
-                "kappaRequired": true,
-                "trader": {
-                    "name": "Skier"
-                },
-                "taskRequirements": [
-                    {
-                        "task": {
-                            "name": "Chumming"
-                        }
-                    }
-                ],
-                "objectives": [
-                    {
-                        "id": "5c0bdbb586f774166e38eed5",
-                        "description": "Reach the required Stress Resistance skill level",
-                        "type": "skill",
-                        "skillLevel": {
-                            "level": 5
-                        }
-                    }
-                ]
-            },
-            {
                 "id": "625d6ffaf7308432be1d44c5",
                 "name": "Network Provider - Part 2",
                 "kappaRequired": false,
@@ -10256,25 +10315,25 @@ const data = {
                 "objectives": [
                     {
                         "id": "625ecedaa4eb80027c4f2e0b",
-                        "description": "Set up the retransmitter inside the MI-8 helicopter at the water treatment plant",
+                        "description": "Set up the radio repeater inside the MI-8 helicopter at the water treatment plant on Lighthouse",
                         "type": "mark",
                         "requiredKeys": null
                     },
                     {
                         "id": "625ecee6f7308432be1d44c7",
-                        "description": "Set up the retransmitter inside the abandoned USEC cottage",
+                        "description": "Set up the radio repeater inside the abandoned USEC cottage on Lighthouse",
                         "type": "mark",
                         "requiredKeys": null
                     },
                     {
                         "id": "625eceebc4874104f230c0c7",
-                        "description": "Set up the retransmitter at a high elevation overlooking the lighthouse",
+                        "description": "Set up the radio repeater at a high elevation overlooking the peninsula on Lighthouse",
                         "type": "mark",
                         "requiredKeys": null
                     },
                     {
                         "id": "6386410704a59f742a7a3b45",
-                        "description": "Set up the retransmitter on the roof of the sunken building at the shore",
+                        "description": "Set up the radio repeater on the roof of the sunken building at the shore on Lighthouse",
                         "type": "mark",
                         "requiredKeys": null
                     }
@@ -10299,7 +10358,7 @@ const data = {
                         "id": "625ed292c4874104f230c0c8",
                         "description": "Eliminate PMC operatives at the Lighthouse premises",
                         "type": "shoot",
-                        "count": 20
+                        "count": 15
                     }
                 ]
             },
@@ -10363,27 +10422,27 @@ const data = {
                         "id": "6260295faa168e51321d69d9",
                         "description": "Eliminate Raiders in The Lab",
                         "type": "shoot",
-                        "count": 10
+                        "count": 7
                     },
                     {
                         "id": "62602aaff7308432be1d44c9",
                         "description": "Hand over the found in raid SJ1 TGLabs combat stimulant injector",
                         "type": "giveItem",
-                        "count": 20,
+                        "count": 15,
                         "foundInRaid": true
                     },
                     {
                         "id": "62602a37c4874104f230c0ca",
                         "description": "Hand over the found in raid SJ6 TGLabs combat stimulant injector",
                         "type": "giveItem",
-                        "count": 8,
+                        "count": 5,
                         "foundInRaid": true
                     },
                     {
                         "id": "62602a44e7578c305945c9c5",
                         "description": "Hand over the found in raid SJ9 TGLabs combat stimulant injector",
                         "type": "giveItem",
-                        "count": 2,
+                        "count": 1,
                         "foundInRaid": true
                     }
                 ]
@@ -10572,6 +10631,47 @@ const data = {
                 ]
             },
             {
+                "id": "639135cd8ba6894d155e77cb",
+                "name": "House Arrest - Part 2",
+                "kappaRequired": false,
+                "trader": {
+                    "name": "Skier"
+                },
+                "taskRequirements": [
+                    {
+                        "task": {
+                            "name": "House Arrest - Part 1"
+                        }
+                    }
+                ],
+                "objectives": [
+                    {
+                        "id": "63a7dbc31943b749b5021ec3",
+                        "description": "Locate the improvised jail warden's apartment on Streets of Tarkov",
+                        "type": "visit",
+                        "requiredKeys": null
+                    },
+                    {
+                        "id": "63a7dbefee7b4d0d5507baf8",
+                        "description": "Find out what happened to the warden",
+                        "type": "visit",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "Chek 15"
+                                }
+                            ]
+                        ]
+                    },
+                    {
+                        "id": "63972db222ea23711e21aaaa",
+                        "description": "Survive and extract from the location",
+                        "type": "extract",
+                        "count": 1
+                    }
+                ]
+            },
+            {
                 "id": "6391d90f4ed9512be67647df",
                 "name": "Make Amends",
                 "kappaRequired": false,
@@ -10649,6 +10749,12 @@ const data = {
                     {
                         "id": "6397a5cbdcdd126fef173f36",
                         "description": "Survive and extract from Streets of Tarkov through Primorsky Ave Taxi V-Ex",
+                        "type": "extract",
+                        "count": 1
+                    },
+                    {
+                        "id": "65e09d3f0d1442c78274027e",
+                        "description": "Survive and extract from Ground Zero through Police Cordon V-Ex",
                         "type": "extract",
                         "count": 1
                     },
@@ -10765,7 +10871,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "6397ae22e301557ae24cbfe7",
-                        "description": "Locate and eliminate Glukhar",
+                        "description": "Locate and neutralize Glukhar",
                         "type": "shoot",
                         "count": 1
                     },
@@ -10811,14 +10917,14 @@ const data = {
                     },
                     {
                         "id": "639915f339cb4711771bedc6",
-                        "description": "Hide the TerraGroup \"Blue Folders\" materials folder inside the black SUV in the USEC camp",
+                        "description": "Hide the TerraGroup \"Blue Folders\" materials folder inside the black SUV in the USEC camp on Woods",
                         "type": "plantItem",
                         "count": 1,
                         "foundInRaid": false
                     },
                     {
                         "id": "63991601deadb12b2d7c6027",
-                        "description": "Hide the TerraGroup \"Blue Folders\" materials in the crates near the satellite antenna in the USEC camp",
+                        "description": "Hide the TerraGroup \"Blue Folders\" materials in the crates near the satellite antenna in the USEC camp on Woods",
                         "type": "plantItem",
                         "count": 1,
                         "foundInRaid": false
@@ -11065,37 +11171,37 @@ const data = {
                 "objectives": [
                     {
                         "id": "64f1cc571a5f313cb144bf91",
-                        "description": "Locate and eliminate Reshala",
+                        "description": "Locate and neutralize Reshala",
                         "type": "shoot",
                         "count": 15
                     },
                     {
                         "id": "64f1cc571a5f313cb144bf93",
-                        "description": "Locate and eliminate Glukhar",
+                        "description": "Locate and neutralize Glukhar",
                         "type": "shoot",
                         "count": 15
                     },
                     {
                         "id": "64f1cc571a5f313cb144bf95",
-                        "description": "Locate and eliminate Killa",
+                        "description": "Locate and neutralize Killa",
                         "type": "shoot",
                         "count": 15
                     },
                     {
                         "id": "64f1cc571a5f313cb144bf97",
-                        "description": "Locate and eliminate Shturman",
+                        "description": "Locate and neutralize Shturman",
                         "type": "shoot",
                         "count": 15
                     },
                     {
                         "id": "64f1cc571a5f313cb144bf99",
-                        "description": "Locate and eliminate Sanitar",
+                        "description": "Locate and neutralize Sanitar",
                         "type": "shoot",
                         "count": 15
                     },
                     {
                         "id": "64f1cc571a5f313cb144bf9b",
-                        "description": "Locate and eliminate Tagilla",
+                        "description": "Locate and neutralize Tagilla",
                         "type": "shoot",
                         "count": 15
                     }
@@ -11122,6 +11228,36 @@ const data = {
                         "type": "giveItem",
                         "count": 50000,
                         "foundInRaid": false
+                    }
+                ]
+            },
+            {
+                "id": "6613f307fca4f2f386029409",
+                "name": "Drip-Out - Part 2",
+                "kappaRequired": false,
+                "trader": {
+                    "name": "Ragman"
+                },
+                "taskRequirements": [
+                    {
+                        "task": {
+                            "name": "Dandies"
+                        }
+                    }
+                ],
+                "objectives": [
+                    {
+                        "id": "6615127fd998c5f2aaa4a8a0",
+                        "description": "Eliminate Rogues",
+                        "type": "shoot",
+                        "count": 100
+                    },
+                    {
+                        "id": "661681edabe376e7d6eab98f",
+                        "description": "Hand over the found in raid LBT brand equipment",
+                        "type": "giveItem",
+                        "count": 50,
+                        "foundInRaid": true
                     }
                 ]
             },
@@ -11194,79 +11330,6 @@ const data = {
                 ]
             },
             {
-                "id": "626bdcc3a371ee3a7a3514c5",
-                "name": "Stray Dogs",
-                "kappaRequired": true,
-                "trader": {
-                    "name": "Jaeger"
-                },
-                "taskRequirements": [
-                    {
-                        "task": {
-                            "name": "The Huntsman Path - Trophy"
-                        }
-                    },
-                    {
-                        "task": {
-                            "name": "The Huntsman Path - Woods Keeper"
-                        }
-                    },
-                    {
-                        "task": {
-                            "name": "The Huntsman Path - Sellout"
-                        }
-                    }
-                ],
-                "objectives": [
-                    {
-                        "id": "626c317e05f287031503c7fd",
-                        "description": "Locate and eliminate Knight",
-                        "type": "shoot",
-                        "count": 1
-                    },
-                    {
-                        "id": "626c318147ea7f506e5493c7",
-                        "description": "Locate and eliminate Big Pipe",
-                        "type": "shoot",
-                        "count": 1
-                    },
-                    {
-                        "id": "626c3183af14a41d9a1f4ea7",
-                        "description": "Locate and eliminate Birdeye",
-                        "type": "shoot",
-                        "count": 1
-                    }
-                ]
-            },
-            {
-                "id": "5c0d1c4cd0928202a02a6f5c",
-                "name": "Decontamination Service",
-                "kappaRequired": true,
-                "trader": {
-                    "name": "Therapist"
-                },
-                "taskRequirements": [
-                    {
-                        "task": {
-                            "name": "Health Care Privacy - Part 5"
-                        }
-                    },
-                    {
-                        "task": {
-                            "name": "Private Clinic"
-                        }
-                    }
-                ],
-                "objectives": [
-                    {
-                        "id": "5c1b778286f774294438b536",
-                        "description": "Eliminate Scavs from less than 60 meters away while wearing specific gear on Interchange",
-                        "type": "shoot",
-                        "count": 40
-                    }
-                ]
-            },
-            {
                 "id": "626bd75d5bef5d7d590bd415",
                 "name": "Top Secret",
                 "kappaRequired": false,
@@ -11328,12 +11391,12 @@ const data = {
                 "taskRequirements": [
                     {
                         "task": {
-                            "name": "The Tarkov Shooter - Part 7"
+                            "name": "The Huntsman Path - Forest Cleaning"
                         }
                     },
                     {
                         "task": {
-                            "name": "The Huntsman Path - Forest Cleaning"
+                            "name": "Chemical - Part 4"
                         }
                     },
                     {
@@ -11348,42 +11411,47 @@ const data = {
                     },
                     {
                         "task": {
-                            "name": "The Punisher - Part 5"
+                            "name": "A Fuel Matter"
                         }
                     },
                     {
                         "task": {
-                            "name": "Bullshit"
+                            "name": "Database - Part 2"
                         }
                     },
                     {
                         "task": {
-                            "name": "Drug Trafficking"
+                            "name": "Seaside Vacation"
                         }
                     },
                     {
                         "task": {
-                            "name": "Gunsmith - Part 15"
+                            "name": "The Cult - Part 2"
                         }
                     },
                     {
                         "task": {
-                            "name": "Peacekeeping Mission"
+                            "name": "The Punisher - Part 4"
                         }
                     },
                     {
                         "task": {
-                            "name": "Living High is Not a Crime - Part 2"
+                            "name": "Courtesy Visit"
+                        }
+                    },
+                    {
+                        "task": {
+                            "name": "Gunsmith - Part 10"
+                        }
+                    },
+                    {
+                        "task": {
+                            "name": "Lost Contact"
                         }
                     },
                     {
                         "task": {
                             "name": "House Arrest - Part 1"
-                        }
-                    },
-                    {
-                        "task": {
-                            "name": "Decontamination Service"
                         }
                     }
                 ],
@@ -11415,6 +11483,317 @@ const data = {
                         "type": "giveItem",
                         "count": 4,
                         "foundInRaid": true
+                    }
+                ]
+            },
+            {
+                "id": "639135534b15ca31f76bc317",
+                "name": "Your Car Needs a Service",
+                "kappaRequired": false,
+                "trader": {
+                    "name": "Peacekeeper"
+                },
+                "taskRequirements": [
+                    {
+                        "task": {
+                            "name": "Cargo X - Part 4"
+                        }
+                    }
+                ],
+                "objectives": [
+                    {
+                        "id": "639135534b15ca31f76bc318",
+                        "description": "Obtain the digital storage device from the car dealership manager's office on Streets of Tarkov",
+                        "type": "findQuestItem",
+                        "requiredKeys": [
+                            [
+                                {
+                                    "shortName": "LexOs"
+                                }
+                            ],
+                            [
+                                {
+                                    "shortName": "LexOs sect."
+                                }
+                            ]
+                        ]
+                    },
+                    {
+                        "id": "639135534b15ca31f76bc319",
+                        "description": "Hand over the storage device",
+                        "type": "giveQuestItem",
+                        "requiredKeys": null
+                    }
+                ]
+            },
+            {
+                "id": "5c0be13186f7746f016734aa",
+                "name": "Psycho Sniper",
+                "kappaRequired": true,
+                "trader": {
+                    "name": "Mechanic"
+                },
+                "taskRequirements": [
+                    {
+                        "task": {
+                            "name": "Wet Job - Part 6"
+                        }
+                    }
+                ],
+                "objectives": [
+                    {
+                        "id": "5c0be2b486f7747bcb347d58",
+                        "description": "Reach the required Bolt-action Rifles skill level",
+                        "type": "skill",
+                        "skillLevel": {
+                            "level": 10
+                        }
+                    },
+                    {
+                        "id": "64b67c6358b5637e2d71a655",
+                        "description": "Eliminate PMC operatives without dying while using a bolt-action rifle",
+                        "type": "shoot",
+                        "count": 5
+                    }
+                ]
+            },
+            {
+                "id": "5c139eb686f7747878361a6f",
+                "name": "Import",
+                "kappaRequired": true,
+                "trader": {
+                    "name": "Mechanic"
+                },
+                "taskRequirements": [
+                    {
+                        "task": {
+                            "name": "Farming - Part 4"
+                        }
+                    }
+                ],
+                "objectives": [
+                    {
+                        "id": "5ec14003e16f6c41ee73525f",
+                        "description": "Find UHF RFID Reader in raid",
+                        "type": "findItem",
+                        "count": 1,
+                        "foundInRaid": true
+                    },
+                    {
+                        "id": "5ec14080c9ffe55cca300867",
+                        "description": "Find VPX Flash Storage Module in raid",
+                        "type": "findItem",
+                        "count": 1,
+                        "foundInRaid": true
+                    },
+                    {
+                        "id": "5c139eb686f7747878361a72",
+                        "description": "Hand over the reader",
+                        "type": "giveItem",
+                        "count": 1,
+                        "foundInRaid": true
+                    },
+                    {
+                        "id": "5c139eb686f7747878361a73",
+                        "description": "Hand over the storage module",
+                        "type": "giveItem",
+                        "count": 1,
+                        "foundInRaid": true
+                    }
+                ]
+            },
+            {
+                "id": "5c12452c86f7744b83469073",
+                "name": "Perfect Mediator",
+                "kappaRequired": true,
+                "trader": {
+                    "name": "Prapor"
+                },
+                "taskRequirements": [
+                    {
+                        "task": {
+                            "name": "Shaking up the Teller"
+                        }
+                    }
+                ],
+                "objectives": [
+                    {
+                        "id": "5c12470d86f77465ae27a8c0",
+                        "description": "Reach level 4 loyalty with Ragman",
+                        "type": "traderLevel"
+                    },
+                    {
+                        "id": "5c1247f386f77452db1d2b03",
+                        "description": "Reach level 4 loyalty with Skier",
+                        "type": "traderLevel"
+                    },
+                    {
+                        "id": "5c12484586f7744b83469074",
+                        "description": "Reach level 4 loyalty with Mechanic",
+                        "type": "traderLevel"
+                    },
+                    {
+                        "id": "5c12487386f7742a60324299",
+                        "description": "Reach level 4 loyalty with Peacekeeper",
+                        "type": "traderLevel"
+                    },
+                    {
+                        "id": "5c12489886f77452db1d2b05",
+                        "description": "Reach level 4 loyalty with Prapor",
+                        "type": "traderLevel"
+                    },
+                    {
+                        "id": "5c1248ef86f77428266184c2",
+                        "description": "Reach level 4 loyalty with Therapist",
+                        "type": "traderLevel"
+                    },
+                    {
+                        "id": "65e08db1a97b2cd4e452432d",
+                        "description": "Reach level 4 loyalty with Jaeger",
+                        "type": "traderLevel"
+                    }
+                ]
+            },
+            {
+                "id": "5c0be5fc86f774467a116593",
+                "name": "Private Clinic",
+                "kappaRequired": true,
+                "trader": {
+                    "name": "Therapist"
+                },
+                "taskRequirements": [
+                    {
+                        "task": {
+                            "name": "Health Care Privacy - Part 4"
+                        }
+                    }
+                ],
+                "objectives": [
+                    {
+                        "id": "5fd892bc37b6e511a4734969",
+                        "description": "Find Ophthalmoscope in raid",
+                        "type": "findItem",
+                        "count": 1,
+                        "foundInRaid": true
+                    },
+                    {
+                        "id": "5fd8935b7dd32f724e0fe7ee",
+                        "description": "Find LEDX Skin Transilluminator in raid",
+                        "type": "findItem",
+                        "count": 1,
+                        "foundInRaid": true
+                    },
+                    {
+                        "id": "5c0be66c86f7744523489ab2",
+                        "description": "Hand over the Ophthalmoscope",
+                        "type": "giveItem",
+                        "count": 1,
+                        "foundInRaid": true
+                    },
+                    {
+                        "id": "5c0be69086f7743c9c1ecf43",
+                        "description": "Hand over the LEDX Skin Transilluminator",
+                        "type": "giveItem",
+                        "count": 1,
+                        "foundInRaid": true
+                    }
+                ]
+            },
+            {
+                "id": "5c0bdb5286f774166e38eed4",
+                "name": "Flint",
+                "kappaRequired": true,
+                "trader": {
+                    "name": "Skier"
+                },
+                "taskRequirements": [
+                    {
+                        "task": {
+                            "name": "Chumming"
+                        }
+                    }
+                ],
+                "objectives": [
+                    {
+                        "id": "5c0bdbb586f774166e38eed5",
+                        "description": "Reach the required Stress Resistance skill level",
+                        "type": "skill",
+                        "skillLevel": {
+                            "level": 5
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "626bdcc3a371ee3a7a3514c5",
+                "name": "Stray Dogs",
+                "kappaRequired": true,
+                "trader": {
+                    "name": "Jaeger"
+                },
+                "taskRequirements": [
+                    {
+                        "task": {
+                            "name": "The Huntsman Path - Trophy"
+                        }
+                    },
+                    {
+                        "task": {
+                            "name": "The Huntsman Path - Woods Keeper"
+                        }
+                    },
+                    {
+                        "task": {
+                            "name": "The Huntsman Path - Sellout"
+                        }
+                    }
+                ],
+                "objectives": [
+                    {
+                        "id": "626c317e05f287031503c7fd",
+                        "description": "Locate and neutralize Knight",
+                        "type": "shoot",
+                        "count": 1
+                    },
+                    {
+                        "id": "626c318147ea7f506e5493c7",
+                        "description": "Locate and neutralize Big Pipe",
+                        "type": "shoot",
+                        "count": 1
+                    },
+                    {
+                        "id": "626c3183af14a41d9a1f4ea7",
+                        "description": "Locate and neutralize Birdeye",
+                        "type": "shoot",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "id": "5c0d1c4cd0928202a02a6f5c",
+                "name": "Decontamination Service",
+                "kappaRequired": true,
+                "trader": {
+                    "name": "Therapist"
+                },
+                "taskRequirements": [
+                    {
+                        "task": {
+                            "name": "Health Care Privacy - Part 5"
+                        }
+                    },
+                    {
+                        "task": {
+                            "name": "Private Clinic"
+                        }
+                    }
+                ],
+                "objectives": [
+                    {
+                        "id": "5c1b778286f774294438b536",
+                        "description": "Eliminate Scavs from less than 60 meters away while wearing a gas mask or respirator on Interchange",
+                        "type": "shoot",
+                        "count": 40
                     }
                 ]
             },
@@ -11645,6 +12024,12 @@ const data = {
                         "description": "Survive and extract from Streets of Tarkov with the \"Survived\" exit status",
                         "type": "extract",
                         "count": 1
+                    },
+                    {
+                        "id": "65e08b7a2f82d184fcf9ef61",
+                        "description": "Survive and extract from Ground Zero with the \"Survived\" exit status",
+                        "type": "extract",
+                        "count": 1
                     }
                 ]
             },
@@ -11713,6 +12098,12 @@ const data = {
                     {
                         "id": "63a9b5f064b9631d9178276b",
                         "description": "Eliminate Scavs while using melee weapons on Reserve",
+                        "type": "shoot",
+                        "count": 10
+                    },
+                    {
+                        "id": "65e0a329893b7bf535c6a9fd",
+                        "description": "Eliminate Scavs while using melee weapons on Ground Zero",
                         "type": "shoot",
                         "count": 10
                     }
@@ -12090,7 +12481,7 @@ const data = {
                         "id": "60e73ee8b567ff641b129570",
                         "description": "Eliminate PMC operatives inside the ULTRA mall on Interchange",
                         "type": "shoot",
-                        "count": 30
+                        "count": 20
                     }
                 ]
             },
@@ -13337,37 +13728,37 @@ const data = {
                 "objectives": [
                     {
                         "id": "60e7259e465ea8368012cc45",
-                        "description": "Locate and eliminate Tagilla",
+                        "description": "Locate and neutralize Tagilla",
                         "type": "shoot",
                         "count": 1
                     },
                     {
                         "id": "60e725d8b567ff641b129555",
-                        "description": "Locate and eliminate Killa",
+                        "description": "Locate and neutralize Killa",
                         "type": "shoot",
                         "count": 1
                     },
                     {
                         "id": "60e72604a6e322250215f066",
-                        "description": "Locate and eliminate Reshala",
+                        "description": "Locate and neutralize Reshala",
                         "type": "shoot",
                         "count": 1
                     },
                     {
                         "id": "60e7261382576b5f4f21c495",
-                        "description": "Locate and eliminate Shturman",
+                        "description": "Locate and neutralize Shturman",
                         "type": "shoot",
                         "count": 1
                     },
                     {
                         "id": "60e7261eb567ff641b129557",
-                        "description": "Locate and eliminate Glukhar",
+                        "description": "Locate and neutralize Glukhar",
                         "type": "shoot",
                         "count": 1
                     },
                     {
                         "id": "60e72629465ea8368012cc47",
-                        "description": "Locate and eliminate Sanitar",
+                        "description": "Locate and neutralize Sanitar",
                         "type": "shoot",
                         "count": 1
                     }
