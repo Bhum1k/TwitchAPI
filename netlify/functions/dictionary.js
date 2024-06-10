@@ -11,7 +11,7 @@ async function returnOutput(query) {
         return (`${data[0].word} (${data[0].meanings[0].partOfSpeech}) - ${data[0].meanings[0].definitions[0].definition}`);
     } catch (error) {
         console.error('There was an error fetching the dictionary data:', error);
-        return 'Word not found fiathePanic';
+        return 'Word not found!!!';
     }
 }
 
