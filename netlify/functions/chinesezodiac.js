@@ -35,17 +35,19 @@ async function returnOutput(year) {
 
     const index = (year - startYear) % cycleLength;
     let A = zodiacSigns[index >= 0 ? index : index + cycleLength];
-    return `The Chinese Zodiac sign for the year ${year} is: ${A}`
+    return `The Chinese Zodiac sign for the year ${year} is: ${A}`;
 }
-
 
 exports.handler = async (event, context) => {
     try {
         const { queryStringParameters } = event;
         const queryTerm = queryStringParameters && queryStringParameters.query;
 
+        // Convert queryTerm to number
+        const year = parseInt(queryTerm, 10);
+
         // Await the returnOutput call
-        const output = await returnOutput(queryTerm);
+        const output = await returnOutput(year);
 
         return {
             statusCode: 200,
