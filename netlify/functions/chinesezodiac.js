@@ -2,6 +2,16 @@ const fs = require('fs');
 const axios = require('axios');
 
 async function returnOutput(year) {
+    // Check if the input is a string and try to convert it to a number
+    if (typeof year === 'string') {
+        year = parseInt(year, 10);
+    }
+
+    // Check if the input is not a number or if it is NaN after conversion
+    if (isNaN(year)) {
+        return "Invalid input: Year must be a number";
+    }
+
     const zodiacSigns = [
         "Rat",
         "Ox",
