@@ -39,6 +39,8 @@ exports.handler = async (event, context) => {
         const { queryStringParameters } = event;
         const queryTerm = queryStringParameters && queryStringParameters.query;
 
+        console.log(queryTerm);
+
         // Await the returnOutput call
         const output = await returnOutput(queryTerm);
 
