@@ -1,7 +1,7 @@
 const fs = require('fs');
 const axios = require('axios');
 
-function returnOutput(dateString) {
+async function returnOutput(dateString) {
     // Define the zodiac signs and their date ranges
     const zodiacSigns = [
         { sign: "Capricorn", start: "12-22", end: "01-19" },
