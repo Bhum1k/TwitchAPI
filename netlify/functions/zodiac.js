@@ -19,28 +19,38 @@ async function returnOutput(dateString) {
     ];
 
     // Check if the input is a string in the format "MM DD"
-    if (typeof dateString !== 'string' || !/^\d{2} \d{2}$/.test(dateString)) {
-        return "Invalid input: Date must be in the format 'MM DD'";
+    if (typeof dateString !== 'string' || !/^\d{1,2} \d{1,2}$/.test(dateString)) {
+        return "Date must be in the format 'MM DD'";
     }
 
     const [month, day] = dateString.split(' ').map(num => parseInt(num, 10));
 
-    if (isNaN(month) || isNaN(day)) {
-        return "Invalid input: Date must be in the format 'MM DD'";
+    // Validate month and day ranges
+    if (isNaN(month) || isNaN(day) || month < 1 || month > 12) {
+        return "Date must be in the format 'MM DD'";
     }
 
+    // Get the number of days in the given month
+    const daysInMonth = new Date(2020, month, 0).getDate(); // Using 2020 as a leap year reference
+
+    if (day < 1 || day > daysInMonth) {
+        return "Date must be in the format 'MM DD'";
+    }
+
+    const formattedDate = `${String(month).padStart(2, '0')}/${String(day).padStart(2, '0')}`;
     const date = `${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
 
     for (let i = 0; i < zodiacSigns.length; i++) {
         const { sign, start, end } = zodiacSigns[i];
         if (
-            (date >= start && date <= "12-31") || (date >= "01-01" && date <= end)
+            (start <= end && date >= start && date <= end) ||
+            (start > end && (date >= start || date <= end))
         ) {
-            return `The astrological Zodiac sign for the date ${dateString} is: ${sign}`;
+            return `The Zodiac sign for the date ${formattedDate} is: ${sign}`;
         }
     }
 
-    return "Invalid date: Unable to determine Zodiac sign";
+    return "Date must be in the format 'MM DD'";
 }
 
 exports.handler = async (event, context) => {
