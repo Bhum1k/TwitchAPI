@@ -40,12 +40,10 @@ async function returnOutput(year) {
 
 exports.handler = async (event, context) => {
     try {
-        console.log('Event:', JSON.stringify(event)); // Log the entire event object for debugging
-
         const { queryStringParameters } = event;
-        const queryTerm = queryStringParameters ? queryStringParameters.query : undefined;
-
-        console.log('Query Term:', queryTerm); // Log queryTerm for debugging
+        const queryTerm = queryStringParameters && queryStringParameters.query;
+        
+        console.log(queryTerm);
 
         // Convert queryTerm to number
         const year = parseInt(queryTerm, 10);
@@ -61,8 +59,6 @@ exports.handler = async (event, context) => {
             },
         };
     } catch (error) {
-        console.error('Error:', error); // Log the error for debugging
-
         return {
             statusCode: 500,
             body: 'Failed to fetch data',
