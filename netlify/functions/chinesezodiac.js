@@ -42,6 +42,8 @@ exports.handler = async (event, context) => {
     try {
         const { queryStringParameters } = event;
         const queryTerm = queryStringParameters && queryStringParameters.query;
+        
+        console.log(queryTerm);
 
         // Convert queryTerm to number
         const year = parseInt(queryTerm, 10);
