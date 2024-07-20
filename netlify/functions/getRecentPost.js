@@ -4,14 +4,11 @@ const axios = require('axios');
 async function fetchData() {
     const options = {
         method: 'GET',
-        url: 'https://instagram130.p.rapidapi.com/account-medias',
-        params: {
-            userid: '1548216509',
-            first: '1'
-        },
+        url: 'https://instagram-looter2.p.rapidapi.com/user-feeds2',
+        params: { id: '1548216509', count: '1' },
         headers: {
-            'X-RapidAPI-Key': '0d5bc91b44msh27f6c54f345f353p15971ejsnb2754612e803',
-            'X-RapidAPI-Host': 'instagram130.p.rapidapi.com'
+            'x-rapidapi-key': '0d5bc91b44msh27f6c54f345f353p15971ejsnb2754612e803',
+            'x-rapidapi-host': 'instagram-looter2.p.rapidapi.com'
         }
     };
 
@@ -28,7 +25,7 @@ async function fetchData() {
 }
 
 // Call the async function to execute the code
-// fetchData();
+fetchData();
 
 exports.handler = async (event, context) => {
     try {
