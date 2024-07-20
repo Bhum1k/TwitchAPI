@@ -1086,37 +1086,13 @@ const data = {
                 "objectives": [
                     {
                         "id": "664bbad8d5057479ac4b8002",
-                        "description": "Find a stack of “Bison VS Undertaker” posters at the USEC camp on Woods",
-                        "type": "findQuestItem",
-                        "requiredKeys": null
-                    },
-                    {
-                        "id": "664bbb5f217c767c35ae3d51",
-                        "description": "Find a stack of “Killa and Tagilla” posters at the USEC camp on woods",
-                        "type": "findQuestItem",
-                        "requiredKeys": null
-                    },
-                    {
-                        "id": "664bbb73c71d456fd03714ca",
-                        "description": "Find a stack of “Make a fortune on betting!” posters at the USEC camp on woods",
+                        "description": "Locate and obtain the “Bison VS Undertaker” poster at the USEC camp on Woods",
                         "type": "findQuestItem",
                         "requiredKeys": null
                     },
                     {
                         "id": "6606b709f7ce34bb26221cab",
-                        "description": "Stash the flyers \"Bison VS Undertaker\" in the living quarters at the Scav base on Customs",
-                        "type": "plantQuestItem",
-                        "requiredKeys": null
-                    },
-                    {
-                        "id": "6606b74ebce4c3e0bda438fd",
-                        "description": "Stash the flyers \"Killa and Tagilla\" at the railway platform on Reserve",
-                        "type": "plantQuestItem",
-                        "requiredKeys": null
-                    },
-                    {
-                        "id": "6606b752a6c704c4333a804d",
-                        "description": "Stash the flyers \"Easy money on betting\" inside the helicopter at the water treatment plant on Lighthouse",
+                        "description": "Plant the \"Bison VS Undertaker\" poster in the living quarters at the Scav base on Customs",
                         "type": "plantQuestItem",
                         "requiredKeys": null
                     }
@@ -1207,7 +1183,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "6606d133fcb99b9004aa2d1d",
-                        "description": "Eliminate Scavs while using G36 and Thor body armor on Interchange",
+                        "description": "Eliminate Scavs while using a G36 assault rifle and any NFM THOR body armor on Interchange",
                         "type": "shoot",
                         "count": 10
                     }
@@ -1253,21 +1229,21 @@ const data = {
                 "objectives": [
                     {
                         "id": "6606d08b4e2e27ca2d80085e",
-                        "description": "Hand over the item: Korund-VM ballistic plates (Front)",
+                        "description": "Hand over the found in raid item: Korund-VM ballistic plates (Front)",
                         "type": "giveItem",
                         "count": 1,
                         "foundInRaid": true
                     },
                     {
                         "id": "6606d09a3db3fc1911e204ce",
-                        "description": "Hand over the item: SPRTN Omega ballistic plate",
+                        "description": "Hand over the found in raid item: SPRTN Omega ballistic plate",
                         "type": "giveItem",
                         "count": 1,
                         "foundInRaid": true
                     },
                     {
                         "id": "6606d0a8f146598b0f492e12",
-                        "description": "Hand over the item: 6B33 ballistic plate (Front)",
+                        "description": "Hand over the found in raid item: 6B33 ballistic plate (Front)",
                         "type": "giveItem",
                         "count": 1,
                         "foundInRaid": true
@@ -1291,17 +1267,46 @@ const data = {
                 "objectives": [
                     {
                         "id": "660a9dc64c0927ead4fcfeef",
-                        "description": "Plant a TP-200 TNT brick at the car dealership on Streets of Tarkov",
+                        "description": "Plant three TP-200 TNT bricks under Kaban's office on Streets of Tarkov",
                         "type": "plantItem",
                         "count": 3,
                         "foundInRaid": false
                     },
                     {
                         "id": "660a9dcf070cb9c8cc1715c7",
-                        "description": "Plant a TP-200 TNT brick at the MVD academy on Streets of Tarkov",
+                        "description": "Plant three TP-200 TNT bricks at the MVD academy entrance on Streets of Tarkov",
                         "type": "plantItem",
                         "count": 3,
                         "foundInRaid": false
+                    }
+                ]
+            },
+            {
+                "id": "66058cbf2f19c31a5a1337ec",
+                "name": "Create a Distraction - Part 2",
+                "kappaRequired": false,
+                "trader": {
+                    "name": "Ref"
+                },
+                "taskRequirements": [
+                    {
+                        "task": {
+                            "name": "Create a Distraction - Part 1"
+                        }
+                    }
+                ],
+                "objectives": [
+                    {
+                        "id": "660d5effb318c171fb1ca234",
+                        "description": "Eliminate Kaban's guards on Streets of Tarkov",
+                        "type": "shoot",
+                        "count": 3
+                    },
+                    {
+                        "id": "660d5f5a99b1db9725ca1543",
+                        "description": "Eliminate Kollontay's guards on Streets of Tarkov",
+                        "type": "shoot",
+                        "count": 3
                     }
                 ]
             },
@@ -1926,13 +1931,6 @@ const data = {
                         "count": 7
                     },
                     {
-                        "id": "5ec137962d5b8510d548aef1",
-                        "description": "Obtain USEC PMC dogtags",
-                        "type": "findItem",
-                        "count": 7,
-                        "foundInRaid": false
-                    },
-                    {
                         "id": "5ec137dcc367fc6781104613",
                         "description": "Hand over the dogtags",
                         "type": "giveItem",
@@ -2033,6 +2031,72 @@ const data = {
                         "id": "63987404e5163c24b3029356",
                         "description": "Modify an OP-SKS to comply with the given specifications",
                         "type": "buildWeapon"
+                    }
+                ]
+            },
+            {
+                "id": "6672ec2a2b6f3b71be794cc5",
+                "name": "A Key to Salvation",
+                "kappaRequired": false,
+                "trader": {
+                    "name": "Therapist"
+                },
+                "taskRequirements": [
+                    {
+                        "task": {
+                            "name": "First in Line"
+                        }
+                    }
+                ],
+                "objectives": [
+                    {
+                        "id": "66742e9871a1ea849356d1a1",
+                        "description": "Hand over a TerraGroup Labs keycard (Black)",
+                        "type": "giveItem",
+                        "count": 1,
+                        "foundInRaid": false
+                    },
+                    {
+                        "id": "66742eb113141dd347c1515f",
+                        "description": "Hand over a TerraGroup Labs keycard (Blue)",
+                        "type": "giveItem",
+                        "count": 1,
+                        "foundInRaid": false
+                    },
+                    {
+                        "id": "66742ebfbe505da164e5068d",
+                        "description": "Hand over a TerraGroup Labs keycard (Green)",
+                        "type": "giveItem",
+                        "count": 1,
+                        "foundInRaid": false
+                    },
+                    {
+                        "id": "66742efcb6a664c20e32cc11",
+                        "description": "Hand over a TerraGroup Labs keycard (Red)",
+                        "type": "giveItem",
+                        "count": 1,
+                        "foundInRaid": false
+                    },
+                    {
+                        "id": "66742f60da136c794ff6df0c",
+                        "description": "Hand over a TerraGroup Labs keycard (Yellow)",
+                        "type": "giveItem",
+                        "count": 1,
+                        "foundInRaid": false
+                    },
+                    {
+                        "id": "66742f71f4a5f593020a5554",
+                        "description": "Hand over a TerraGroup Labs keycard (Violet)",
+                        "type": "giveItem",
+                        "count": 1,
+                        "foundInRaid": false
+                    },
+                    {
+                        "id": "66742f90653d4d410e6908ea",
+                        "description": "Hand over a TerraGroup Labs access keycard",
+                        "type": "giveItem",
+                        "count": 1,
+                        "foundInRaid": false
                     }
                 ]
             },
@@ -2486,7 +2550,7 @@ const data = {
                 ],
                 "objectives": [
                     {
-                        "id": "5a27e73f86f7740fb275c94b",
+                        "id": "66698a9eddc21e9441645819",
                         "description": "Locate and mark the first Tigr vehicle with an MS2000 Marker on Customs",
                         "type": "mark",
                         "requiredKeys": null
@@ -7045,23 +7109,9 @@ const data = {
                         "count": 15
                     },
                     {
-                        "id": "5b05468f86f774030379eb74",
-                        "description": "Find BEAR PMC dogtags in raid",
-                        "type": "findItem",
-                        "count": 7,
-                        "foundInRaid": false
-                    },
-                    {
                         "id": "5b0548e686f7740306753506",
                         "description": "Hand over the BEAR dogtags",
                         "type": "giveItem",
-                        "count": 7,
-                        "foundInRaid": false
-                    },
-                    {
-                        "id": "5cb3393888a4505d02042061",
-                        "description": "Find USEC PMC dogtags in raid",
-                        "type": "findItem",
                         "count": 7,
                         "foundInRaid": false
                     },
@@ -7494,7 +7544,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "63929224744e45201147081a",
-                        "description": "Eliminate the snipers on the rooftops on Streets of Tarkov",
+                        "description": "Eliminate rooftop Sniper Scavs on Streets of Tarkov",
                         "type": "shoot",
                         "count": 10
                     },
@@ -8105,7 +8155,7 @@ const data = {
                     },
                     {
                         "id": "65802779963422318339533c",
-                        "description": "Eliminate any enemy in the base area",
+                        "description": "Eliminate any target in the base area",
                         "type": "shoot",
                         "count": 25
                     }
@@ -8716,7 +8766,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "63a9b229813bba58a50c9ee6",
-                        "description": "Eliminate any enemy from over 100 meters away while using AR-15 platform weapons",
+                        "description": "Eliminate any target from over 100 meters away while using AR-15 platform weapons",
                         "type": "shoot",
                         "count": 30
                     }
@@ -8850,7 +8900,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "63a9ae63da7999196148ba5c",
-                        "description": "Eliminate any enemy from over 100 meters away while using AK-74 series weapons",
+                        "description": "Eliminate any target from over 100 meters away while using AK-74 series weapons",
                         "type": "shoot",
                         "count": 30
                     }
@@ -9907,7 +9957,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "63a5cf262964a7488f5243d1",
-                        "description": "Eliminate PMC operatives while using an SR-2M \"Veresk\" with a suppressor and KP-SR2 reflex sight on Streets of Tarkov",
+                        "description": "Eliminate PMC operatives while using an SR-2M with a suppressor and KP-SR2 sight on Streets of Tarkov",
                         "type": "shoot",
                         "count": 20
                     }
@@ -10221,7 +10271,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "65734c186dc1e402c80dc1a2",
-                        "description": "Eliminate any enemy while wearing a Bomber beanie and Raybench Hipster Reserve sunglasses on Streets of Tarkov",
+                        "description": "Eliminate any target while wearing a Bomber beanie and RayBench Hipster Reserve sunglasses on Streets of Tarkov",
                         "type": "shoot",
                         "count": 30
                     },
@@ -10234,7 +10284,7 @@ const data = {
                     },
                     {
                         "id": "657356d0a95a1e7e1a8d8d99",
-                        "description": "Stash Raybench Hipster Reserve sunglasses inside the barber shop on Streets of Tarkov",
+                        "description": "Stash RayBench Hipster Reserve sunglasses inside the barber shop on Streets of Tarkov",
                         "type": "plantItem",
                         "count": 1,
                         "foundInRaid": false
@@ -10789,7 +10839,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "63a7cee004d3dc28a52a20f8",
-                        "description": "Locate the informant's backup hideout",
+                        "description": "Locate the informant's backup hideout on Streets of Tarkov",
                         "type": "visit",
                         "requiredKeys": null
                     },
@@ -10917,7 +10967,7 @@ const data = {
                     },
                     {
                         "id": "639915f339cb4711771bedc6",
-                        "description": "Hide the TerraGroup \"Blue Folders\" materials folder inside the black SUV in the USEC camp on Woods",
+                        "description": "Hide the TerraGroup \"Blue Folders\" materials inside the black SUV in the USEC camp on Woods",
                         "type": "plantItem",
                         "count": 1,
                         "foundInRaid": false
@@ -10948,7 +10998,7 @@ const data = {
                 "objectives": [
                     {
                         "id": "639a76e3e4aa7349085cb6e3",
-                        "description": "Eliminate any enemy around the Kiba Arms store while using an ASh-12 on Interchange",
+                        "description": "Eliminate any target around the Kiba Arms store while using an ASh-12 on Interchange",
                         "type": "shoot",
                         "count": 20
                     },
@@ -11258,74 +11308,6 @@ const data = {
                         "type": "giveItem",
                         "count": 50,
                         "foundInRaid": true
-                    }
-                ]
-            },
-            {
-                "id": "626148334149f1149b5b12ca",
-                "name": "Make Amends - Security",
-                "kappaRequired": false,
-                "trader": {
-                    "name": "Mechanic"
-                },
-                "taskRequirements": [
-                    {
-                        "task": {
-                            "name": "Make Amends - Equipment"
-                        }
-                    }
-                ],
-                "objectives": [
-                    {
-                        "id": "62668b98ddc94657c21a1628",
-                        "description": "Place a WI-FI Camera at the yellow bus on the southern bridge approaching the water treatment plant",
-                        "type": "plantItem",
-                        "count": 1,
-                        "foundInRaid": false
-                    },
-                    {
-                        "id": "62668ba11ed3bb5bcc5bd9ef",
-                        "description": "Place a WI-FI Camera at the yellow bulldozer in the south-eastern part of the water treatment plant",
-                        "type": "plantItem",
-                        "count": 1,
-                        "foundInRaid": false
-                    },
-                    {
-                        "id": "62668ba4aa168e51321d69e0",
-                        "description": "Place a WI-FI Camera at the police truck in the western part of the water treatment plant",
-                        "type": "plantItem",
-                        "count": 1,
-                        "foundInRaid": false
-                    },
-                    {
-                        "id": "62668ba9a4eb80027c4f2e16",
-                        "description": "Place a WI-FI Camera at the army truck near the industrial zone in the northern part of the water treatment plant",
-                        "type": "plantItem",
-                        "count": 1,
-                        "foundInRaid": false
-                    }
-                ]
-            },
-            {
-                "id": "62614836f7308432be1d44cc",
-                "name": "Make Amends - Sweep Up",
-                "kappaRequired": false,
-                "trader": {
-                    "name": "Mechanic"
-                },
-                "taskRequirements": [
-                    {
-                        "task": {
-                            "name": "Make Amends - Security"
-                        }
-                    }
-                ],
-                "objectives": [
-                    {
-                        "id": "626171a0f7308432be1d44cd",
-                        "description": "Eliminate Raiders on Reserve",
-                        "type": "shoot",
-                        "count": 25
                     }
                 ]
             },
@@ -13526,14 +13508,14 @@ const data = {
                 "objectives": [
                     {
                         "id": "60e8174d0367e10a450f7818",
-                        "description": "Find in raid and hand over BEAR PMC dogtags of level 50+",
+                        "description": "Hand over the found in raid item: BEAR PMC dogtag (Level 50+)",
                         "type": "giveItem",
                         "count": 20,
                         "foundInRaid": true
                     },
                     {
                         "id": "60e81795479eef59b01b0bdf",
-                        "description": "Find in raid and hand over USEC PMC dogtags of level 50+",
+                        "description": "Hand over the found in raid item: USEC PMC dogtag (Level 50+)",
                         "type": "giveItem",
                         "count": 20,
                         "foundInRaid": true
@@ -13594,6 +13576,12 @@ const data = {
                     {
                         "id": "60ec0b1871035f300c301acd",
                         "description": "Eliminate PMC operatives in The Lab",
+                        "type": "shoot",
+                        "count": 4
+                    },
+                    {
+                        "id": "65e09b343458a36a766837c7",
+                        "description": "Eliminate PMC operatives in Ground Zero",
                         "type": "shoot",
                         "count": 4
                     }

@@ -1,5 +1,3 @@
-// https://rapidapi.com/neotank/api/instagram130
-
 const fs = require('fs');
 const axios = require('axios');
 
@@ -19,16 +17,18 @@ async function fetchData() {
 
     try {
         const response = await axios.request(options);
-        console.log(`Fia's Recent IG Post: https://www.instagram.com/p/${response.data.edges[0].node.shortcode}`)
-        return (`Fia's Recent IG Post: https://www.instagram.com/p/${response.data.edges[0].node.shortcode}`);
+        const shortcode = response.data.data.user.edge_owner_to_timeline_media.edges[0].node.shortcode;
+        const result = `Fia's Recent IG Post: https://www.instagram.com/p/${shortcode}`;
+        console.log(result);
+        return result;
     } catch (error) {
-        return (error);
+        console.error(error);
+        return 'Failed to fetch data';
     }
 }
 
 // Call the async function to execute the code
 // fetchData();
-
 
 exports.handler = async (event, context) => {
     try {

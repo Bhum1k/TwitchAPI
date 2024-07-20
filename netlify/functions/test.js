@@ -1,62 +1,26 @@
-const fs = require('fs');
 const axios = require('axios');
 
-async function returnOutput(dateString) {
-    // Define the zodiac signs and their date ranges
-    const zodiacSigns = [
-        { sign: "Capricorn", start: "12-22", end: "01-19" },
-        { sign: "Aquarius", start: "01-20", end: "02-18" },
-        { sign: "Pisces", start: "02-19", end: "03-20" },
-        { sign: "Aries", start: "03-21", end: "04-19" },
-        { sign: "Taurus", start: "04-20", end: "05-20" },
-        { sign: "Gemini", start: "05-21", end: "06-20" },
-        { sign: "Cancer", start: "06-21", end: "07-22" },
-        { sign: "Leo", start: "07-23", end: "08-22" },
-        { sign: "Virgo", start: "08-23", end: "09-22" },
-        { sign: "Libra", start: "09-23", end: "10-22" },
-        { sign: "Scorpio", start: "10-23", end: "11-21" },
-        { sign: "Sagittarius", start: "11-22", end: "12-21" },
-    ];
-
-    // Check if the input is a string in the format "MM DD"
-    if (typeof dateString !== 'string' || !/^\d{1,2} \d{1,2}$/.test(dateString)) {
-        return "Date must be in the format 'MM DD'";
+const options = {
+    method: 'GET',
+    url: 'https://instagram-looter2.p.rapidapi.com/user-feeds2',
+    params: { id: '1548216509', count: '1' },
+    headers: {
+        'x-rapidapi-key': '0d5bc91b44msh27f6c54f345f353p15971ejsnb2754612e803',
+        'x-rapidapi-host': 'instagram-looter2.p.rapidapi.com'
     }
+};
 
-    const [month, day] = dateString.split(' ').map(num => parseInt(num, 10));
-
-    // Validate month and day ranges
-    if (isNaN(month) || isNaN(day) || month < 1 || month > 12) {
-        return "Date must be in the format 'MM DD'";
+axios.request(options).then(function (response) {
+    const data = response.data;
+    if (data && data.data && data.data.user && data.data.user.edge_owner_to_timeline_media &&
+        data.data.user.edge_owner_to_timeline_media.edges &&
+        data.data.user.edge_owner_to_timeline_media.edges.length > 0) {
+        const node = data.data.user.edge_owner_to_timeline_media.edges[0].node;
+        const shortcode = node.shortcode;
+        console.log(shortcode);
+    } else {
+        console.log("Shortcode not found");
     }
-
-    // Get the number of days in the given month
-    const daysInMonth = new Date(2020, month, 0).getDate(); // Using 2020 as a leap year reference
-
-    if (day < 1 || day > daysInMonth) {
-        return "Date must be in the format 'MM DD'";
-    }
-
-    // Format the date for output without leading zeroes
-    const formattedDate = `${month}/${day}`;
-
-    // Find the zodiac sign for the given date
-    let zodiacSign = "";
-    for (let i = 0; i < zodiacSigns.length; i++) {
-        const { sign, start, end } = zodiacSigns[i];
-        if (
-            (start <= end && dateString >= start && dateString <= end) ||
-            (start > end && (dateString >= start || dateString <= end))
-        ) {
-            zodiacSign = sign;
-            break;
-        }
-    }
-
-    return `Zodiac sign for the date ${formattedDate} is: ${zodiacSign}`;
-}
-
-// Test the function with invalid date input
-returnOutput('4 20').then(result => {
-    console.log(result);
+}).catch(function (error) {
+    console.error(error);
 });
