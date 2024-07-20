@@ -15,7 +15,7 @@ async function fetchData() {
     try {
         const response = await axios.request(options);
         const shortcode = response.data.data.user.edge_owner_to_timeline_media.edges[0].node.shortcode;
-        const result = `Fia's Recent IG Post: https://www.instagram.com/p/${shortcode}`;
+        const result = `Fia's Recent IG Post: instagram.com/p/${shortcode}`;
         console.log(result);
         return result;
     } catch (error) {
