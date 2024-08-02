@@ -37,23 +37,29 @@ async function returnOutput(dateString) {
         return "Date must be in the format 'MM DD'";
     }
 
+    // Format the date for comparison with leading zeroes
+    const formattedDate = `${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+
     // Format the date for output without leading zeroes
-    const formattedDate = `${month}/${day}`;
+    const outputDate = `${month}/${day}`;
 
     // Find the zodiac sign for the given date
     let zodiacSign = "";
-    for (let i = 0; i < zodiacSigns.length; i++) {
-        const { sign, start, end } = zodiacSigns[i];
+    for (const { sign, start, end } of zodiacSigns) {
         if (
-            (start <= end && dateString >= start && dateString <= end) ||
-            (start > end && (dateString >= start || dateString <= end))
+            (start <= end && formattedDate >= start && formattedDate <= end) ||
+            (start > end && (formattedDate >= start || formattedDate <= end))
         ) {
             zodiacSign = sign;
             break;
         }
     }
 
-    return `Zodiac sign for the date ${formattedDate} is ${zodiacSign}`;
+    if (zodiacSign === "") {
+        return `No zodiac sign found for the date ${outputDate}`;
+    }
+
+    return `Zodiac sign for the date ${outputDate} is ${zodiacSign}`;
 }
 
 exports.handler = async (event, context) => {
@@ -83,3 +89,6 @@ exports.handler = async (event, context) => {
         };
     }
 };
+
+// Example call for testing
+// returnOutput("2 21").then(console.log);
